@@ -181,7 +181,7 @@ func void dia_pal_91680_natan_whereudardone_info()
 {
 	B_GivePlayerXP(200);
 	AI_Output(self,other,"DIA_Pal_91680_Natan_WhereUdarDone_01_00");	//Je dobře, že jsme tu včas... Ještě trochu a ta stvoření by ho zabila!
-	AI_Output(other,self,"DIA_Pal_91680_Natan_WhereUdarDone_01_01");	//Ale jak vidíš, vše se povedlo! Myslím, že teď jsi Udarovi konečně splatil svůj dluh - Právě jsi mu zachránili život.
+	AI_Output(other,self,"DIA_Pal_91680_Natan_WhereUdarDone_01_01");	//Ale jak vidíš, vše se povedlo! Myslím, že teď jsi Udarovi konečně splatil svůj dluh - právě jsi mu zachránili život.
 	AI_Output(self,other,"DIA_Pal_91680_Natan_WhereUdarDone_01_02");	//Hmmm... Žije... Všechno se to semlelo tak rychle.
 	AI_Output(other,self,"DIA_Pal_91680_Natan_WhereUdarDone_01_03");	//Hlavní je, že jsi splatil svůj dluh, jak se to stalo už není důležité.
 	AI_Output(self,other,"DIA_Pal_91680_Natan_WhereUdarDone_01_04");	//No, máš pravdu... Díky za pomoc (úsměv) Doufám, že se znovu potkáme!
