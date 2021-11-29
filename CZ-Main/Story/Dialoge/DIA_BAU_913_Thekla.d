@@ -684,7 +684,7 @@ func void DIA_Thekla_PERM_Info()
 		MIS_Thekla_Paket = LOG_Running;
 		Log_CreateTopic(TOPIC_TheklaEintopf,LOG_MISSION);
 		Log_SetTopicStatus(TOPIC_TheklaEintopf,LOG_Running);
-		B_LogEntry(TOPIC_TheklaEintopf,"Když Thekle přinesu byliny od léčitelky Sagitty, uvaří mi ještě další lektvar. Sagitta přebývá kousek za Sekobovým statkem.");
+		B_LogEntry(TOPIC_TheklaEintopf,"Když Thekle přinesu byliny od léčitelky Sagitty, uvaří mi ještě další vývar. Sagitta přebývá kousek za Sekobovým statkem.");
 	}
 	else if(MIS_Thekla_Paket == LOG_SUCCESS)
 	{
@@ -738,7 +738,7 @@ func void DIA_Thekla_PERM_Info()
 	}
 	else
 	{
-		AI_Output(self,other,"DIA_Thekla_PERM_17_21");	//Žádné bylinky, žádný vývar - víme?
+		AI_Output(self,other,"DIA_Thekla_PERM_17_21");	//Žádné bylinky, žádný vývar - rozuměls?
 	};
 };
 
