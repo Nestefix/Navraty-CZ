@@ -9,7 +9,6 @@ func int DIA_Thekla_Baker_Condition - upraveny podmínky dialogu
 */
 
 
-
 instance DIA_Thekla_EXIT(C_Info)
 {
 	npc = BAU_913_Thekla;
