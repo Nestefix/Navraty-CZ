@@ -809,7 +809,7 @@ func void dia_onar_onarbusiness_need()
 	AI_Output(self,other,"DIA_Onar_OnarBusiness_Need_01_06");	//Možná také, chcípnou hlady dřív!
 	AI_Output(self,other,"DIA_Onar_OnarBusiness_Need_01_07");	//Zvlášť se to týká těch tvejch paladinů! Ať jsou sebelepší... (škodolibě)
 	AI_Output(self,other,"DIA_Onar_OnarBusiness_Need_01_08");	//Takže bude lepší, když odsud vypadneš a už mě nikdy nebudeš obtěžovat takovýma otázkama!
-	AI_Output(self,other,"DIA_Onar_OnarBusiness_Need_01_09");	//Jinak ti to mí chlapi spočítají. 
+	AI_Output(self,other,"DIA_Onar_OnarBusiness_Need_01_09");	//Jinak ti to mí chlapi spočítají.
 	ONARNOTAGREED = TRUE;
 	B_LogEntry(TOPIC_ONARBUSINESS,"Nedomluvil jsem s Onarem podmínky týkající se dodávky jídla. Je čas oznámit to Luterovi.");
 	AI_StopProcessInfos(self);
