@@ -395,7 +395,7 @@ func void dia_kurgan_dgjjoinpaladin_info()
 	AI_Output(other,self,"DIA_Kurgan_DgjJoinPaladin_01_00");	//Paladinové potřebují vaši pomoc.
 	AI_Output(self,other,"DIA_Kurgan_DgjJoinPaladin_01_01");	//Ano?! A co po nás potřebují?
 	AI_Output(other,self,"DIA_Kurgan_DgjJoinPaladin_01_02");	//Chtějí zaútočit na pevnost a sebrat ji skřetům.
-	AI_Output(self,other,"DIA_Kurgan_DgjJoinPaladin_01_03");	//(sarkasticky) Vážně? Když je vše ztracené a na dně, Innosovy sloužící udělají nějakou blbost, aby jejich jména vešla v legendu!
+	AI_Output(self,other,"DIA_Kurgan_DgjJoinPaladin_01_03");	//(sarkasticky) Vážně? Když je vše ztracené a na dně, Innosovi sloužící udělají nějakou blbost, aby jejich jména vešla v legendu!
 	AI_Output(self,other,"DIA_Kurgan_DgjJoinPaladin_01_07");	//Nejsme tak hloupí, abychom riskovali naše životy.
 	AI_Output(other,self,"DIA_Kurgan_DgjJoinPaladin_01_10");	//Určitě se můžeme nějak dohodnout, nemyslíš příteli?
 	AI_Output(self,other,"DIA_Kurgan_DgjJoinPaladin_01_11");	//A o čem se chceš dohodnout, příteli?
