@@ -271,7 +271,7 @@ instance DIA_Pyrokar_TEST(C_Info)
 	condition = DIA_Pyrokar_TEST_Condition;
 	information = DIA_Pyrokar_TEST_Info;
 	permanent = FALSE;
-	description = "Jsem připraven složit Vaši zkoušku, mistře.";
+	description = "Jsem připraven složit vaši zkoušku, mistře.";
 };
 
 
@@ -290,12 +290,12 @@ func void DIA_Pyrokar_TEST_Info()
 	AI_Output(self,other,"DIA_Pyrokar_TEST_11_02");	//Zkouška magie... (odměřeně) Měl bys vědět, že pouze jeden novic může uspět.
 	AI_Output(other,self,"DIA_Pyrokar_TEST_15_03");	//Ach tak, kdo jsou tedy moji soupeři?
 	AI_Output(self,other,"DIA_Pyrokar_TEST_11_04");	//Innos ve své moudrosti zvolil tři novice, kteří jsou také podrobení zkoušce: Agon, Igaraz a Ulf. Už se vydali na cestu.
-	AI_Output(self,other,"DIA_Pyrokar_TEST_11_05");	//(úsečně) Ale už dost o tom! Teď slyš slova, která tě povedou: 'Následuj znamení Innose a dones nám to co věřící najde na konci cesty.
+	AI_Output(self,other,"DIA_Pyrokar_TEST_11_05");	//(úsečně) Ale už dost o tom! Teď slyš slova, která tě povedou: 'Následuj znamení Innose a dones nám to, co věřící najde na konci cesty.'
 	AI_Output(self,other,"DIA_Pyrokar_TEST_11_06");	//Také budeš potřebovat tento klíč.
 	Log_CreateTopic(TOPIC_Schnitzeljagd,LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Schnitzeljagd,LOG_Running);
 	B_LogEntry(TOPIC_Schnitzeljagd,"Pyrokar mě podrobí zkoušce magie. Tato zkouška byla také zadána Agonovi, Igarazovi a Ulfovi.");
-	B_LogEntry_Quiet(TOPIC_Schnitzeljagd,"Musím následovat Innosova znamení, najít a donést 'to, co věřící nalezne na konci cesty'. Klíč, který jsem obdržel by mi měl pomoct.");
+	B_LogEntry_Quiet(TOPIC_Schnitzeljagd,"Musím následovat Innosova znamení, najít a donést 'to, co věřící najde na konci cesty.' Klíč, který jsem obdržel by mi měl pomoct.");
 	CreateInvItems(self,ItKe_MagicChest,1);
 	B_GiveInvItems(self,other,ItKe_MagicChest,1);
 	B_StartOtherRoutine(Igaraz,"CONTEST");
@@ -455,14 +455,14 @@ func int DIA_Pyrokar_MAGICAN_Condition()
 func void DIA_Pyrokar_MAGICAN_Info()
 {
 	AI_Output(other,self,"DIA_Pyrokar_MAGICAN_15_00");	//Budu teď přijat do řad mágů?
-	AI_Output(self,other,"DIA_Pyrokar_MAGICAN_11_01");	//Dokázal jsi to. Složil jsi Zkoušku ohně. Celou dobu jsme si byli jistí, že ty uspěješ!
+	AI_Output(self,other,"DIA_Pyrokar_MAGICAN_11_01");	//Dokázal jsi to. Složil jsi Zkoušku Ohně. Celou dobu jsme si byli jistí, že ty uspěješ!
 	AI_Output(self,other,"DIA_Pyrokar_MAGICAN_11_02");	//(naléhavě) Stejně jako bylo jisté, že se staneš skutečným Innosovým služebníkem.
 	AI_Output(self,other,"DIA_Pyrokar_MAGICAN_11_03");	//Takže pokud jsi připraven složit Přísahu Ohně, budeš přijat mezi nás mágy.
 	AI_Output(self,other,"DIA_Pyrokar_MAGICAN_100_01");	//Ale teď mám pro tebe poslední úkol. Běž za Karrasem on ti řekne víc.
 	MIS_KARRAS_BOOKS = LOG_Running;
 	Log_CreateTopic(TOPIC_HELPKARRASBOOKS,LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_HELPKARRASBOOKS,LOG_Running);
-	B_LogEntry(TOPIC_HELPKARRASBOOKS,"Pyrokar řekl že budu mágem Ohně až splním poslední Karrasův úkol.");
+	B_LogEntry(TOPIC_HELPKARRASBOOKS,"Pyrokar řekl, že budu mágem Ohně až splním poslední Karrasův úkol.");
 };
 
 instance DIA_Pyrokar_OATH(C_Info)
@@ -600,7 +600,7 @@ func void DIA_Pyrokar_Wunsch_Info()
 func void DIA_Pyrokar_Wunsch_Nothing()
 {
 	AI_Teleport(Dyrian,"TAVERNE");
-	AI_Output(other,self,"DIA_Pyrokar_Wunsch_Nothing_15_00");	//Žádné.
+	AI_Output(other,self,"DIA_Pyrokar_Wunsch_Nothing_15_00");	//Nic.
 	AI_Output(self,other,"DIA_Pyrokar_Wunsch_Nothing_11_01");	//(udiveně) Dobrá tedy. Nový mág se vzdal práva na svůj první čin.
 	B_StartOtherRoutine(Dyrian,"NOFAVOUR");
 
@@ -624,9 +624,9 @@ func void DIA_Pyrokar_Wunsch_Nothing()
 
 func void DIA_Pyrokar_Wunsch_Dyrian()
 {
-	AI_Output(other,self,"DIA_Pyrokar_Wunsch_Dyrian_15_00");	//Nechte novice Dyriana zůstat v klášteře.
+	AI_Output(other,self,"DIA_Pyrokar_Wunsch_Dyrian_15_00");	//Rád bych, aby Dyrian nadále setrval v klášteře.
 	AI_Output(self,other,"DIA_Pyrokar_Wunsch_Dyrian_11_01");	//Budiž.
-	AI_Output(self,other,"DIA_Pyrokar_Wunsch_Dyrian_11_02");	//Novic zůstanu v klášteře a bude dosazen na post zahradníka, který je teď volný.
+	AI_Output(self,other,"DIA_Pyrokar_Wunsch_Dyrian_11_02");	//Novic zůstane v klášteře a bude dosazen na post zahradníka, který je teď volný.
 	B_GivePlayerXP(XP_HelpDyrian);
 	B_StartOtherRoutine(Dyrian,"FAVOUR");
 	MIS_HelpDyrian = LOG_SUCCESS;
@@ -697,7 +697,7 @@ instance DIA_Pyrokar_Nachricht(C_Info)
 	condition = DIA_Pyrokar_Nachricht_Condition;
 	information = DIA_Pyrokar_Nachricht_Info;
 	permanent = FALSE;
-	description = "Mám zprávy pro lorda Hagena!";
+	description = "Nesu zprávy od lorda Hagena.";
 };
 
 
@@ -711,13 +711,13 @@ func int DIA_Pyrokar_Nachricht_Condition()
 
 func void DIA_Pyrokar_Nachricht_Info()
 {
-	AI_Output(other,self,"DIA_Pyrokar_Nachricht_15_00");	//Nesu zprávy pro lorda Hagena. Chce důkaz o přítomnosti draků a armády zla v Hornickém údolí.
+	AI_Output(other,self,"DIA_Pyrokar_Nachricht_15_00");	//Nesu zprávy od lorda Hagena. Chce důkaz o přítomnosti draků a armády zla v Hornickém údolí.
 	if(EnterOW_Kapitel2 == FALSE)
 	{
 		AI_Teleport(Sergio,"NW_MONASTERY_PLACE_09");
-		AI_Output(other,self,"DIA_Pyrokar_Nachricht_15_01");	//Takže vyražím do Údolí abych mu tento důkaz donesl.
+		AI_Output(other,self,"DIA_Pyrokar_Nachricht_15_01");	//Takže vyrážím do Hornického údolí abych mu tento důkaz donesl.
 		AI_Output(self,other,"DIA_Pyrokar_Nachricht_11_02");	//Dobře, budeš se řídit tímto rozkazem, tedy. Paladin Sergio tě doprovodí k průsmyku.
-		AI_Output(self,other,"DIA_Pyrokar_Nachricht_11_03");	//Nechť tě Innost ochraňuje.
+		AI_Output(self,other,"DIA_Pyrokar_Nachricht_11_03");	//Nechť tě Innos ochraňuje.
 		Sergio_Follow = TRUE;
 		AI_StopProcessInfos(self);
 		B_StartOtherRoutine(Sergio,"WAITFORPLAYER");
@@ -1000,7 +1000,7 @@ func void DIA_Pyrokar_BACKFROMOW_Info()
 	AI_Output(other,self,"DIA_Pyrokar_BACKFROMOW_15_04");	//Doly, ve kterých se ještě může těžit, nemohou dostát královým požadavkům.
 	AI_Output(self,other,"DIA_Pyrokar_BACKFROMOW_11_05");	//Dny se stále více zatemňují a svit slunce slábne.
 	AI_Output(other,self,"DIA_Pyrokar_BACKFROMOW_15_06");	//Napadli mě nějací mágové v černých kápích.
-	AI_Output(self,other,"DIA_Pyrokar_BACKFROMOW_11_07");	//Ano, to jsou Pátrači. Beliarovi nohsledi z podsvětí. Pokusí se ovládnout tvou mysl, dávej si na ně pozor.
+	AI_Output(self,other,"DIA_Pyrokar_BACKFROMOW_11_07");	//Ano, to jsou Pátrači. Beliarovy nohsledi z podsvětí. Pokusí se ovládnout tvou mysl, dávej si na ně pozor.
 	AI_Output(self,other,"DIA_Pyrokar_BACKFROMOW_11_08");	//Jakmile tě ovládnou, už to nebudeš nadále ty. Poté už ti pomůžeme jen my, zde v klášteře.
 
 	if(hero.guild == GIL_KDF)
@@ -1062,12 +1062,12 @@ func void DIA_Pyrokar_GIVEINNOSEYE_Info()
 	{
 		B_GivePlayerXP(300);
 		AI_Output(other,self,"DIA_Pyrokar_GIVEINNOSEYE_Bad_01_01");	//Jak to vidíte?
-		AI_Output(self,other,"DIA_Pyrokar_GIVEINNOSEYE_Bad_01_02");	//Dobře! Než si to vemeš. Věz že nyní je to na tobě.
+		AI_Output(self,other,"DIA_Pyrokar_GIVEINNOSEYE_Bad_01_02");	//Dobře! Než si to vemeš. Věz, že nyní je to na tobě.
 		B_GiveInvItems(self,other,ItMi_InnosEye_Bad,1);
 		AI_Output(other,self,"DIA_Pyrokar_GIVEINNOSEYE_Bad_01_03");	//Děkuji ti mistře.
-		AI_Output(self,other,"DIA_Pyrokar_GIVEINNOSEYE_Bad_01_04");	//Postarej se o to! A pamatuj, že takové věci by se neměly dostat do rukou zlu.
+		AI_Output(self,other,"DIA_Pyrokar_GIVEINNOSEYE_Bad_01_04");	//Postarej se o to! A pamatuj, že takové věci by se neměly dostat do rukou zla.
 		AI_Output(self,other,"DIA_Pyrokar_GIVEINNOSEYE_Bad_01_05");	//Teď jdi, můj synu. Innos tě bude doprovázet na tvé cestě.
-		B_LogEntry(TOPIC_INNOSEYE,"Pyrokar mi dal artefakt. Měl bych jít ke kruhu Slunce a donést ho Temnému vyslanci. Tím dokážu že jsem hoden sloužit Beliarovi!");
+		B_LogEntry(TOPIC_INNOSEYE,"Pyrokar mi dal artefakt. Měl bych jít ke kruhu Slunce a donést ho Temnému vyslanci. Tím dokážu, že jsem hoden sloužit Beliarovi!");
 		AI_StopProcessInfos(self);
 		B_StartOtherRoutine(DMT_2200_DarkSpeaker,"Circle");
 	};
@@ -1166,7 +1166,7 @@ func void DIA_Pyrokar_FOUNDINNOSEYE_was()
 	AI_Output(self,other,"DIA_Pyrokar_FOUNDINNOSEYE_was_11_01");	//Nepřítel se stal velice mocným, ale i tak je pro něj tento amulet mocnou hrozbou.
 	AI_Output(self,other,"DIA_Pyrokar_FOUNDINNOSEYE_was_11_02");	//Musíme Oko uzdravit a navrátit mu moc. Ale nemáme moc času.
 	AI_Output(self,other,"DIA_Pyrokar_FOUNDINNOSEYE_was_11_03");	//Bojím se představit si co se s námi stane. Bez ochrany Oka jsme oddáni na milost a nemilost nepřítele.
-	AI_Output(self,other,"DIA_Pyrokar_FOUNDINNOSEYE_was_11_04");	//Jdi za Vatrasem, mágem Vody co káže ve městě. V této strašné situaci jen on bude vědět co musím učinit. Vezmi Oko a jdi hned zaním.
+	AI_Output(self,other,"DIA_Pyrokar_FOUNDINNOSEYE_was_11_04");	//Jdi za Vatrasem, mágem Vody co káže ve městě. V této strašné situaci jen on bude vědět co musíme učinit. Vezmi Oko a jdi hned za ním.
 	Info_AddChoice(DIA_Pyrokar_FOUNDINNOSEYE,Dialog_Back,DIA_Pyrokar_FOUNDINNOSEYE_weiter);
 	if(hero.guild == GIL_KDF)
 	{
@@ -1182,7 +1182,7 @@ func void DIA_Pyrokar_FOUNDINNOSEYE_was_vatras()
 	AI_Output(other,self,"DIA_Pyrokar_FOUNDINNOSEYE_was_vatras_15_00");	//Proč zrovna Vatras?
 	AI_Output(self,other,"DIA_Pyrokar_FOUNDINNOSEYE_was_vatras_11_01");	//Privilegium roucha tě neopravňuje zpochybňovat mé příkazy, bratře.
 	AI_Output(self,other,"DIA_Pyrokar_FOUNDINNOSEYE_was_vatras_11_02");	//Vatras je služebník Adanův. Vědomosti mága Vody nám přinesou plamínek světla do tohoto temného období.
-	AI_Output(self,other,"DIA_Pyrokar_FOUNDINNOSEYE_was_vatras_11_03");	//To je vše co potřebuješ vědět.
+	AI_Output(self,other,"DIA_Pyrokar_FOUNDINNOSEYE_was_vatras_11_03");	//To je vše, co potřebuješ vědět.
 };
 
 func void DIA_Pyrokar_FOUNDINNOSEYE_sonnenkreis()
@@ -1404,7 +1404,7 @@ func void DIA_Pyrokar_KAP3_READY_Info()
 	CreateInvItems(Gorax,ItMi_RuneBlank,1);
 	Log_CreateTopic(TOPIC_DRACHENJAGD,LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_DRACHENJAGD,LOG_Running);
-	B_LogEntry(TOPIC_DRACHENJAGD,"Nyní jsem připraven postavit se Drakům! Innosovo oko mi pomůže je porazit. Nicméně prvně bych si měl Oko nasadit a s draky promluvit než je zabiju. Je tu ale jeden problém - Oko ztrácí po každém rozhovoru s drakem svou moc a musím ho znovu nabít. K tomu potřebuji dračí srdce, laboratorní baňku, vybité Oko a alchymistickou kolonu. Až po znovunabití oka se bude moct opět postavit dalšímu drakovi.");
+	B_LogEntry(TOPIC_DRACHENJAGD,"Nyní jsem připraven postavit se Drakům! Innosovo oko mi pomůže je porazit. Nicméně prvně bych si měl Oko nasadit a s draky promluvit než je zabiju. Je tu ale jeden problém - Oko ztrácí po každém rozhovoru s drakem svou moc a musím ho znovu nabít. K tomu potřebuji dračí srdce, laboratorní baňku, vybité Oko a alchymistickou kolonu. Až po znovunabití oka se budu moct opět postavit dalšímu drakovi.");
 	MIS_ReadyforChapter4 = TRUE;
 	B_NPC_IsAliveCheck(NEWWORLD_ZEN);
 	AI_StopProcessInfos(self);
@@ -1459,7 +1459,7 @@ func void DIA_Pyrokar_BUCHDERBESSENEN_Info()
 		B_LogEntry(TOPIC_DEMENTOREN,"Pyrokar si přeje abych mu donesl, a on mohl poté zničit, almanachy posedlých. K tomuto účelu mi dal svitek s jmény těch, které Pátrači plánují posednout. Časem se může rozrůst o další jména.");
 	};
 	AI_Output(self,other,"DIA_Pyrokar_BUCHDERBESSENEN_11_12");	//Nepřibližuj se k Pátračům, nebo ovládnou i tebe.
-	AI_Output(self,other,"DIA_Pyrokar_BUCHDERBESSENEN_11_13");	///Pokud si budeš myslet, že už jim nedokážeš odporovat přijď rychle za mnou.
+	AI_Output(self,other,"DIA_Pyrokar_BUCHDERBESSENEN_11_13");	//Pokud si budeš myslet, že už jim nedokážeš odporovat přijď rychle za mnou.
 	AI_Output(self,other,"DIA_Pyrokar_BUCHDERBESSENEN_11_14");	//Jedině zde v klášteře budeš v bezpečí.
 	if((Npc_IsDead(Karras) == FALSE) && (hero.guild == GIL_KDF))
 	{
@@ -1616,7 +1616,7 @@ func void dia_pyrokar_givehealpotions_ok_1()
 
 func void dia_pyrokar_givehealpotions_ok_5()
 {
-	AI_Output(other,self,"DIA_Pyrokar_GiveHealPotions_ok_5_01_00");	//Vezmu si jich pět!.
+	AI_Output(other,self,"DIA_Pyrokar_GiveHealPotions_ok_5_01_00");	//Vezmu si jich pět.
 	if(B_GiveInvItems(other,self,ItMi_Gold,1500))
 	{
 		AI_Output(self,other,"DIA_Pyrokar_GiveHealPotions_ok_5_01_01");	//Zde, vezmi si je. Zbaví tě té temné infekce.
@@ -1631,10 +1631,10 @@ func void dia_pyrokar_givehealpotions_ok_5()
 
 func void dia_pyrokar_givehealpotions_ok_10()
 {
-	AI_Output(other,self,"DIA_Pyrokar_GiveHealPotions_ok_10_01_00");	//Tak já si jich vezmu deset!
+	AI_Output(other,self,"DIA_Pyrokar_GiveHealPotions_ok_10_01_00");	//Tak já si jich vezmu deset.
 	if(B_GiveInvItems(other,self,ItMi_Gold,3000))
 	{
-		AI_Output(self,other,"DIA_Pyrokar_GiveHealPotions_ok_10_01_01");	//Tady, vezmi si tychle lektvary. Zbaví tě té nákazy.
+		AI_Output(self,other,"DIA_Pyrokar_GiveHealPotions_ok_10_01_01");	//Tady, vezmi si tyhle lektvary. Zbaví tě té nákazy.
 		B_GiveInvItems(self,other,ItPo_HealObsession_MIS,10);
 	}
 	else
@@ -1921,7 +1921,7 @@ func void DIA_Pyrokar_IRDORATHBOOKOPEN_glueck()
 {
 	AI_Output(other,self,"DIA_Pyrokar_IRDORATHBOOKOPEN_glueck_15_00");	//Asi prostě klika.
 	AI_Output(self,other,"DIA_Pyrokar_IRDORATHBOOKOPEN_glueck_11_01");	//Nemluv nesmysly. Štěstí?!
-	AI_Output(self,other,"DIA_Pyrokar_IRDORATHBOOKOPEN_glueck_11_02");	//Když ani já neuspěji v otevření této knihy a pak přijde někdo jako ty a začne si jí listovat jako by se nic nedělo...
+	AI_Output(self,other,"DIA_Pyrokar_IRDORATHBOOKOPEN_glueck_11_02");	//Když ani já neuspěl v otevření této knihy a pak přijde někdo jako ty a začne si jí listovat jako by se nic nedělo...
 	AI_Output(self,other,"DIA_Pyrokar_IRDORATHBOOKOPEN_glueck_11_03");	//... to mi dává podnět k zamyšlení.
 	AI_Output(self,other,"DIA_Pyrokar_IRDORATHBOOKOPEN_glueck_11_04");	//Každopádně jsi jediný kdo byl schopen knihu otevřít, tak hádám, že by ti měla být svěřena. Alespoň do té doby, než překonáme tuhle krizi.
 	B_GivePlayerXP(XP_Ambient);
@@ -2206,7 +2206,7 @@ func void DIA_Pyrokar_PotionofDeath_Teardrops()
 {
 	AI_Output(other,self,"DIA_Pyrokar_PotionofDeath_Teardrops_15_00");	//Co jsou teda ty Innosovy slzy?
 	AI_Output(self,other,"DIA_Pyrokar_PotionofDeath_Teardrops_11_01");	//Když si Innos uvědomil, že aby zachranil svět, tak musí bojovat se svým vlastním bratrem, Beliarem, jeho smutek byl nevyslovitelný.
-	AI_Output(self,other,"DIA_Pyrokar_PotionofDeath_Teardrops_11_02");	//Začal plakat a jeho slzy padaly dolů na svět. Bylo jich mnoho, protože jeho srdce bylo tak plné zármkutku, že plakal celých 13let.
+	AI_Output(self,other,"DIA_Pyrokar_PotionofDeath_Teardrops_11_02");	//Začal plakat a jeho slzy padaly dolů na svět. Bylo jich mnoho, protože jeho srdce bylo tak plné zármutku, že plakal celých 13 let.
 	AI_Output(other,self,"DIA_Pyrokar_PotionofDeath_Teardrops_15_03");	//Jdi k věci.
 	AI_Output(self,other,"DIA_Pyrokar_PotionofDeath_Teardrops_11_04");	//Lidé, kteří nalezli jeho slzy a ochutnali je, získali najednou nadpřirozenou sílu a hbitost. Poznali Innosovu moudrost a začali mu sloužit.
 	AI_Output(self,other,"DIA_Pyrokar_PotionofDeath_Teardrops_11_05");	//Byli to zakladatelé Společenstva Ohně. Slzy jim dali sílu, odvahu a moudrost. Ale to už je velice dávno. Je to více než čtvrt století, co naposledy někdo spatřil Innosovy slzy.
@@ -2323,7 +2323,7 @@ func void dia_pyrokar_kapitelorcattack_what()
 	AI_Output(self,other,"DIA_Pyrokar_KapitelOrcAttack_What_01_01");	//Khorinis padl! (sklíčeně) Nyní jsou tam jen skřeti.
 	AI_Output(other,self,"DIA_Pyrokar_KapitelOrcAttack_What_01_02");	//Jak se to mohlo stát?
 	AI_Output(self,other,"DIA_Pyrokar_KapitelOrcAttack_What_01_03");	//Pár dní po vašem odjezdu jejich hordy prošly průsmykem a napadly město.
-	AI_Output(self,other,"DIA_Pyrokar_KapitelOrcAttack_What_01_04");	//Zpočátku ho jen obklíčily, ale další noc začly útočit.
+	AI_Output(self,other,"DIA_Pyrokar_KapitelOrcAttack_What_01_04");	//Zpočátku ho jen obklíčily, ale další noc začaly útočit.
 	AI_Output(self,other,"DIA_Pyrokar_KapitelOrcAttack_What_01_05");	//Ani si nedokážeme představit, co se tam dělo... Ani se nebojovalo, prostě masakr.
 	AI_Output(self,other,"DIA_Pyrokar_KapitelOrcAttack_What_01_07");	//Lord Hagen a jeho lidé dělali co mohli... (sklíčeně) statečně bojovali do posledního dechu, ale obrovská početní přesila skřetů byla prostě příliš velká.
 	AI_Output(self,other,"DIA_Pyrokar_KapitelOrcAttack_What_01_08");	//Těch pár co přežilo uteklo do pevnosti Azgan a skřeti nakonec ovládli celé město.
@@ -2357,7 +2357,7 @@ func void dia_pyrokar_kapitelorcattack_do()
 	AI_Output(self,other,"DIA_Pyrokar_KapitelOrcAttack_Do_01_13");	//Jak jsi již zjistil, město je plné skřetů, takže bude extrémně složíté se z něj dostat.
 	AI_Output(self,other,"DIA_Pyrokar_KapitelOrcAttack_Do_01_15");	//Jsem si ale jistý, že TY to nějak zvládneš.
 	AI_Output(self,other,"DIA_Pyrokar_KapitelOrcAttack_Do_01_16");	//Ale tvá posádka je v pasti.
-	AI_Output(self,other,"DIA_Pyrokar_KapitelOrcAttack_Do_01_17");	//Nikdy nevíš, kdy se dostanou skřeti na loď a pak najednou... Jsou tam (vzrušeně) Myslím, že víš o čem mluvím.
+	AI_Output(self,other,"DIA_Pyrokar_KapitelOrcAttack_Do_01_17");	//Nikdy nevíš, kdy se dostanou skřeti na loď a pak najednou... Jsou tam. (vzrušeně) Myslím, že víš o čem mluvím.
 	AI_Output(other,self,"DIA_Pyrokar_KapitelOrcAttack_Do_01_18");	//Chápu, co mám teda dělat?
 	AI_Output(self,other,"DIA_Pyrokar_KapitelOrcAttack_Do_01_19");	//Jediné co mě napadá, je použít teleportační runy, jestli je máš stále s sebou.
 	AI_Output(self,other,"DIA_Pyrokar_KapitelOrcAttack_Do_01_20");	//Je to asi nejjednodušší a nejbezpečnější cesta odsud.
@@ -2407,7 +2407,7 @@ func void dia_pyrokar_kapitelorcattack_do()
 			AI_Output(self,other,"DIA_Pyrokar_KapitelOrcAttack_Do_01_45");	//(velice udiveně) Vážně? A proč si to myslíš?
 			AI_Output(other,self,"DIA_Pyrokar_KapitelOrcAttack_Do_01_46");	//Řeknu ti to potom, teď na to není nejvhodnější chvíle.
 			AI_Output(self,other,"DIA_Pyrokar_KapitelOrcAttack_Do_01_47");	//(zamyšleně) Hmm... dobře. Poslechnu tě a zatím ho nepotrestám.
-			AI_Output(self,other,"DIA_Pyrokar_KapitelOrcAttack_Do_01_48");	//Ale budeš mi potom muset dokázat jeho nevinnu.
+			AI_Output(self,other,"DIA_Pyrokar_KapitelOrcAttack_Do_01_48");	//Ale budeš mi potom muset dokázat jeho nevinu.
 			AI_Output(self,other,"DIA_Pyrokar_KapitelOrcAttack_Do_01_49");	//Jinak víš jaký trest ho v klášteře čeká.
 			PEDROCANSAVE = TRUE;
 			Log_AddEntry(TOPIC_HELPPEDRO,"Jak jsem slíbil tak jsem učinil. Přimluvil jsem se za Pedra u Pyrokara. Ale teď budu muset říct, proč ho považuji za nevinného a dokázat to i Pyrokarovi.");
@@ -2681,7 +2681,7 @@ func void dia_pyrokar_guardiansexists_info()
 	AI_Output(self,other,"DIA_Pyrokar_GuardiansExists_01_21");	//Ale vážně si myslí, že je bohové nechají to udělat?!
 	AI_Output(other,self,"DIA_Pyrokar_GuardiansExists_01_22");	//Obávám se, že bohové jsou teď příliš slabí, aby se ubránili moci Strážců.
 	AI_Output(other,self,"DIA_Pyrokar_GuardiansExists_01_23");	//A částečně je to moje vina. Strážci mě jen využili jako svůj nástroj.
-	AI_Output(other,self,"DIA_Pyrokar_GuardiansExists_01_24");	//Nevědomky jsem každým svým činem sám oslaboval jejich moc v tomhle světě
+	AI_Output(other,self,"DIA_Pyrokar_GuardiansExists_01_24");	//Nevědomky jsem každým svým činem sám oslaboval jejich moc v tomhle světě.
 	AI_Output(other,self,"DIA_Pyrokar_GuardiansExists_01_25");	//Takže teď už nám jen stěží pomohou.
 	AI_Output(self,other,"DIA_Pyrokar_GuardiansExists_01_26");	//Ach, Innosi! To nesmí být! Kdo by řekl, že všechny naše činy se obrátí proti nám.
 	AI_Output(self,other,"DIA_Pyrokar_GuardiansExists_01_27");	//Jestli je to pravda, tak jsme odsouzeni k záhubě. Bez pomoci bohů Strážce nemůžeme porazit.
