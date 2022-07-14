@@ -28,8 +28,8 @@ func void Rtn_Start_827()
 
 func void rtn_orcatcbegan_827()
 {
-	TA_Stand_Guarding(6,55,20,30,"NW_BIGFARM_KITCHEN_BUSTER");
-	TA_Stand_Guarding(20,30,6,55,"NW_BIGFARM_KITCHEN_BUSTER");
+	TA_Stand_Guarding(6,55,20,30,"NW_BIGFARM_HOUSE_OUT_09");
+	TA_Stand_Guarding(20,30,6,55,"NW_BIGFARM_HOUSE_OUT_09");
 };
 
 func void rtn_inbattle_827()
