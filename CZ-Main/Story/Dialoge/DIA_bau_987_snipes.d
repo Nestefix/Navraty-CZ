@@ -410,7 +410,7 @@ func void dia_snipes_learnabouterzhunt_ERZWORK()
 				AI_Output(self,other,"DIA_SNIPES_LearnAboutErzHunt_01_03");	//Pak začni zpracovávat rudnou žílu.
 				AI_Output(self,other,"DIA_SNIPES_LearnAboutErzHunt_01_04");	//Není třeba trefit na okraj žíly, ani přesně do středu... Stačí jeden silný úder a pak poněkud slabší.
 				AI_Output(self,other,"DIA_SNIPES_LearnAboutErzHunt_01_05");	//Takto narušíš strukturu a dalším úderem určitě nějaký kus rudy získáš.
-				AI_Output(self,other,"DIA_SNIPES_LearnAboutErzHunt_01_06");	//A to opakuješ znovu a znovu - pokus se nudíš. (směje se)
+				AI_Output(self,other,"DIA_SNIPES_LearnAboutErzHunt_01_06");	//A to opakuješ znovu a znovu - pokud se nudíš. (směje se)
 				AI_Output(self,other,"DIA_SNIPES_LearnAboutErzHunt_01_07");	//To je hlavní věc, kterou potřebuješ vědět o těžbě rudy.
 				AI_Output(other,self,"DIA_SNIPES_LearnAboutErzHunt_01_08");	//Dík!
 				GRIMESTEACHMOREORE = TRUE;
