@@ -1993,7 +1993,7 @@ instance DIA_PARLAN_PICKPOCKET(C_Info)
 	condition = dia_parlan_pickpocket_condition;
 	information = dia_parlan_pickpocket_info;
 	permanent = TRUE;
-	description = "(pokusit se ukrást klíč.)";
+	description = "(pokusit se ukrást klíč)";
 };
 
 
