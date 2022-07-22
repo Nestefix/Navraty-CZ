@@ -744,27 +744,27 @@ func void dia_addon_riordian_ADW_teach_info()
 
 		if(player_talent_wispdetector[WISPSKILL_FF] == FALSE)
 		{
-			Info_AddChoice(dia_addon_riordian_ADW_teach,"Vyhledávání zbraní, šípů a šipek (vyžaduje 10 kusů magické rudy)",dia_addon_riordian_ADW_teach_wispskill_ff);
+			Info_AddChoice(dia_addon_riordian_ADW_teach,"Vyhledávání zbraní, šípů a šipek (vyžaduje: 10 kusů magické rudy)",dia_addon_riordian_ADW_teach_wispskill_ff);
 		};
 		if(player_talent_wispdetector[WISPSKILL_NONE] == FALSE)
 		{
-			Info_AddChoice(dia_addon_riordian_ADW_teach,"Vyhledávání zlata a různého nádobí (vyžaduje 20 kusů magické rudy)",dia_addon_riordian_ADW_teach_wispskill_none);
+			Info_AddChoice(dia_addon_riordian_ADW_teach,"Vyhledávání zlata a různého nádobí (vyžaduje: 20 kusů magické rudy)",dia_addon_riordian_ADW_teach_wispskill_none);
 		};
 		if(player_talent_wispdetector[WISPSKILL_RUNE] == FALSE)
 		{
-			Info_AddChoice(dia_addon_riordian_ADW_teach,"Vyhledávání magických svitků (vyžaduje 30 kusů magické rudy)",dia_addon_riordian_ADW_teach_wispskill_rune);
+			Info_AddChoice(dia_addon_riordian_ADW_teach,"Vyhledávání magických svitků (vyžaduje: 30 kusů magické rudy)",dia_addon_riordian_ADW_teach_wispskill_rune);
 		};
 		if(player_talent_wispdetector[WISPSKILL_FOOD] == FALSE)
 		{
-			Info_AddChoice(dia_addon_riordian_ADW_teach,"Vyhledávání rostlin a potravin (vyžaduje 50 kusů magické rudy)",dia_addon_riordian_ADW_teach_wispskill_food);
+			Info_AddChoice(dia_addon_riordian_ADW_teach,"Vyhledávání rostlin a potravin (vyžaduje: 50 kusů magické rudy)",dia_addon_riordian_ADW_teach_wispskill_food);
 		};
 		if(player_talent_wispdetector[WISPSKILL_MAGIC] == FALSE)
 		{
-			Info_AddChoice(dia_addon_riordian_ADW_teach,"Vyhledávání magických prstenů a amuletů (vyžaduje 75 kusů magické rudy)",dia_addon_riordian_ADW_teach_wispskill_magic);
+			Info_AddChoice(dia_addon_riordian_ADW_teach,"Vyhledávání magických prstenů a amuletů (vyžaduje: 75 kusů magické rudy)",dia_addon_riordian_ADW_teach_wispskill_magic);
 		};
 		if(player_talent_wispdetector[WISPSKILL_POTIONS] == FALSE)
 		{
-			Info_AddChoice(dia_addon_riordian_ADW_teach,"Vyhledávání magických lektvarů (vyžaduje 100 kusů magické rudy)",dia_addon_riordian_ADW_teach_wispskill_potions);
+			Info_AddChoice(dia_addon_riordian_ADW_teach,"Vyhledávání magických lektvarů (vyžaduje: 100 kusů magické rudy)",dia_addon_riordian_ADW_teach_wispskill_potions);
 		};
 	}
 	else
