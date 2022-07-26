@@ -201,7 +201,7 @@ func void dia_hun_741_falk_news_info()
 		AI_Output(self,other,"DIA_HUN_741_Falk_News_01_35");	//Pokud to tak půjde dál, budou se hemžit všude kolem nás.
 		AI_Output(self,other,"DIA_HUN_741_Falk_News_01_36");	//Nemluvě o skřetech!
 	}
-	else if(Kapitel == 6)
+	else if(Kapitel >= 6)
 	{
 		AI_Output(self,other,"DIA_HUN_741_Falk_News_01_37");	//Všichni jsme dost nervózní. Ta situace se skřety je prostě strašná!
 		AI_Output(self,other,"DIA_HUN_741_Falk_News_01_38");	//Slyšel jsem, že ty příšery útočí na město, nechci vědět, jak to bude vypadat, až udeří jinde.
