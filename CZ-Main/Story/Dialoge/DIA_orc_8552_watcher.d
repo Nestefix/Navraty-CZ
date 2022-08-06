@@ -218,11 +218,11 @@ func void DIA_ORC_8901_GuardMine_Enter_info()
 	AI_Output(self,other,"DIA_ORC_8901_GuardMine_Enter_01_03");	//Nikoho nevpustit dovnitř ani ven, dokud velká náčelník neřekne.
 	AI_Output(other,self,"DIA_ORC_8901_GuardMine_Enter_01_04");	//A co když stejně vstoupit chci?
 	AI_PlayAni(self,"T_NO");
-	AI_Output(self,other,"DIA_ORC_8901_GuardMine_Enter_01_05");	//To muž nesmí udělat! Bratři šamani dělají kouzla u vchodu do dolu.
+	AI_Output(self,other,"DIA_ORC_8901_GuardMine_Enter_01_05");	//To člověk nesmí udělat! Bratři šamani dělají kouzla u vchodu do dolu.
 	AI_Output(self,other,"DIA_ORC_8901_GuardMine_Enter_01_06");	//Oni zabíjí každého, kdo není bratr.
 	AI_Output(other,self,"DIA_ORC_8901_GuardMine_Enter_01_07");	//A co když se tam stejně musím podívat?
 	AI_Output(self,other,"DIA_ORC_8901_GuardMine_Enter_01_08");	//(hrozivě) ARRUG NOR! Pouze velký náčelník to dovolit.
-	AI_Output(self,other,"DIA_ORC_8901_GuardMine_Enter_01_09");	//Pak dveře otevřit a kouzla nezabít muže!
+	AI_Output(self,other,"DIA_ORC_8901_GuardMine_Enter_01_09");	//Pak dveře otevřit a kouzla nezabít člověka!
 };
 
 //instance DIA_ORC_8901_GuardMine_Closed(C_Info)
@@ -297,7 +297,7 @@ func void DIA_Orc_8205_TarGor_hello_info()
 	AI_Output(self,other,"DIA_Orc_8205_TarGor_hello_01_03");	//Hmmm... Člověk chodit dál může.
 	AI_RemoveWeapon(self);
 	AI_Output(self,other,"DIA_Orc_8205_TarGor_hello_01_04");	//Člověk nevytvářet problém tady! Neodvádět otrok od práce.
-	AI_Output(self,other,"DIA_Orc_8205_TarGor_hello_01_05");	//Jinak TarGor rozzlobit! Ar-Dagar se rozzlobit! Udělat mrtvého muže...
+	AI_Output(self,other,"DIA_Orc_8205_TarGor_hello_01_05");	//Jinak Tar Gor rozzlobit! Ar-Dagar se rozzlobit! Udělat mrtvého člověka...
 	AI_StopProcessInfos(self);
 };
 
@@ -348,7 +348,7 @@ func void DIA_Orc_8204_Grok_hello_info()
 	AI_Output(other,self,"DIA_Orc_8204_Grok_hello_01_02");	//Um... Vůbec ti nerozumím.
 	AI_PlayAni(self,"T_DONTKNOW");
 	AI_Output(self,other,"DIA_Orc_8204_Grok_hello_01_03");	//UR DAGAR TAROK MOR DAK KUR ZAR PARAK TURAB.
-	AI_Output(other,self,"DIA_Orc_8204_Grok_hello_01_04");	//Hmmm... (vypadá to,že se budu muset naučit jazyk skřetů, abych si s ním promluvil)
+	AI_Output(other,self,"DIA_Orc_8204_Grok_hello_01_04");	//Hmmm... (vypadá to, že se budu muset naučit jazyk skřetů, abych si s ním promluvil)
 	AI_PlayAni(self,"T_GETLOST2");
 	AI_Output(self,other,"DIA_Orc_8204_Grok_hello_01_05");	//UKATAR Tarka BOR! NABAR...
 	NeedKnowOrcLang = TRUE;
@@ -505,7 +505,7 @@ func void DIA_Orc_8204_Grok_BringPotion_info()
 	Npc_RemoveInvItems(self,ItPo_Perm_STR,1);
 	B_UseItem(self,ItPo_Perm_STR_Fake);
 	AI_Output(self,other,"DIA_Orc_8204_Grok_BringPotion_01_02");	//Grok děkovat člověku! Cítit jak se vracet síla.
-	AI_Output(other,self,"DIA_Orc_8204_Grok_BringPotion_01_03");	//V tom případě tě tvý bratři snědí někdy jindy.
+	AI_Output(other,self,"DIA_Orc_8204_Grok_BringPotion_01_03");	//V tom případě tě tví bratři snědí někdy jindy.
 	AI_Output(self,other,"DIA_Orc_8204_Grok_BringPotion_01_04");	//Člověk mít smysl pro vtip... (směje se) Grok líbit vtip.
 	MIS_GrokBringPotion = LOG_Success;
 	Log_SetTopicStatus(TOPIC_GrokBringPotion,LOG_Success);
@@ -537,9 +537,9 @@ func void DIA_Orc_8204_Grok_LowLevel_info()
 	AI_Output(other,self,"DIA_Orc_8204_Grok_LowLevel_01_03");	//Protože ty jsi jediný, kdo ví proč ostatní skřeti zavřeli spodní patro dolu.
 	AI_Output(self,other,"DIA_Orc_8204_Grok_LowLevel_01_04");	//Grok je velmi překvapený... (překvapeně) Jak to člověk vědět?
 	AI_Output(other,self,"DIA_Orc_8204_Grok_LowLevel_01_05");	//Tavič Hildur říkal, že jsi jediný, kdo v dolu přežil.
-	AI_Output(self,other,"DIA_Orc_8204_Grok_LowLevel_01_06");	//Hmmm... (zamyšleně) Dobře! Člověk pomáhá Grockovi a on jako důkaz vděčnosti mu vypráví o dolu.
+	AI_Output(self,other,"DIA_Orc_8204_Grok_LowLevel_01_06");	//Hmmm... (zamyšleně) Dobře! Člověk pomáhá Grokovi a on jako důkaz vděčnosti mu vypráví o dolu.
 	AI_Output(self,other,"DIA_Orc_8204_Grok_LowLevel_01_07");	//Hildur mluvit pravdu! Grok opravdu vidí a ví všechno.
-	AI_Output(self,other,"DIA_Orc_8204_Grok_LowLevel_01_09");	//Je to už tolik zim. Grok byl silný válečník a strážit spodní patro dolu.
+	AI_Output(self,other,"DIA_Orc_8204_Grok_LowLevel_01_09");	//Je to už tolik zim. Grok byl silný válečník a střežit spodní patro dolu.
 	AI_Output(self,other,"DIA_Orc_8204_Grok_LowLevel_01_10");	//Bratři kopat hodně rudy. A chtít víc a víc!
 	AI_Output(self,other,"DIA_Orc_8204_Grok_LowLevel_01_11");	//Jednoho dne objevit jednu jeskyni a najít zlá a velká démon.
 	AI_Output(self,other,"DIA_Orc_8204_Grok_LowLevel_01_12");	//Grok ho vidět! Vidět, jak zabíjí bratry a otroky.
@@ -577,7 +577,7 @@ func void DIA_Orc_8204_Grok_GoLevel_info()
 	AI_Output(other,self,"DIA_Orc_8204_Grok_GoLevel_01_01");	//Nezkoušel jsi toho démona zabít viď?
 	AI_Output(self,other,"DIA_Orc_8204_Grok_GoLevel_01_02");	//Když Ar-Dagar stát hlavní skřet tady, poslat celý oddíl skřetů na démon.
 	AI_Output(self,other,"DIA_Orc_8204_Grok_GoLevel_01_03");	//Ale žádný z nich se nevrátí! Nikdo neví, kam zmizí.
-	AI_Output(self,other,"DIA_Orc_8204_Grok_GoLevel_01_04");	//Nikdy bratři nevratit a chtít zabít démon.
+	AI_Output(self,other,"DIA_Orc_8204_Grok_GoLevel_01_04");	//Nikdy bratři nevrátit a chtít zabít démon.
 	KnowGrokDemon = TRUE;
 	B_LogEntry(TOPIC_LowLevel,"Ar-Dagar poslal do dolu oddíl skřetů ale nikdo se nevrátil.");
 };
@@ -626,9 +626,9 @@ func void DIA_Orc_8206_Dakar_hello_info()
 {
 	AI_Output(self,other,"DIA_Orc_8206_Dakar_hello_01_01");	//Co je osoba? Proč mluvit s Dakar Shaku?
 	AI_Output(other,self,"DIA_Orc_8206_Dakar_hello_01_02");	//Jen se tu rozhlížím. Co tady hlídáš?
-	AI_Output(self,other,"DIA_Orc_8206_Dakar_hello_01_03");	//Dakar Shak dívat na výheň, dívat na muže, co dělat ocel pro skřety.
+	AI_Output(self,other,"DIA_Orc_8206_Dakar_hello_01_03");	//Dakar Shak dívat na výheň, dívat na člověka, co dělat ocel pro skřety.
 	AI_Output(self,other,"DIA_Orc_8206_Dakar_hello_01_04");	//Pokud není dostatek oceli, Ar-Dagar nebýt spokojen!
-	AI_Output(self,other,"DIA_Orc_8206_Dakar_hello_01_05");	//Takže Dakar Shak chce, aby muži pracovala dobře.
+	AI_Output(self,other,"DIA_Orc_8206_Dakar_hello_01_05");	//Takže Dakar Shak chce, aby lidé pracovala dobře.
 	AI_Output(self,other,"DIA_Orc_8206_Dakar_hello_01_06");	//Neopírejte se! Jen pracujte, dělejte ocel. Hodně oceli...
 };
 
@@ -789,7 +789,7 @@ instance DIA_OrcWarrior_MineCommander_HelpDemon(C_Info)
 	condition = DIA_OrcWarrior_MineCommander_HelpDemon_condition;
 	information = DIA_OrcWarrior_MineCommander_HelpDemon_info;
 	permanent = FALSE;
-	description = "Chci Vám pomoct porazit démona.";
+	description = "Chci vám pomoct porazit démona.";
 };
 
 func int DIA_OrcWarrior_MineCommander_HelpDemon_condition()
@@ -802,7 +802,7 @@ func int DIA_OrcWarrior_MineCommander_HelpDemon_condition()
 
 func void DIA_OrcWarrior_MineCommander_HelpDemon_info()
 {
-	AI_Output(other,self,"DIA_OrcWarrior_MineCommander_HelpDemon_01_01");		//Chci Vám pomoct porazit démona.
+	AI_Output(other,self,"DIA_OrcWarrior_MineCommander_HelpDemon_01_01");		//Chci vám pomoct porazit démona.
 	AI_Output(self,other,"DIA_OrcWarrior_MineCommander_HelpDemon_01_02");		//(smích) Opravdu člověk tak velký válečník?
 	AI_Output(self,other,"DIA_OrcWarrior_MineCommander_HelpDemon_01_03");		//Zlý démon rozdrtit člověka!
 	AI_Output(other,self,"DIA_OrcWarrior_MineCommander_HelpDemon_01_04");		//Být tebou, nebyl bych si tím tak jistý.
@@ -963,7 +963,7 @@ func int DIA_OrcWarrior_MineCommander_WhatNow_condition()
 func void DIA_OrcWarrior_MineCommander_WhatNow_info()
 {
 	AI_Output(other,self,"DIA_OrcWarrior_MineCommander_WhatNow_01_01");	//Budou skřeti opět těžit rudu?
-	AI_Output(self,other,"DIA_OrcWarrior_MineCommander_WhatNow_01_02");	//Ar-Dagar myslí že ne... To nemůže!
+	AI_Output(self,other,"DIA_OrcWarrior_MineCommander_WhatNow_01_02");	//Ar-Dagar myslí, že ne... To nemůže!
 	AI_Output(other,self,"DIA_OrcWarrior_MineCommander_WhatNow_01_03");	//Ale proč? Konečně je spodní patro bezpečné.
 	AI_Output(self,other,"DIA_OrcWarrior_MineCommander_WhatNow_01_04");	//Skřeti být pak velice hloupí, že kopají tak hluboko!
 	AI_Output(self,other,"DIA_OrcWarrior_MineCommander_WhatNow_01_05");	//Ar-Dagar nechce dělat další chyby svých bratrů.
@@ -1147,7 +1147,7 @@ func void DIA_OrcWarrior_MineWatcher_Vakur_FerdRing_info()
 	AI_Output(other,self,"DIA_OrcWarrior_MineWatcher_Vakur_FerdRing_01_04");	//A co když jde o zlato?
 	AI_Output(self,other,"DIA_OrcWarrior_MineWatcher_Vakur_FerdRing_01_05");	//Hmmm... (zamyšleně) Pak osoba, dát Vakur Shak a pak poslouchala.
 	AI_Output(other,self,"DIA_OrcWarrior_MineWatcher_Vakur_FerdRing_01_06");	//Kolik potřebuješ?
-	AI_Output(self,other,"DIA_OrcWarrior_MineWatcher_Vakur_FerdRing_01_07");	//Mnoho, velmi mnoho! Mnoho aby Vakur Shak štatný.
+	AI_Output(self,other,"DIA_OrcWarrior_MineWatcher_Vakur_FerdRing_01_07");	//Mnoho, velmi mnoho! Mnoho aby Vakur Shak šťastný.
 	AI_Output(other,self,"DIA_OrcWarrior_MineWatcher_Vakur_FerdRing_01_08");	//Řekni to přesně!
 	AI_Output(self,other,"DIA_OrcWarrior_MineWatcher_Vakur_FerdRing_01_09");	//(přemýšlí) Třicet zlatých nuget! 
 	AI_Output(other,self,"DIA_OrcWarrior_MineWatcher_Vakur_FerdRing_01_10");	//Máš dobrý vkus. V tom případě je pro tebe budu muset sehnat.
@@ -1274,7 +1274,7 @@ func void DIA_OrcWarrior_MineWatcher_Vakur_GoldNuggetDone_info()
 	AI_Output(self,other,"DIA_OrcWarrior_MineWatcher_Vakur_GoldNuggetDone_01_09");	//(vyděšeně) Ur-Thrall? Člověk pozná velkého náčelníka?
 	AI_Output(other,self,"DIA_OrcWarrior_MineWatcher_Vakur_GoldNuggetDone_01_10");	//A kdo si myslíš, že mi dovolil vstoupit do dolu?
 	AI_Output(self,other,"DIA_OrcWarrior_MineWatcher_Vakur_GoldNuggetDone_01_11");	//HARAD! Člověk nemusí jít za Ur-Thrall! Vakur Shak jen žertuje.
-	AI_Output(self,other,"DIA_OrcWarrior_MineWatcher_Vakur_GoldNuggetDone_01_12");	//Tady, ten člověk vzal ten prsten! Jen nechodíte k velkému vůdci.
+	AI_Output(self,other,"DIA_OrcWarrior_MineWatcher_Vakur_GoldNuggetDone_01_12");	//Tady, ten člověk vzal ten prsten! Jen nechodit k velkému vůdci.
 	B_GiveInvItems(self,other,ItRi_Ferd,1);
 
 	if(RhetorikSkillValue[1] >= 65)
@@ -1286,7 +1286,7 @@ func void DIA_OrcWarrior_MineWatcher_Vakur_GoldNuggetDone_info()
 		AI_Output(other,self,"DIA_OrcWarrior_MineWatcher_Vakur_GoldNuggetDone_01_17");	//Tak schválně, co mi nabídneš.
 		AI_Output(self,other,"DIA_OrcWarrior_MineWatcher_Vakur_GoldNuggetDone_01_18");	//Hmmm... (zamyšleně) Vakur Shak má lektvar, díky němuž je Morra silná.
 		AI_Output(self,other,"DIA_OrcWarrior_MineWatcher_Vakur_GoldNuggetDone_01_19");	//Může to dát člověku.
-		AI_Output(other,self,"DIA_OrcWarrior_MineWatcher_Vakur_GoldNuggetDone_01_20");	//Skvěle. De mi to.
+		AI_Output(other,self,"DIA_OrcWarrior_MineWatcher_Vakur_GoldNuggetDone_01_20");	//Skvěle. Dej mi to.
 		B_GiveInvItems(self,other,ItPo_Perm_STR,1);
 		AI_Output(self,other,"DIA_OrcWarrior_MineWatcher_Vakur_GoldNuggetDone_01_21");	//(vztekle) Arrgh...
 	}
@@ -1359,7 +1359,7 @@ instance DIA_OrcWarrior_MineWatcher_Vakur_ElkKirka_Done(C_Info)
 	condition = DIA_OrcWarrior_MineWatcher_Vakur_ElkKirka_Done_condition;
 	information = DIA_OrcWarrior_MineWatcher_Vakur_ElkKirka_Done_info;
 	permanent = TRUE;
-	description = "Prodá mi nový krumpáč. (cena: 10 zlatých nugetů)";
+	description = "Prodej mi nový krumpáč. (cena: 10 zlatých nugetů)";
 };
 
 func int DIA_OrcWarrior_MineWatcher_Vakur_ElkKirka_Done_condition()
@@ -1518,9 +1518,9 @@ func void DIA_OrcWarrior_MineWatcher_Korshak_KrowBookBack_info()
 	AI_Output(other,self,"DIA_OrcWarrior_MineWatcher_Korshak_KrowBookBack_01_03");	//Podívěj, tohle je učebnice rétoriky! Pomůže ti porozumět lidské řeči daleko lépe.
 	AI_Output(self,other,"DIA_OrcWarrior_MineWatcher_Korshak_KrowBookBack_01_04");	//(se zájmem) Člověk má jinou knihu? Co za ní chce?
 	AI_Output(other,self,"DIA_OrcWarrior_MineWatcher_Korshak_KrowBookBack_01_05");	//Uděláme výměnu. Dám ti tuhle knihu a ty mi dáš ten deník.
-	AI_Output(other,self,"DIA_OrcWarrior_MineWatcher_Korshak_KrowBookBack_01_06");	//Veř mi, skřete. Je to férový obchod!
+	AI_Output(other,self,"DIA_OrcWarrior_MineWatcher_Korshak_KrowBookBack_01_06");	//Věř mi, skřete. Je to férový obchod!
 	AI_Output(self,other,"DIA_OrcWarrior_MineWatcher_Korshak_KrowBookBack_01_07");	//Hmmm... (zamyšleně) Dobře! Kor Shak souhlasí s výměnou.
-	AI_Output(self,other,"DIA_OrcWarrior_MineWatcher_Korshak_KrowBookBack_01_08");	//Ale pokud se mi nebude líbit kniha od člověka tam mu nic nedám!
+	AI_Output(self,other,"DIA_OrcWarrior_MineWatcher_Korshak_KrowBookBack_01_08");	//Ale pokud se mi nebude líbit kniha od člověka tak mu nic nedám!
 	AI_Output(other,self,"DIA_OrcWarrior_MineWatcher_Korshak_KrowBookBack_01_09");	//Tak si ji prohlédni.
 	B_GiveInvItems(other,self,ITWR_RHETORIKBOOK,1);
 	B_UseFakeScroll();
@@ -1788,7 +1788,7 @@ func void DIA_Orc_8210_Umrak_PreHello_info()
 
 		if(random == 0)
 		{
-			AI_Output(self,other,"DIA_Orc_8210_Umrak_PreHello_01_01");	//Vypadni odsud! Nebo vás rozříznu...
+			AI_Output(self,other,"DIA_Orc_8210_Umrak_PreHello_01_01");	//Vypadni odsud! Nebo tě rozříznu...
 		}
 		else if(random == 1)
 		{
@@ -2496,10 +2496,10 @@ func int DIA_Orc_8215_Kan_WhoYou_condition()
 func void DIA_Orc_8215_Kan_WhoYou_info()
 {
 	AI_Output(other,self,"DIA_Orc_8215_Kan_WhoYou_01_01");	//Kdo jsi?
-	AI_Output(self,other,"DIA_Orc_8215_Kan_WhoYou_01_02");	//Jmenuji se Ur-Kan, člověče.
+	AI_Output(self,other,"DIA_Orc_8215_Kan_WhoYou_01_02");	//Jmenuji se Ur Kan, člověče.
 	AI_Output(other,self,"DIA_Orc_8215_Kan_WhoYou_01_03");	//Co tu děláš?
-	AI_Output(self,other,"DIA_Orc_8215_Kan_WhoYou_01_04");	//Ur-Kan dbá o to, aby jeho válečníci byli vždy připraveni bojovat.
-	AI_Output(self,other,"DIA_Orc_8215_Kan_WhoYou_01_05");	//Buďte silní! Hodně trénování, málo spánek...
+	AI_Output(self,other,"DIA_Orc_8215_Kan_WhoYou_01_04");	//Ur Kan dbá o to, aby jeho válečníci byli vždy připraveni bojovat.
+	AI_Output(self,other,"DIA_Orc_8215_Kan_WhoYou_01_05");	//Být silní! Hodně trénování, málo spánek...
 };
 
 instance DIA_Orc_8215_Kan_Place(C_Info)
@@ -2535,7 +2535,7 @@ instance DIA_Orc_8215_Kan_MorDar(C_Info)
 	condition = DIA_Orc_8215_Kan_MorDar_condition;
 	information = DIA_Orc_8215_Kan_MorDar_info;
 	permanent = FALSE;
-	description = "Kdo je Mor Dar:";
+	description = "Kdo je Mor Dar?";
 };
 
 func int DIA_Orc_8215_Kan_MorDar_condition()
@@ -2584,14 +2584,14 @@ func int DIA_Orc_8215_Kan_Interes_condition()
 func void DIA_Orc_8215_Kan_Interes_info()
 {
 	AI_Output(other,self,"DIA_Orc_8215_Kan_Interes_01_01");	//Bojujete pouze pro čest nebo pro nějakou odměnu?
-	AI_Output(self,other,"DIA_Orc_8215_Kan_Interes_01_02");	//Pokud člověk bojuje dobře a vyhraje, dostane od Ur-Kan za každou boj odměnu.
-	AI_Output(self,other,"DIA_Orc_8215_Kan_Interes_01_03");	//Pokud prohraješ a budeš chtít znovu bojovat, dej Ur-Kan trochu rudy.
-	AI_Output(other,self,"DIA_Orc_8215_Kan_Interes_01_04");	//A nechcete raději zlato?
+	AI_Output(self,other,"DIA_Orc_8215_Kan_Interes_01_02");	//Pokud člověk bojuje dobře a vyhraje, dostane od Ur Kan za každou boj odměnu.
+	AI_Output(self,other,"DIA_Orc_8215_Kan_Interes_01_03");	//Pokud prohraješ a budeš chtít znovu bojovat, dej Ur Kan trochu rudy.
+	AI_Output(other,self,"DIA_Orc_8215_Kan_Interes_01_04");	//A nechceš raději zlato?
 	AI_Output(self,other,"DIA_Orc_8215_Kan_Interes_01_05");	//Skřeti nemají rádi zlato, jak milovat lidi...
 	AI_Output(self,other,"DIA_Orc_8215_Kan_Interes_01_06");	//Skřeti milují jen dobrý meč a silná zbroj!
-	AI_Output(other,self,"DIA_Orc_8215_Kan_Interes_01_07");	//A proč potřebujete magickou rudu?
+	AI_Output(other,self,"DIA_Orc_8215_Kan_Interes_01_07");	//A proč potřebuješ magickou rudu?
 	AI_Output(self,other,"DIA_Orc_8215_Kan_Interes_01_08");	//Bratři mohou z toho dělat velmi silné zbraně. Pak jít a bojovat lépe!
-	AI_Output(other,self,"DIA_Orc_8215_Kan_Interes_01_09");	//A kdo pro Vás dělá takové zbraně?
+	AI_Output(other,self,"DIA_Orc_8215_Kan_Interes_01_09");	//A kdo pro vás dělá takové zbraně?
 	AI_Output(self,other,"DIA_Orc_8215_Kan_Interes_01_10");	//Člověk se má zeptat Hash Tor! Jen on dělat takové zbraně.
 	KnowAboutHashTor = TRUE;
 	B_LogEntry(TOPIC_OrcArena,"Za každý boj co vyhraji dostanu odměnu. Pokud prohraji, budu potřebovat magickou rudu na další kolo. Z magické rudy se dají udělat velmi silné zbraně.");
@@ -2620,7 +2620,7 @@ func void DIA_Orc_8215_Kan_GrahShar_info()
 	AI_Output(self,other,"DIA_Orc_8215_Kan_GrahShar_01_02");	//Pokud člověk porazí každého a stane se Mor Dar, obdrží Grah Shah.
 	AI_Output(other,self,"DIA_Orc_8215_Kan_GrahShar_01_03");	//Grah Shah?
 	AI_Output(self,other,"DIA_Orc_8215_Kan_GrahShar_01_04");	//Skvělý symbol mocného válečníka skřetů! Učinit člověka ještě silnější...
-	B_LogEntry(TOPIC_OrcArena,"Nejcennější cenou je Grah Shah. Nevím, co to je. A Ur-Kan mi to moc nevysvětlil.");
+	B_LogEntry(TOPIC_OrcArena,"Nejcennější cenou je Grah Shah. Nevím, co to je. A Ur Kan mi to moc nevysvětlil.");
 };
 
 
@@ -2646,17 +2646,17 @@ func void DIA_Orc_8215_Kan_Join_info()
 	AI_Output(other,self,"DIA_Orc_8215_Kan_Join_01_01");	//Chci bojovat v aréně.
 	AI_Output(self,other,"DIA_Orc_8215_Kan_Join_01_02");	//Nejprve musí člověk prokázat, že je hoden toho.
 	AI_Output(other,self,"DIA_Orc_8215_Kan_Join_01_03");	//A jak to mám udělat? Zmalovat ti hřbet, skřete?
-	AI_Output(self,other,"DIA_Orc_8215_Kan_Join_01_04");	//(smích) Člověk, která je zábavná! Ur-Kan má rád, jak vtipkovat.
+	AI_Output(self,other,"DIA_Orc_8215_Kan_Join_01_04");	//(smích) Člověk, která je zábavná! Ur Kan má rád, jak vtipkovat.
 	AI_Output(self,other,"DIA_Orc_8215_Kan_Join_01_05");	//To mu však nepomůže.
-	AI_Output(self,other,"DIA_Orc_8215_Kan_Join_01_06");	//Člověk musí porazit jednoho z válečníků Ur-Kana! Jen tehdy dokáže, že je hoden.
+	AI_Output(self,other,"DIA_Orc_8215_Kan_Join_01_06");	//Člověk musí porazit jednoho z válečníků Ur Kana! Jen tehdy dokáže, že je hoden.
 	AI_Output(other,self,"DIA_Orc_8215_Kan_Join_01_07");	//No, to zvládnu.
 	AI_Output(self,other,"DIA_Orc_8215_Kan_Join_01_08");	//To není všechno... (vážně) Člověk bojovat s Ulu-Mulu!
-	AI_Output(self,other,"DIA_Orc_8215_Kan_Join_01_09");	//Když vzít jiná zbraň tak zemřít rychle! Tak říkat Ur-Kan...
+	AI_Output(self,other,"DIA_Orc_8215_Kan_Join_01_09");	//Když vzít jiná zbraň tak zemřít rychle! Tak říkat Ur Kan...
 	AI_Output(other,self,"DIA_Orc_8215_Kan_Join_01_10");	//Aha, rozumím.
 	MIS_OrcArena = LOG_Running;
 	Log_CreateTopic(TOPIC_OrcArena,LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_OrcArena,LOG_Running);
-	B_LogEntry(TOPIC_OrcArena,"Ve skřetím městě je aréna, kde se bojuje o právo nosit titul velkých skřetích válečníků, Mor Dar. Ur-Kan to tu řídí. Projevil jsem zájem zúčastnit se. Ur-Kan mě chce pro začátek prověřit jak jsem na tom s bojem. Musím porazit jednoho z jeho válečníků.");
+	B_LogEntry(TOPIC_OrcArena,"Ve skřetím městě je aréna, kde se bojuje o právo nosit titul velkých skřetích válečníků, Mor Dar. Ur Kan to tu řídí. Projevil jsem zájem zúčastnit se. Ur Kan mě chce pro začátek prověřit jak jsem na tom s bojem. Musím porazit jednoho z jeho válečníků.");
 };
 
 instance DIA_Orc_8215_Kan_JoinNext(C_Info)
@@ -2679,7 +2679,7 @@ func int DIA_Orc_8215_Kan_JoinNext_condition()
 func void DIA_Orc_8215_Kan_JoinNext_info()
 {
 	AI_Output(other,self,"DIA_Orc_8215_Kan_JoinNext_01_01");	//A když zvítězím, pak co?
-	AI_Output(self,other,"DIA_Orc_8215_Kan_JoinNext_01_02");	//Pak se člověk stává jedním z válečníků Ur-Kan a pak může vyzvat další válečníky.
+	AI_Output(self,other,"DIA_Orc_8215_Kan_JoinNext_01_02");	//Pak se člověk stává jedním z válečníků Ur Kan a pak může vyzvat další válečníky.
 	AI_Output(self,other,"DIA_Orc_8215_Kan_JoinNext_01_03");	//Dokud se nestát Mor Dar!
 };
 
@@ -2705,19 +2705,19 @@ func int DIA_Orc_8215_Kan_Rules_condition()
 func void DIA_Orc_8215_Kan_Rules_info()
 {
 	AI_Output(other,self,"DIA_Orc_8215_Kan_Rules_01_01");	//Jaká jsou pravidla?
-	AI_Output(self,other,"DIA_Orc_8215_Kan_Rules_01_02");	//Muž bojovat pouze s Ulu-Mulu!
+	AI_Output(self,other,"DIA_Orc_8215_Kan_Rules_01_02");	//Člověk bojovat pouze s Ulu-Mulu!
 	AI_Output(other,self,"DIA_Orc_8215_Kan_Rules_01_03");	//Co, vždycky?!
 	AI_Output(self,other,"DIA_Orc_8215_Kan_Rules_01_04");	//Ne. Jenom v první bitvě pak už může jakoukoli zbraň.
 	AI_Output(other,self,"DIA_Orc_8215_Kan_Rules_01_05");	//Dobře. Ještě něco?
-	AI_Output(self,other,"DIA_Orc_8215_Kan_Rules_01_06");	//Nechte šíp nebo šipka HARAD! Muž umírá...
-	AI_Output(self,other,"DIA_Orc_8215_Kan_Rules_01_07");	//Použijte kouzlo HARAD! Muž znovu zemře...
-	AI_Output(self,other,"DIA_Orc_8215_Kan_Rules_01_08");	//Začít boj až promluvit se soupeř! Pokud jinak muž zemře...
+	AI_Output(self,other,"DIA_Orc_8215_Kan_Rules_01_06");	//Nech šíp nebo šipka HARAD! Člověk umírá...
+	AI_Output(self,other,"DIA_Orc_8215_Kan_Rules_01_07");	//Použij kouzlo HARAD! Člověk znovu zemře...
+	AI_Output(self,other,"DIA_Orc_8215_Kan_Rules_01_08");	//Začít boj až promluvit se soupeř! Pokud jinak člověk zemře...
 	AI_Output(self,other,"DIA_Orc_8215_Kan_Rules_01_09");	//Nezabíjej, pokud vyhraješ! Jinak bratři rychle učiní člověk mrtvým.
 	AI_Output(self,other,"DIA_Orc_8215_Kan_Rules_01_10");	//Pokud uteče, pak už nebude bojovat ve velké aréně.
 	AI_Output(other,self,"DIA_Orc_8215_Kan_Rules_01_11");	//Je to všechno?
-	AI_Output(self,other,"DIA_Orc_8215_Kan_Rules_01_12");	//Ano, Ur-Kan říká všechno.
+	AI_Output(self,other,"DIA_Orc_8215_Kan_Rules_01_12");	//Ano, Ur Kan říká všechno.
 	UrKanTellRules = TRUE;
-	B_LogEntry(TOPIC_OrcArena,"Ur-Kan mi řekl pravidla pro boj v aréně. Nesmím používat luky, kuše a dokonce ani magii. Pokud něco z toho použiju, zemřu! Nejprve musím pozdravit svého soupěře a pak začne boj. Nemůžu opustit arénu, protože bych pak nemohl dále bojovat. Není dovoleno zabít svého soupeře. V mém prvním souboji musím používat POUZE Ulu-Mulu! V následujícím boji mohu použít libovolnou zbraň ale po každém boji si musím nasadit Ulu-Mulu jinak mě skřeti zabijí. Vše je strašně komplikované... Ale není se čemu divit, když jsem pro ně cizinec.");
+	B_LogEntry(TOPIC_OrcArena,"Ur Kan mi řekl pravidla pro boj v aréně. Nesmím používat luky, kuše a dokonce ani magii. Pokud něco z toho použiju, zemřu! Nejprve musím pozdravit svého soupeře a pak začne boj. Nemůžu opustit arénu, protože bych pak nemohl dále bojovat. Není dovoleno zabít svého soupeře. V mém prvním souboji musím používat POUZE Ulu-Mulu! V následujícím boji mohu použít libovolnou zbraň ale po každém boji si musím nasadit Ulu-Mulu jinak mě skřeti zabijí. Vše je strašně komplikované... Ale není se čemu divit, když jsem pro ně cizinec.");
 };
 
 instance DIA_Orc_8215_Kan_Ready(C_Info)
@@ -2747,9 +2747,9 @@ func void DIA_Orc_8215_Kan_Ready_info()
 	if(UrKanTellRules == TRUE)
 	{
 		AI_Output(self,other,"DIA_Orc_8215_Kan_Ready_01_02");	//Dobře. Tvým prvním soupeř je Dagrag!
-		AI_Output(self,other,"DIA_Orc_8215_Kan_Ready_01_03");	//Je nejslabším válečníkem Ur-Kan.
+		AI_Output(self,other,"DIA_Orc_8215_Kan_Ready_01_03");	//Je nejslabším válečníkem Ur Kan.
 		AI_Output(self,other,"DIA_Orc_8215_Kan_Ready_01_04");	//Pokud člověk nemůže překonat Dagrag, nemá tu co dělat.
-		AI_Output(self,other,"DIA_Orc_8215_Kan_Ready_01_05");	//Člověk odchází a už nechodí k Ur-Kan.
+		AI_Output(self,other,"DIA_Orc_8215_Kan_Ready_01_05");	//Člověk odchází a už nechodí k Ur Kan.
 		AI_Output(self,other,"DIA_Orc_8215_Kan_Ready_01_06");	//Teď vstoupí do arény! Dagrag už musí čekat...
 		B_LogEntry(TOPIC_OrcArena,"Takže, můj první soupeř je Dagrag. Jsem zvědav jak moc jsou skřetí válečníci silní.");
 		AI_StopProcessInfos(self);
@@ -2759,7 +2759,7 @@ func void DIA_Orc_8215_Kan_Ready_info()
 	}
 	else
 	{
-		AI_Output(self,other,"DIA_Orc_8215_Kan_Ready_01_07");	//Za prvé, Ur-Kan říct člověk pravidla.
+		AI_Output(self,other,"DIA_Orc_8215_Kan_Ready_01_07");	//Za prvé, Ur Kan říct člověk pravidla.
 		AI_Output(self,other,"DIA_Orc_8215_Kan_Ready_01_08");	//Pak už bude bojovat.
 	};
 };
@@ -2818,11 +2818,11 @@ func void DIA_Orc_8215_Kan_Round_First_info()
 	if(ArenaBattle_01_Won == TRUE)
 	{
 		B_GivePlayerXP(300);
-		AI_Output(self,other,"DIA_Orc_8215_Kan_Round_First_01_02");	//Člověk vyhrál... (s respektem) Ur-Kan vidí, že člověk je zručný válečník!
-		AI_Output(self,other,"DIA_Orc_8215_Kan_Round_First_01_03");	//Teď, pokud chce, může bojovat s dalšími válečníky Ur-Kan.
+		AI_Output(self,other,"DIA_Orc_8215_Kan_Round_First_01_02");	//Člověk vyhrál... (s respektem) Ur Kan vidí, že člověk je zručný válečník!
+		AI_Output(self,other,"DIA_Orc_8215_Kan_Round_First_01_03");	//Teď, pokud chce, může bojovat s dalšími válečníky Ur Kan.
 		AI_Output(other,self,"DIA_Orc_8215_Kan_Round_First_01_04");	//A co moje odměna?
-		AI_Output(self,other,"DIA_Orc_8215_Kan_Round_First_01_05");	//Pro tento boj člověk nedostávat nic. Ur-Kan prostě zkontrolovat člověk.
-		B_LogEntry(TOPIC_OrcArena,"Prošel jsem zkouškou Ur-Kana. Teď můžu vyzvat další valečníky.");
+		AI_Output(self,other,"DIA_Orc_8215_Kan_Round_First_01_05");	//Pro tento boj člověk nedostávat nic. Ur Kan prostě zkontrolovat člověk.
+		B_LogEntry(TOPIC_OrcArena,"Prošel jsem zkouškou Ur Kana. Teď můžu vyzvat další valečníky.");
 		ORCRESPECT = ORCRESPECT + 5;
 
 		if(MIS_HeroOrcJoin == LOG_Running)
@@ -2836,9 +2836,9 @@ func void DIA_Orc_8215_Kan_Round_First_info()
 	else if(ArenaBattle_01_Lost == TRUE)
 	{
 		AI_Output(self,other,"DIA_Orc_8215_Kan_Round_First_01_07");	//Tys prohrál! Člověk je slabá a není hodna nosit Ulu-Mulu.
-		AI_Output(self,other,"DIA_Orc_8215_Kan_Round_First_01_08");	//Ur Kan už nemluví s mužem! Ty odejít.
+		AI_Output(self,other,"DIA_Orc_8215_Kan_Round_First_01_08");	//Ur Kan už nemluví s člověkem! Ty odejít.
 		AI_Output(other,self,"DIA_Orc_8215_Kan_Round_First_01_09");	//Počkej...
-		B_LogEntry(TOPIC_OrcArena,"Nesplnil jsem Ur-Kanovu zkoušku. Nemám mu chodit na oči.");
+		B_LogEntry(TOPIC_OrcArena,"Nesplnil jsem Ur Kanovu zkoušku. Nemám mu chodit na oči.");
 		MIS_OrcArena = LOG_FAILED;
 		B_LogEntry_Failed(TOPIC_OrcArena);
 		UrKanPissOff = TRUE;
@@ -2877,7 +2877,7 @@ func void DIA_Orc_8215_Kan_RoundTwo_info()
 	AI_Output(self,other,"DIA_Orc_8215_Kan_RoundTwo_01_02");	//Dobře. Věděl jsem, že člověk to líbí!
 	AI_Output(self,other,"DIA_Orc_8215_Kan_RoundTwo_01_03");	//Dalším soupeřem Gunnok.
 	AI_Output(self,other,"DIA_Orc_8215_Kan_RoundTwo_01_04");	//Je silným válečníkem skřetů. Člověk nelehké!
-	AI_Output(self,other,"DIA_Orc_8215_Kan_RoundTwo_01_05");	//Teď vstoupí do arény! Ur-Kan říct vše...
+	AI_Output(self,other,"DIA_Orc_8215_Kan_RoundTwo_01_05");	//Teď vstoupí do arény! Ur Kan říct vše...
 	B_LogEntry(TOPIC_OrcArena,"Mým dalším soupeřem je skřet Gunnok.");
 	AI_StopProcessInfos(self);
 	ArenaBattle_02 = TRUE;
@@ -2909,7 +2909,7 @@ func void DIA_Orc_8215_Kan_RoundTwoDone_info()
 	if(ArenaBattle_02_Won == TRUE)
 	{
 		B_GivePlayerXP(400);
-		AI_Output(self,other,"DIA_Orc_8215_Kan_RoundTwoDone_01_02");	//Ur Kahn vidět boj... (s úctou) Muž je dobrý bojovat a zaslouží si odměnu!
+		AI_Output(self,other,"DIA_Orc_8215_Kan_RoundTwoDone_01_02");	//Ur Kan vidět boj... (s úctou) Člověk je dobrý bojovat a zaslouží si odměnu!
 		AI_Output(self,other,"DIA_Orc_8215_Kan_RoundTwoDone_01_03");	//Tady vzít tyto magické lektvary. Pomáhají obnovit sílu člověka.
 		B_GiveInvItems(self,other,ItPo_Health_03,2);
 		ORCRESPECT = ORCRESPECT + 5;
@@ -2924,11 +2924,11 @@ func void DIA_Orc_8215_Kan_RoundTwoDone_info()
 	}
 	else if(ArenaBattle_02_Lost == TRUE)
 	{
-		AI_Output(self,other,"DIA_Orc_8215_Kan_Kan_RoundTwoDone_01_05");	//Ur-Kan vidět bitvu... (zklamaný) Člověk není dostatečně silný na to, aby porazil Gunnoka.
+		AI_Output(self,other,"DIA_Orc_8215_Kan_Kan_RoundTwoDone_01_05");	//Ur Kan vidět bitvu... (zklamaný) Člověk není dostatečně silný na to, aby porazil Gunnoka.
 		AI_Output(self,other,"DIA_Orc_8215_Kan_Kan_RoundTwoDone_01_06");	//To je první krok přípravy a prokázání odvahy.
 		AI_Output(self,other,"DIA_Orc_8215_Kan_Kan_RoundTwoDone_01_07");	//Přijít znovu až připraven bojovat s Gunnok.
-		AI_Output(self,other,"DIA_Orc_8215_Kan_Kan_RoundTwoDone_01_08");	//Nezapomenout na magická ruda pro Ur-Kan!
-		AI_Output(self,other,"DIA_Orc_8215_Kan_Kan_RoundTwoDone_01_09");	//Ur-Kan nedovolit bojovat pokud nepřinést!
+		AI_Output(self,other,"DIA_Orc_8215_Kan_Kan_RoundTwoDone_01_08");	//Nezapomenout na magická ruda pro Ur Kan!
+		AI_Output(self,other,"DIA_Orc_8215_Kan_Kan_RoundTwoDone_01_09");	//Ur Kan nedovolit bojovat pokud nepřinést!
 		ArenaBattle_02_Won = FALSE;
 		ArenaBattle_02_Lost = FALSE;
 		ArenaBattle_02 = FALSE;
@@ -2979,7 +2979,7 @@ func void DIA_Orc_8215_Kan_RoundTwo_Again_info()
 	else
 	{
 		AI_Output(self,other,"DIA_Orc_8215_Kan_RoundTwo_Again_01_04");	//Člověk na to nemá dost rudy!
-		AI_Output(self,other,"DIA_Orc_8215_Kan_RoundTwo_Again_01_05");	//Ur-Kan nedovoluje muži bojovat v aréně.
+		AI_Output(self,other,"DIA_Orc_8215_Kan_RoundTwo_Again_01_05");	//Ur Kan nedovoluje člověku bojovat v aréně.
 	};
 };
 
@@ -3011,7 +3011,7 @@ func void DIA_Orc_8215_Kan_RoundThree_info()
 	AI_Output(other,self,"DIA_Orc_8215_Kan_RoundThree_01_01");	//Kdo je tvůj další válečník?
 	AI_Output(self,other,"DIA_Orc_8215_Kan_RoundThree_01_02");	//Turuk. Být velmi silný válečník!
 	AI_Output(self,other,"DIA_Orc_8215_Kan_RoundThree_01_03");	//On velmi silný se sekyrou a porazit mnoho silných válečníků.
-	AI_Output(self,other,"DIA_Orc_8215_Kan_RoundThree_01_04");	//Muž vstoupí do arény! Turuk už čekat...
+	AI_Output(self,other,"DIA_Orc_8215_Kan_RoundThree_01_04");	//Člověk vstoupí do arény! Turuk už čekat...
 	B_LogEntry(TOPIC_OrcArena,"Teď musím bojovat se skřetem jménem Turuk.");
 	AI_StopProcessInfos(self);
 	ArenaBattle_03 = TRUE;
@@ -3027,7 +3027,7 @@ instance DIA_Orc_8215_Kan_RoundThreeDone(C_Info)
 	condition = DIA_Orc_8215_Kan_RoundThreeDone_condition;
 	information = DIA_Orc_8215_Kan_RoundThreeDone_info;
 	permanent = TRUE;
-	description = "Bojoval jsem Turukem.";
+	description = "Bojoval jsem s Turukem.";
 };
 
 func int DIA_Orc_8215_Kan_RoundThreeDone_condition()
@@ -3050,7 +3050,7 @@ func void DIA_Orc_8215_Kan_RoundThreeDone_info()
 	{
 		B_GivePlayerXP(400);
 		AI_Output(self,other,"DIA_Orc_8215_Kan_RoundThreeDone_01_02");	//Turuk je velmi zkušený válečník, ale člověk ho porazil!
-		AI_Output(self,other,"DIA_Orc_8215_Kan_RoundThreeDone_01_03");	//Za to Ur-Kan dá jako odměnu černé perly.
+		AI_Output(self,other,"DIA_Orc_8215_Kan_RoundThreeDone_01_03");	//Za to Ur Kan dá jako odměnu černé perly.
 		B_GiveInvItems(self,other,ItMi_DarkPearl,1);
 		ORCRESPECT = ORCRESPECT + 5;
 
@@ -3066,7 +3066,7 @@ func void DIA_Orc_8215_Kan_RoundThreeDone_info()
 	{
 		AI_Output(self,other,"DIA_Orc_8215_Kan_RoundThreeDone_01_05");	//Turuk je velmi zkušený válečník! Člověk ho nemohl porazit.
 		AI_Output(self,other,"DIA_Orc_8215_Kan_RoundThreeDone_01_06");	//Člověk musí být rychlejší a silnější, aby porazit Turuk.
-		AI_Output(self,other,"DIA_Orc_8215_Kan_RoundThreeDone_01_07");	//Pokud chcete znovu bojovat, řekni Ur-Kan.
+		AI_Output(self,other,"DIA_Orc_8215_Kan_RoundThreeDone_01_07");	//Pokud chceš znovu bojovat, řekni Ur Kan.
 		ArenaBattle_03_Won = FALSE;
 		ArenaBattle_03_Lost = FALSE;
 		ArenaBattle_03 = FALSE;
@@ -3109,7 +3109,7 @@ func void DIA_Orc_8215_Kan_RoundThree_Again_info()
 	{
 		Npc_RemoveInvItems(hero,ItMi_Nugget,20);
 		AI_Output(self,other,"DIA_Orc_8215_Kan_RoundThree_Again_01_02");	//Člověk chce zavolat mocný Turuk?
-		AI_Output(self,other,"DIA_Orc_8215_Kan_RoundThree_Again_01_03");	//Ur-Kan nebude proti! Jděte do arény a bojujte.
+		AI_Output(self,other,"DIA_Orc_8215_Kan_RoundThree_Again_01_03");	//Ur Kan nebude proti! Jděte do arény a bojujte.
 		AI_StopProcessInfos(self);
 		ArenaBattle_03 = TRUE;
 		ArenaFightNow = TRUE;
@@ -3121,7 +3121,7 @@ func void DIA_Orc_8215_Kan_RoundThree_Again_info()
 	else
 	{
 		AI_Output(self,other,"DIA_Orc_8215_Kan_RoundThree_Again_01_04");	//Člověk na to nemá dost rudy!
-		AI_Output(self,other,"DIA_Orc_8215_Kan_RoundThree_Again_01_05");	//Ur-Kan nedovoluje muži bojovat v aréně.
+		AI_Output(self,other,"DIA_Orc_8215_Kan_RoundThree_Again_01_05");	//Ur Kan nedovoluje člověku bojovat v aréně.
 	};
 };
 
@@ -3151,9 +3151,9 @@ func void DIA_Orc_8215_Kan_RoundFour_info()
 	ArenaFighter = Hlp_GetNpc(STRF_8146_Hart);
 
 	AI_Output(other,self,"DIA_Orc_8215_Kan_RoundFour_01_01");	//Máš ještě silnějšího válečníka?
-	AI_Output(self,other,"DIA_Orc_8215_Kan_RoundFour_01_02");	//Samozřejmě. Další boj bude s mužem jménem Hart!
-	AI_Output(self,other,"DIA_Orc_8215_Kan_RoundFour_01_03");	//Zasloužil si právo bojovat zde a porazit mnoho mocných bratrů Ur-Kana.
-	AI_Output(self,other,"DIA_Orc_8215_Kan_RoundFour_01_04");	//Jděte do arény teď! Ur-Kan přeje člověku štěstí...
+	AI_Output(self,other,"DIA_Orc_8215_Kan_RoundFour_01_02");	//Samozřejmě. Další boj bude s člověkem jménem Hart!
+	AI_Output(self,other,"DIA_Orc_8215_Kan_RoundFour_01_03");	//Zasloužil si právo bojovat zde a porazit mnoho mocných bratrů Ur Kana.
+	AI_Output(self,other,"DIA_Orc_8215_Kan_RoundFour_01_04");	//Jdi teď do arény! Ur Kan přeje člověku štěstí...
 	B_LogEntry(TOPIC_OrcArena,"Je čas bojovat s Hartem, jediným člověkem, který bojuje ve skřetí aréně.");
 	AI_StopProcessInfos(self);
 	ArenaBattle_04 = TRUE;
@@ -3192,7 +3192,7 @@ func void DIA_Orc_8215_Kan_RoundFourDone_info()
 	{
 		B_GivePlayerXP(500);
 		AI_Output(self,other,"DIA_Orc_8215_Kan_RoundFourDone_01_02");	//A tys ho porazil! Ačkoliv silný a rychlý soupeř.
-		AI_Output(self,other,"DIA_Orc_8215_Kan_RoundFourDone_01_03");	//Jako odměnu získáte nyní kůži černého trol.
+		AI_Output(self,other,"DIA_Orc_8215_Kan_RoundFourDone_01_03");	//Jako odměnu získáš nyní kůži černého trol.
 		B_GiveInvItems(self,other,ItAt_TrollBlackFur,1);
 		ORCRESPECT = ORCRESPECT + 5;
 
@@ -3265,7 +3265,7 @@ func void DIA_Orc_8215_Kan_RoundFour_Again_info()
 	else
 	{
 		AI_Output(self,other,"DIA_Orc_8215_Kan_RoundFour_Again_01_04");	//Člověk na to nemá dost rudy!
-		AI_Output(self,other,"DIA_Orc_8215_Kan_RoundFour_Again_01_05");	//Ur-Kan nedovoluje muži bojovat v aréně.
+		AI_Output(self,other,"DIA_Orc_8215_Kan_RoundFour_Again_01_05");	//Ur Kan nedovoluje člověku bojovat v aréně.
 	};
 };
 
@@ -3295,9 +3295,9 @@ func void DIA_Orc_8215_Kan_RoundFive_info()
 	ArenaFighter = Hlp_GetNpc(STRF_8150_UrTrok);
 
 	AI_Output(other,self,"DIA_Orc_8215_Kan_RoundFive_01_01");	//Potřebuju dalšího soupeře.
-	AI_Output(self,other,"DIA_Orc_8215_Kan_RoundFive_01_02");	//Člověk dostane... (s respektem) Ur-Trok být jedním z nesilnějších válečník Ur-Kan!
-	AI_Output(self,other,"DIA_Orc_8215_Kan_RoundFive_01_03");	//Je možné, že porazí muž jedním máchnutím zbraně.
-	AI_Output(self,other,"DIA_Orc_8215_Kan_RoundFive_01_04");	//Nyní jděte do arény! Už na tebe čeká...
+	AI_Output(self,other,"DIA_Orc_8215_Kan_RoundFive_01_02");	//Člověk dostane... (s respektem) Ur-Trok být jedním z nejsilnějších válečník Ur Kan!
+	AI_Output(self,other,"DIA_Orc_8215_Kan_RoundFive_01_03");	//Je možné, že porazí člověk jedním máchnutím zbraně.
+	AI_Output(self,other,"DIA_Orc_8215_Kan_RoundFive_01_04");	//Nyní jdi do arény! Už na tebe čeká...
 	B_LogEntry(TOPIC_OrcArena,"Ur-Trok je můj další soupeř.");
 	AI_StopProcessInfos(self);
 	ArenaBattle_05 = TRUE;
@@ -3330,9 +3330,9 @@ func void DIA_Orc_8215_Kan_RoundFiveDone_info()
 	{
 		B_GivePlayerXP(600);
 		AI_Output(self,other,"DIA_Orc_8215_Kan_RoundFiveDone_01_02");	//Ur Kan obdivovat sílu člověka! Je velmi obtížné porazit Ur-Trok.
-		AI_Output(self,other,"DIA_Orc_8215_Kan_RoundFiveDone_01_03");	//Proto dává muži velmi cennou odměnu. Lektvar s síla!
+		AI_Output(self,other,"DIA_Orc_8215_Kan_RoundFiveDone_01_03");	//Proto dává člověku velmi cennou odměnu. Lektvar s síla!
 		B_GiveInvItems(self,other,ItPo_Perm_STR,1);
-		AI_Output(other,self,"DIA_Orc_8215_Kan_RoundFiveDone_01_04");	//To potěsí.
+		AI_Output(other,self,"DIA_Orc_8215_Kan_RoundFiveDone_01_04");	//To potěší.
 		ArenaFightNow = FALSE;
 		ReadyForRoundSix = TRUE;
 		ORCRESPECT = ORCRESPECT + 5;
@@ -3344,10 +3344,10 @@ func void DIA_Orc_8215_Kan_RoundFiveDone_info()
 	}
 	else if(ArenaBattle_05_Lost == TRUE)
 	{
-		AI_Output(self,other,"DIA_Orc_8215_Kan_RoundFiveDone_01_05");	//Ur-Kan varoval, že Ur-Trok je velmi silný.
+		AI_Output(self,other,"DIA_Orc_8215_Kan_RoundFiveDone_01_05");	//Ur Kan varoval, že Ur-Trok je velmi silný.
 		AI_Output(self,other,"DIA_Orc_8215_Kan_RoundFiveDone_01_06");	//Člověk to zjistit sám.
 		AI_Output(self,other,"DIA_Orc_8215_Kan_RoundFiveDone_01_07");	//Musíš být mnohem silnější, aby porazit Ur-Trok!
-		AI_Output(self,other,"DIA_Orc_8215_Kan_RoundFiveDone_01_08");	//Muž jít trénovat! Až připraven říct Ur-Kan.
+		AI_Output(self,other,"DIA_Orc_8215_Kan_RoundFiveDone_01_08");	//Člověk jít trénovat! Až připraven říct Ur Kan.
 		ArenaBattle_05_Won = FALSE;
 		ArenaBattle_05_Lost = FALSE;
 		ArenaBattle_05 = FALSE;
@@ -3387,7 +3387,7 @@ func void DIA_Orc_8215_Kan_RoundFive_Again_info()
 	if(Npc_HasItems(other,ItMi_Nugget) >= 60)
 	{
 		Npc_RemoveInvItems(hero,ItMi_Nugget,60);
-		AI_Output(self,other,"DIA_Orc_8215_Kan_RoundFive_Again_01_02");	//Pokud je člověk jistý svou silou, pak Ur-Kan zavelí k boji.
+		AI_Output(self,other,"DIA_Orc_8215_Kan_RoundFive_Again_01_02");	//Pokud je člověk jistý svou silou, pak Ur Kan zavelí k boji.
 		AI_Output(self,other,"DIA_Orc_8215_Kan_RoundFive_Again_01_03");	//Jdi člověče! Ur-Trok ho čeká.
 		AI_StopProcessInfos(self);
 		ArenaBattle_05 = TRUE;
@@ -3398,7 +3398,7 @@ func void DIA_Orc_8215_Kan_RoundFive_Again_info()
 	else
 	{
 		AI_Output(self,other,"DIA_Orc_8215_Kan_RoundFive_Again_01_04");	//Člověk na to nemá dost rudy!
-		AI_Output(self,other,"DIA_Orc_8215_Kan_RoundFive_Again_01_05");	//Ur-Kan nedovoluje muži bojovat v aréně.
+		AI_Output(self,other,"DIA_Orc_8215_Kan_RoundFive_Again_01_05");	//Ur Kan nedovoluje člověku bojovat v aréně.
 	};
 };
 
@@ -3429,11 +3429,11 @@ func void DIA_Orc_8215_Kan_RoundSix_info()
 
 	AI_Output(other,self,"DIA_Orc_8215_Kan_RoundSix_01_01");	//Kdo ještě zbývá?
 	AI_Output(self,other,"DIA_Orc_8215_Kan_RoundSix_01_02");	//Umrak zůstal proti člověk.
-	AI_Output(self,other,"DIA_Orc_8215_Kan_RoundSix_01_03");	//To je nejsilnější válečník Ur-Kan! Ani síle Ur-Thrall nepodlehl.
+	AI_Output(self,other,"DIA_Orc_8215_Kan_RoundSix_01_03");	//To je nejsilnější válečník Ur Kan! Ani síle Ur-Thrall nepodlehl.
 	AI_Output(self,other,"DIA_Orc_8215_Kan_RoundSix_01_04");	//Člověk nejprve dobře myslí. Chce skutečně bojovat s Umrakem?
 	AI_Output(other,self,"DIA_Orc_8215_Kan_RoundSix_01_05");	//Sem s ním!
-	AI_Output(self,other,"DIA_Orc_8215_Kan_RoundSix_01_06");	//(vážně) Dobře. Jak chce! Jděte do arény, bojuj s Umrak.
-	B_LogEntry(TOPIC_OrcArena,"Můj poslední boj v aréně. Umrak proti mně. Podle Ur-Kana je to velmi mocný soupeř. Nepodlehl dokonce ani velkému náčelníkovi skřetů.");
+	AI_Output(self,other,"DIA_Orc_8215_Kan_RoundSix_01_06");	//(vážně) Dobře. Jak chce! Jdi do arény, bojuj s Umrak.
+	B_LogEntry(TOPIC_OrcArena,"Můj poslední boj v aréně. Umrak proti mně. Podle Ur Kana je to velmi mocný soupeř. Nepodlehl dokonce ani velkému náčelníkovi skřetů.");
 	AI_StopProcessInfos(self);
 	ArenaBattle_06 = TRUE;
 	ArenaFightNow = TRUE;
@@ -3465,15 +3465,15 @@ func void DIA_Orc_8215_Kan_RoundSixDone_info()
 	if(ArenaBattle_06_Won == TRUE)
 	{
 		B_GivePlayerXP(1000);
-		AI_Output(self,other,"DIA_Orc_8215_Kan_RoundSixDone_01_02");	//Ur-Kan nevěří svým očím! Muž, který se porazí Umrak!
+		AI_Output(self,other,"DIA_Orc_8215_Kan_RoundSixDone_01_02");	//Ur Kan nevěří svým očím! Člověk, který porazí Umrak!
 		AI_Output(other,self,"DIA_Orc_8215_Kan_RoundSixDone_01_03");	//Ano, nebylo to snadné!
-		AI_Output(self,other,"DIA_Orc_8215_Kan_RoundSixDone_01_04");	//Pak se nyní člověk stane Mor Dar! Nejlepší válečník je velká skřetí aréna.
+		AI_Output(self,other,"DIA_Orc_8215_Kan_RoundSixDone_01_04");	//Pak se nyní člověk stane Mor Dar! Nejlepší válečník velká skřetí aréna.
 		AI_Output(self,other,"DIA_Orc_8215_Kan_RoundSixDone_01_05");	//Silnější než on je už nikdo. Hodně síly, hodně čestnosti a úcty.
 		AI_Output(other,self,"DIA_Orc_8215_Kan_RoundSixDone_01_06");	//A kde je moje odměna?
 		AI_Output(self,other,"DIA_Orc_8215_Kan_RoundSixDone_01_07");	//Tady, člověk který obdrží Grah Shah! Nejcennější odměna, kterou má.
 		B_GiveInvItems(self,other,ItMi_GrahShar,1);
 		AI_Output(other,self,"DIA_Orc_8215_Kan_RoundSixDone_01_08");	//Zajímavé. A co to je?
-		AI_Output(self,other,"DIA_Orc_8215_Kan_RoundSixDone_01_09");	//Člověk, obléknout a podívat se ! Ur-Kan si myslí, že člověk to pochopí.
+		AI_Output(self,other,"DIA_Orc_8215_Kan_RoundSixDone_01_09");	//Člověk, obléknout a podívat se! Ur Kan si myslí, že člověk to pochopí.
 		ORCRESPECT = ORCRESPECT + 45;
 
 		if(MIS_HeroOrcJoin == LOG_Running)
@@ -3489,7 +3489,7 @@ func void DIA_Orc_8215_Kan_RoundSixDone_info()
 	}
 	else if(ArenaBattle_06_Lost == TRUE)
 	{
-		AI_Output(self,other,"DIA_Orc_8215_Kan_RoundSixDone_01_11");	//Ur-Kan není překvapen, že člověk prohrát s Umrak.
+		AI_Output(self,other,"DIA_Orc_8215_Kan_RoundSixDone_01_11");	//Ur Kan není překvapen, že člověk prohrát s Umrak.
 		AI_Output(self,other,"DIA_Orc_8215_Kan_RoundSixDone_01_12");	//Měl štěstí, že ho Umrak nezabil!
 		AI_Output(other,self,"DIA_Orc_8215_Kan_RoundSixDone_01_13");	//Ano, ten skřet je tuhý soupeř.
 		AI_Output(self,other,"DIA_Orc_8215_Kan_RoundSixDone_01_14");	//Protože je skoro nejlepší, skoro Mor Dar!
@@ -3544,7 +3544,7 @@ func void DIA_Orc_8215_Kan_RoundSix_Again_info()
 	else
 	{
 		AI_Output(self,other,"DIA_Orc_8215_Kan_RoundSix_Again_01_05");	//Člověk na to nemá dost rudy!
-		AI_Output(self,other,"DIA_Orc_8215_Kan_RoundSix_Again_01_06");	//Ur-Kan nedovoluje muži bojovat v aréně.
+		AI_Output(self,other,"DIA_Orc_8215_Kan_RoundSix_Again_01_06");	//Ur Kan nedovoluje člověku bojovat v aréně.
 	};
 };
 
@@ -3669,7 +3669,7 @@ func int DIA_STRF_8152_UrTak_TeachDone_condition()
 func void DIA_STRF_8152_UrTak_TeachDone_info()
 {
 	AI_Output(other,self,"DIA_STRF_8152_UrTak_TeachDone_01_01");	//Porazil jsem tvého bratra v aréně!
-	AI_Output(self,other,"DIA_STRF_8152_UrTak_TeachDone_01_02");	//Muž překoná Umrak? (s úctou) Pak bude velkým válečníkem!
+	AI_Output(self,other,"DIA_STRF_8152_UrTak_TeachDone_01_02");	//Člověk překoná Umrak? (s úctou) Pak bude velkým válečníkem!
 	AI_Output(self,other,"DIA_STRF_8152_UrTak_TeachDone_01_03");	//Pro Urtak je velkou ctí ho naučit bojovat.
 	AI_PlayAni(self,"T_GREETGRD");
 	MIS_UrTakTeach = LOG_Success;
@@ -3714,7 +3714,7 @@ func void DIA_STRF_8152_UrTak_OFStyle_info()
 		AI_Output(self,other,"DIA_STRF_8152_UrTak_OFStyle_01_03");	//Zbraně bratří jsou pro člověka velmi těžké! Je těžké držet, je těžké bojovat.
 		AI_Output(self,other,"DIA_STRF_8152_UrTak_OFStyle_01_04");	//Rychle se unaví, ztratí sílu a ztratí bitvu.
 		AI_Output(self,other,"DIA_STRF_8152_UrTak_OFStyle_01_05");	//Urtak ukázat, jak správně držet zbraň, jak správně zasáhnout.
-		AI_Output(self,other,"DIA_STRF_8152_UrTak_OFStyle_01_06");	//Muž musí použít tíhu zbraně, ne svou vlastní sílu.
+		AI_Output(self,other,"DIA_STRF_8152_UrTak_OFStyle_01_06");	//Člověk musí použít tíhu zbraně, ne svou vlastní sílu.
 		AI_Output(self,other,"DIA_STRF_8152_UrTak_OFStyle_01_07");	//Pak může správně použít zbraně bratrů!
 		hero.lp = hero.lp - kosten;
 		RankPoints = RankPoints + kosten;
@@ -4230,7 +4230,7 @@ func void DIA_STRF_8157_Fighter_PreHello_info()
 	AI_Output(other,self,"DIA_STRF_8157_Fighter_PreHello_01_02");	//Není vás moc.
 	AI_Output(self,other,"DIA_STRF_8157_Fighter_PreHello_01_03");	//Všichni válečníci zde velmi silní! Mnohokrát bojovat s nepřítel a porazit ho.
 	AI_Output(other,self,"DIA_STRF_8157_Fighter_PreHello_01_04");	//Doufám, že máš pravdu. Snad nám pomohou.
-	AI_Output(self,other,"DIA_STRF_8157_Fighter_PreHello_01_05");	//Čůlověk, říct kdy začít! Počkáme na jeho signál...
+	AI_Output(self,other,"DIA_STRF_8157_Fighter_PreHello_01_05");	//Člověk, říct kdy začít! Počkáme na jeho signál...
 };
 
 instance DIA_STRF_8157_Fighter_Go(C_Info)
@@ -4404,7 +4404,7 @@ func void dia_Orc_8571_HashTor_Rule_info()
 	B_GivePlayerXP(500);
 	AI_Output(other,self,"DIA_Orc_8571_HashTor_Rule_01_01");	//Vím, jak ovládat skřetí zbraně.
 	AI_Output(self,other,"DIA_Orc_8571_HashTor_Rule_01_02");	//Urak Shaka Morra... (přikyvuje) Hash Tor to vidět! Člověk je silný, když se mohl naučit.
-	AI_Output(other,self,"DIA_Orc_8571_HashTor_Rule_01_03");	//Takže teď mid ukážeš jak ukovat zbraně z magické rudy?
+	AI_Output(other,self,"DIA_Orc_8571_HashTor_Rule_01_03");	//Takže teď mi ukážeš jak ukovat zbraně z magické rudy?
 	AI_Output(self,other,"DIA_Orc_8571_HashTor_Rule_01_04");	//Hash Tor dal slovo. Hash Tor držet slovo!
 	AI_Output(self,other,"DIA_Orc_8571_HashTor_Rule_01_05");	//Hash Tor učit člověk, pokud má člověk mnoho rudy a zkušeností.
 	MIS_HashTorRule = LOG_Success;
@@ -4487,7 +4487,7 @@ func void DIA_Orc_8571_HashTor_Teach_STR_01()
 		Npc_RemoveInvItems(hero,ItMi_Nugget,125);
 		ORCWEAPON_LINE_STR_01 = TRUE;
 		AI_Print("Naučeno: Kovářství - 'Rudná skřetí sekyra'");
-		B_LogEntry(TOPIC_ORCWEAPON,"Materiály pro vykování RUDNÉ SKŘETÍ SEKYRY: 10x magická ruda, 2x železná ruda, prykyřice a síra.");
+		B_LogEntry(TOPIC_ORCWEAPON,"Materiály pro vykování RUDNÉ SKŘETÍ SEKYRY: 10x magická ruda, 2x železná ruda, pryskyřice a síra.");
 		Npc_SetTalentSkill(hero,NPC_TALENT_SMITH,1);
 		Snd_Play("LevelUP");
 	};
@@ -4523,7 +4523,7 @@ func void DIA_Orc_8571_HashTor_Teach_STR_03()
 		Npc_RemoveInvItems(hero,ItMi_Nugget,500);
 		ORCWEAPON_LINE_STR_03 = TRUE;
 		AI_Print("Naučeno: Kovářství - 'Rudná válečná sekyra'");
-		B_LogEntry(TOPIC_ORCWEAPON,"Materiály pro vykování RUDNÉ VÁLEČNÉ SEKYRY: 30x magická ruda, 5x uhlí, 3x prykyřice, rtuť a síra.");
+		B_LogEntry(TOPIC_ORCWEAPON,"Materiály pro vykování RUDNÉ VÁLEČNÉ SEKYRY: 30x magická ruda, 5x uhlí, 3x pryskyřice, rtuť a síra.");
 		Npc_SetTalentSkill(hero,NPC_TALENT_SMITH,1);
 		Snd_Play("LevelUP");
 
@@ -4610,7 +4610,7 @@ func void DIA_Orc_8571_HashTor_Teach_PRIME()
 		Npc_RemoveInvItems(hero,ItMi_Nugget,1000);
 		ORCPRIMEWEAPON = TRUE;
 		AI_Print("Naučeno: Kovářství - 'Rudný dvousečný meč náčelníka'");
-		B_LogEntry(TOPIC_ORCWEAPON,"Materiály pro vykování RUDNÉHO DVOUSEČNÉHO MEČE NÁČELNÍKA: 50x magická ruda, 2x černá ruda, 10x síra, 2x prykyřice, černá perla, smaragd a rtuť.");
+		B_LogEntry(TOPIC_ORCWEAPON,"Materiály pro vykování RUDNÉHO DVOUSEČNÉHO MEČE NÁČELNÍKA: 50x magická ruda, 2x černá ruda, 10x síra, 2x pryskyřice, černá perla, smaragd a rtuť.");
 		Npc_SetTalentSkill(hero,NPC_TALENT_SMITH,1);
 		Snd_Play("LevelUP");
 
@@ -4642,7 +4642,7 @@ func void dia_Orc_8571_HashTor_Anvil_info()
 {
 	AI_Output(other,self,"DIA_Orc_8571_HashTor_Anvil_01_01");	//Máš velkou kovárnu!
 	AI_Output(self,other,"DIA_Orc_8571_HashTor_Anvil_01_02");	//Když hodně kování, pak musíš mít spoustu místa.
-	AI_Output(self,other,"DIA_Orc_8571_HashTor_Anvil_01_03");	//A zapálit velký oheň, abyste vyrobili skvělé zbraně!
+	AI_Output(self,other,"DIA_Orc_8571_HashTor_Anvil_01_03");	//A zapálit velký oheň, abys vyrobil skvělé zbraně!
 	AI_Output(other,self,"DIA_Orc_8571_HashTor_Anvil_01_04");	//To je pochopitelné.
 };
 
@@ -4876,10 +4876,10 @@ func void dia_Orc_8572_UrHoshNar_Clever_info()
 {
 	AI_Output(other,self,"DIA_Orc_8571_UrHoshNar_Clever_01_01");	//Vy, šamani, jste mezi skřety nejchytřejší?
 	AI_Output(self,other,"DIA_Orc_8571_UrHoshNar_Clever_01_02");	//UR RAT! Synové duchů vědí mnoho... (přikyvuje) Ale proč by se o to člověk měl ptát?
-	AI_Output(other,self,"DIA_Orc_8572_UrHoshNar_Clever_01_03");	//Rád bych se naučil něco o Vaší kultuře. A pochybuju, že o tom někomu budu vyprávět.
+	AI_Output(other,self,"DIA_Orc_8572_UrHoshNar_Clever_01_03");	//Rád bych se naučil něco o vaší kultuře. A pochybuju, že o tom někomu budu vyprávět.
 	AI_Output(self,other,"DIA_Orc_8572_UrHoshNar_Clever_01_05");	//Člověk velmi překvapit Hosh-Nar! To je velmi zvláštní!
 	AI_Output(self,other,"DIA_Orc_8572_UrHoshNar_Clever_01_06");	//Ale jestli opravdu chce vědět hodně o skřetech, jít sem.
-	AI_Output(self,other,"DIA_Orc_8572_UrHoshNar_Clever_01_07");	//Hosh-Nah ví o svých bratrech hodně, vidí hodně, slyší hodně...
+	AI_Output(self,other,"DIA_Orc_8572_UrHoshNar_Clever_01_07");	//Hosh-Nar ví o svých bratrech hodně, vidí hodně, slyší hodně...
 	AI_Output(self,other,"DIA_Orc_8572_UrHoshNar_Clever_01_08");	//Člověk, která zná náš jazyk, pochopila, co říkat Hosh-Nar!
 	AI_Output(self,other,"DIA_Orc_8572_UrHoshNar_Clever_01_09");	//Proto mu řekne, co má znát. Pokud chce člověk samozřejmě poslouchat.
 	AI_Output(self,other,"DIA_Orc_8572_UrHoshNar_Clever_01_10");	//Nicméně předtím než Hosh-Nar začít, člověk přinést znalosti lidí!
@@ -4888,7 +4888,7 @@ func void dia_Orc_8572_UrHoshNar_Clever_info()
 	AI_Output(self,other,"DIA_Orc_8572_UrHoshNar_Clever_01_13");	//Ale potřebuje něco, co lidé píší o svém lidu.
 	AI_Output(self,other,"DIA_Orc_8572_UrHoshNar_Clever_01_14");	//Hosh-Nar chce dozvědět více o lidech! Jak žijí, co dělají, jak bojují...
 	AI_Output(other,self,"DIA_Orc_8572_UrHoshNar_Clever_01_15");	//Dobře, zkusím ti něco najít.
-	AI_Output(self,other,"DIA_Orc_8572_UrHoshNar_Clever_01_16");	//Pak člověk, který má pro Hash-Nar tu věc... (přikyvuje) Ten muž čekat tady!
+	AI_Output(self,other,"DIA_Orc_8572_UrHoshNar_Clever_01_16");	//Pak člověk, který má pro Hash-Nar tu věc... (přikyvuje) Ten člověk čekat tady!
 	MIS_HoshNarBooks = LOG_Running;
 	Log_CreateTopic(TOPIC_HoshNarBooks,LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_HoshNarBooks,LOG_Running);
@@ -4920,7 +4920,7 @@ func void dia_Orc_8572_UrHoshNar_CleverDone_info()
 	AI_Output(other,self,"DIA_Orc_8571_UrHoshNar_CleverDone_01_03");	//Nevzpomínám si přesně ale myslím, že je tam popsaná velká bitva. Lepší bude když si to přečteš sám.
 	B_GiveInvItems(other,self,ItWr_EinhandBuch,1);
 	Npc_RemoveInvItems(self,ItWr_EinhandBuch,1);
-	AI_Output(self,other,"DIA_Orc_8571_UrHoshNar_CleverDone_01_05");	//(se zájmem) Velká bitva? Hosh-Nah si myslí, že je pro něj zajímavé!
+	AI_Output(self,other,"DIA_Orc_8571_UrHoshNar_CleverDone_01_05");	//(se zájmem) Velká bitva? Hosh-Nar si myslí, že je pro něj zajímavé!
 	AI_Output(self,other,"DIA_Orc_8571_UrHoshNar_CleverDone_01_06");	//Děkuji člověk za zajímavá kniha.
 	ORCRESPECT = ORCRESPECT + 15;
 
@@ -4990,7 +4990,7 @@ func void dia_Orc_8572_UrHoshNar_War_info()
 	AI_Output(self,other,"DIA_Orc_8572_UrHoshNar_War_01_05");	//Mnoho zim předtím, připlout sem a zabít mnoho bratří Hosh-Nar.
 	AI_Output(self,other,"DIA_Orc_8572_UrHoshNar_War_01_06");	//Pak se skřeti dostanou vysoko do hor, sbírají mnoho válečníků a jdou do války.
 	AI_Output(self,other,"DIA_Orc_8572_UrHoshNar_War_01_07");	//Pomstít své bratry! Zabít a vyhnat člověk z ostrova.
-	AI_Output(other,self,"DIA_Orc_8572_UrHoshNar_War_01_08");	//A to Vám stačí?
+	AI_Output(other,self,"DIA_Orc_8572_UrHoshNar_War_01_08");	//A to vám stačí?
 	AI_Output(self,other,"DIA_Orc_8572_UrHoshNar_War_01_09");	//Ne! Skřeti vždy chtít žít v klidu, ale lidé nevědí jak. Lidé jsou zlí, velmi zlí!
 	AI_Output(other,self,"DIA_Orc_8572_UrHoshNar_War_01_10");	//Hmmm... Vidím.
 };
@@ -5015,7 +5015,7 @@ func int dia_Orc_8572_UrHoshNar_Faith_condition()
 func void dia_Orc_8572_UrHoshNar_Faith_info()
 {
 	AI_Output(other,self,"DIA_Orc_8572_UrHoshNar_Faith_01_01");	//Pověz mi něco o vaší víře.
-	AI_Output(self,other,"DIA_Orc_8572_UrHoshNar_Faith_01_02");	//Skřeti vždy ustívali jen svého velkého předka! Modlíme se k velkým vůdcům a šamanům minulosti.
+	AI_Output(self,other,"DIA_Orc_8572_UrHoshNar_Faith_01_02");	//Skřeti vždy uctívali jen svého velkého předka! Modlíme se k velkým vůdcům a šamanům minulosti.
 	AI_Output(self,other,"DIA_Orc_8572_UrHoshNar_Faith_01_03");	//A někteří z nás s nimi mohou dokonce komunikovat!
 	AI_Output(other,self,"DIA_Orc_8572_UrHoshNar_Faith_01_04");	//A co Spáč nebo Beliar?
 	AI_Output(self,other,"DIA_Orc_8572_UrHoshNar_Faith_01_05");	//(rozzlobeně) UR DAR KRUSHAK KAT ZO KHAR!
@@ -5161,7 +5161,7 @@ func void dia_Orc_8572_UrHoshNar_Dragon_info()
 	MIS_TrueDragonMasters = LOG_Running;
 	Log_CreateTopic(TOPIC_TrueDragonMasters,LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_TrueDragonMasters,LOG_Running);
-	B_LogEntry(TOPIC_TrueDragonMasters,"Slova nejvyššího z šamanů Hosh-Nara me zaskočila. Říká, že draci neposlouchají Beliara, ale někoho mještě silnějšího. Měl bych si o tom promluvit s Xardasem. Jeho názor a vědomosti budou třeba.");
+	B_LogEntry(TOPIC_TrueDragonMasters,"Slova nejvyššího z šamanů Hosh-Nara me zaskočila. Říká, že draci neposlouchají Beliara, ale někoho ještě silnějšího. Měl bych si o tom promluvit s Xardasem. Jeho názor a vědomosti budou třeba.");
 };
 
 instance DIA_Orc_8572_UrHoshNar_OrcHolyPlaces(C_Info)
@@ -5185,22 +5185,22 @@ func void dia_Orc_8572_UrHoshNar_OrcHolyPlaces_info()
 {
 	AI_Output(other,self,"DIA_Orc_8572_UrHoshNar_OrcHolyPlaces_01_01");	//Potřebuješ ještě pomoc?
 	AI_Output(self,other,"DIA_Orc_8572_UrHoshNar_OrcHolyPlaces_01_02");	//(překvapeně) Ty chtít pomoc Hosh-Nar? Proč?
-	AI_Output(other,self,"DIA_Orc_8572_UrHoshNar_OrcHolyPlaces_01_03");	//Musím se dostat k Vašemu vůdci. Jelikož mě skřeti ještě nerespektují tak mě Farrok nepustí.
+	AI_Output(other,self,"DIA_Orc_8572_UrHoshNar_OrcHolyPlaces_01_03");	//Musím se dostat k vašemu vůdci. Jelikož mě skřeti ještě nerespektují tak mě Farrok nepustí.
 	AI_Output(self,other,"DIA_Orc_8572_UrHoshNar_OrcHolyPlaces_01_05");	//Hosh-Nar pochopit...
 	AI_Output(self,other,"DIA_Orc_8572_UrHoshNar_OrcHolyPlaces_01_06");	//Pokud chce, aby jeho bratři respektovali, půjde do Velkého údolí a modlí se tam k velkým duchům předků!
 	AI_Output(other,self,"DIA_Orc_8572_UrHoshNar_OrcHolyPlaces_01_07");	//A jak to mám udělat?
 	AI_Output(self,other,"DIA_Orc_8572_UrHoshNar_OrcHolyPlaces_01_08");	//Skřeti staví velkou svatyni pro každého velkého předka. Ve Velkém údolí jsou... mmm... čtyři.
 	AI_Output(other,self,"DIA_Orc_8572_UrHoshNar_OrcHolyPlaces_01_09");	//A kde mohu najít tyto svatyně?
-	AI_Output(self,other,"DIA_Orc_8572_UrHoshNar_OrcHolyPlaces_01_10");	//Hosh-Nar říct muži... (zamyšleně) Jedna být nedaleko klanu Vysoké skály. 
-	AI_Output(self,other,"DIA_Orc_8572_UrHoshNar_OrcHolyPlaces_01_11");	//Druhá je tam, kde voda padat z výšky hluboko! Další je vedle věže šamana lídi.
+	AI_Output(self,other,"DIA_Orc_8572_UrHoshNar_OrcHolyPlaces_01_10");	//Hosh-Nar říct člověku... (zamyšleně) Jedna být nedaleko klanu Vysoké skály. 
+	AI_Output(self,other,"DIA_Orc_8572_UrHoshNar_OrcHolyPlaces_01_11");	//Druhá je tam, kde voda padat z výšky hluboko! Další je vedle věže šamana lidí.
 	AI_Output(self,other,"DIA_Orc_8572_UrHoshNar_OrcHolyPlaces_01_12");	//A poslední na vysoké hoře, kde je moře.
 	AI_Output(other,self,"DIA_Orc_8572_UrHoshNar_OrcHolyPlaces_01_13");	//Dobře, pokusím se je najít.
-	AI_Output(self,other,"DIA_Orc_8572_UrHoshNar_OrcHolyPlaces_01_14");	//Muž chodit a modlit se k duchům předků! Pak se vrátit k Hosh-Nar.
+	AI_Output(self,other,"DIA_Orc_8572_UrHoshNar_OrcHolyPlaces_01_14");	//Člověk chodit a modlit se k duchům předků! Pak se vrátit k Hosh-Nar.
 	AI_Output(self,other,"DIA_Orc_8572_UrHoshNar_OrcHolyPlaces_01_15");	//On říkat svým bratrům, že respektovat člověk.
 	MIS_OrcHolyPlaces = LOG_Running;
 	Log_CreateTopic(TOPIC_OrcHolyPlaces,LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_OrcHolyPlaces,LOG_Running);
-	B_LogEntry(TOPIC_OrcHolyPlaces,"Šaman Hosh-Nar mi řekl, že pokud si chci získat respekt skřetů musím se pomohlit ve svatyních k jejich velkým předkům. Podle něj jsou čtyři - blízko vodopádu, u klanu Vysoké skály, vedle mágovy věže a poslední u moře vysoko v horách.");
+	B_LogEntry(TOPIC_OrcHolyPlaces,"Šaman Hosh-Nar mi řekl, že pokud si chci získat respekt skřetů musím se pomodlit ve svatyních k jejich velkým předkům. Podle něj jsou čtyři - blízko vodopádu, u klanu Vysoké skály, vedle mágovy věže a poslední u moře vysoko v horách.");
 };
 
 instance DIA_Orc_8572_UrHoshNar_OrcHolyPlaces_Done(C_Info)
@@ -5209,7 +5209,7 @@ instance DIA_Orc_8572_UrHoshNar_OrcHolyPlaces_Done(C_Info)
 	condition = dia_Orc_8572_UrHoshNar_OrcHolyPlaces_Done_condition;
 	information = dia_Orc_8572_UrHoshNar_OrcHolyPlaces_Done_info;
 	permanent = FALSE;
-	description = "Pomodlil jsem se ve všech svatyních Vašich předků.";
+	description = "Pomodlil jsem se ve všech svatyních vašich předků.";
 };
 
 func int dia_Orc_8572_UrHoshNar_OrcHolyPlaces_Done_condition()
@@ -5223,7 +5223,7 @@ func int dia_Orc_8572_UrHoshNar_OrcHolyPlaces_Done_condition()
 func void dia_Orc_8572_UrHoshNar_OrcHolyPlaces_Done_info()
 {
 	B_GivePlayerXP(500);
-	AI_Output(other,self,"DIA_Orc_8572_UrHoshNar_OrcHolyPlaces_Done_01_01");	//Pomodlil jsem se ve všech svatyních Vašich předků.
+	AI_Output(other,self,"DIA_Orc_8572_UrHoshNar_OrcHolyPlaces_Done_01_01");	//Pomodlil jsem se ve všech svatyních vašich předků.
 	AI_Output(self,other,"DIA_Orc_8572_UrHoshNar_OrcHolyPlaces_Done_01_02");	//Hosh-Nar o tom už ví... (souhlasně) Člověk udělat všechno správně!
 	AI_Output(other,self,"DIA_Orc_8572_UrHoshNar_OrcHolyPlaces_Done_01_03");	//Jak o tom můžeš vědět?
 	AI_Output(self,other,"DIA_Orc_8572_UrHoshNar_OrcHolyPlaces_Done_01_04");	//Hosh-Nar mluvit s duchy. To duchové říct Hosh-Nar.
@@ -5241,7 +5241,7 @@ func void dia_Orc_8572_UrHoshNar_OrcHolyPlaces_Done_info()
 
 	MIS_OrcHolyPlaces = LOG_Success;
 	Log_SetTopicStatus(TOPIC_OrcHolyPlaces,LOG_Success);
-	B_LogEntry(TOPIC_OrcHolyPlaces,"Hosh-Nar o mě řekne svým bratrům. To značně zvyší mojí reputaci mezi skřety.");
+	B_LogEntry(TOPIC_OrcHolyPlaces,"Hosh-Nar o mě řekne svým bratrům. To značně zvýší mou reputaci mezi skřety.");
 };
 
 instance DIA_Orc_8572_UrHoshNar_PsicampDemon(C_Info)
@@ -5273,7 +5273,7 @@ func void dia_Orc_8572_UrHoshNar_PsicampDemon_info()
 	AI_Output(self,other,"DIA_Orc_8572_UrHoshNar_PsicampDemon_01_08");	//Hosh-Nar netuší. Bratři stále nevracejí.
 	AI_Output(self,other,"DIA_Orc_8572_UrHoshNar_PsicampDemon_01_09");	//Pokud chce člověk pomoci Hosh-Nar, musí jít k velká bažina a zjistit všechno.
 	AI_Output(other,self,"DIA_Orc_8572_UrHoshNar_PsicampDemon_01_10");	//Rozumím.
-	AI_Output(self,other,"DIA_Orc_8572_UrHoshNar_PsicampDemon_01_11");	//Hosh-Nar bude čekat na muže až vrátit! Být ostražitý.
+	AI_Output(self,other,"DIA_Orc_8572_UrHoshNar_PsicampDemon_01_11");	//Hosh-Nar bude čekat na člověka až vrátit! Být ostražitý.
 	AI_Output(self,other,"DIA_Orc_8572_UrHoshNar_PsicampDemon_01_12");	//Velká bažina nebezpečné místo - hodně zla, mnoho mrtvých...
 	AI_Output(other,self,"DIA_Orc_8572_UrHoshNar_PsicampDemon_01_13");	//Nedělej si starost! Nějak se s tím poperu.
 	AI_Output(self,other,"DIA_Orc_8572_UrHoshNar_PsicampDemon_01_14");	//KRAT SHAKA OR... (přikyvuje) Šťastnou cestu.
@@ -5306,7 +5306,7 @@ func void dia_Orc_8572_UrHoshNar_What_info()
 {
 	B_GivePlayerXP(300);
 	AI_Output(other,self,"DIA_Orc_8572_UrHoshNar_What_01_01");	//Přinesl jsem zprávy od Tor-Dal.
-	AI_Output(self,other,"DIA_Orc_8572_UrHoshNar_What_01_02");	//Hosh-Nar poslouchat... (dychtivě) Muž mluvit!
+	AI_Output(self,other,"DIA_Orc_8572_UrHoshNar_What_01_02");	//Hosh-Nar poslouchat... (dychtivě) Člověk mluvit!
 	AI_Output(other,self,"DIA_Orc_8572_UrHoshNar_What_01_03");	//Oddíl, co jsi poslal do bažin je skoro zničený.
 	AI_Output(other,self,"DIA_Orc_8572_UrHoshNar_What_01_04");	//Zůstal pouze Tor-Dal a pár jeho válečníků.
 	AI_Output(other,self,"DIA_Orc_8572_UrHoshNar_What_01_05");	//V tom chrámu, kde bývalo Bratrstvo Spáče, je zlo.
@@ -5322,9 +5322,9 @@ func void dia_Orc_8572_UrHoshNar_What_info()
 	AI_Output(self,other,"DIA_Orc_8572_UrHoshNar_What_01_15");	//Ur-Thrall se domnívá, že je to špatné místo pro svatyni bratří.
 	AI_Output(self,other,"DIA_Orc_8572_UrHoshNar_What_01_16");	//Zatracený KRUSHAK! Musí tam být spousta zla...
 	AI_Output(other,self,"DIA_Orc_8572_UrHoshNar_What_01_17");	//Musím pomoct Tor-Dalovi. Nejdřív musím zajít za Ur-Thrallem.
-	AI_Output(self,other,"DIA_Orc_8572_UrHoshNar_What_01_18");	//Hosh-Nar si to myslí. Muž jít k Ur-Thrall a mluvit s ním o chrámu v bažinách.
+	AI_Output(self,other,"DIA_Orc_8572_UrHoshNar_What_01_18");	//Hosh-Nar si to myslí. Člověk jít k Ur-Thrall a mluvit s ním o chrámu v bažinách.
 	HoshNarSentMe = TRUE;
-	B_LogEntry(TOPIC_PsicampDemon,"Podal jsem zprávy o Tor-Dalovi. Hosh-Nar mu němůže poslat další válečníky. To vyžaduje povolení od Ur-Thralla.");	
+	B_LogEntry(TOPIC_PsicampDemon,"Podal jsem zprávy o Tor-Dalovi. Hosh-Nar mu nemůže poslat další válečníky. To vyžaduje povolení od Ur-Thralla.");	
 };
 
 instance DIA_Orc_8572_UrHoshNar_PsicampDemonDone(C_Info)
@@ -5374,7 +5374,7 @@ func void dia_Orc_8572_UrHoshNar_PsicampDemonDone_info()
 	}
 	else
 	{
-		AI_Output(self,other,"DIA_Orc_8572_UrHoshNar_PsicampDemonDone_01_06");	//Vzít tento nápoj! On dělá silného muže, jako skřet.
+		AI_Output(self,other,"DIA_Orc_8572_UrHoshNar_PsicampDemonDone_01_06");	//Vzít tento nápoj! On dělá silného člověka, jako skřet.
 		ORCRESPECT = ORCRESPECT + 50;
 
 		if(MIS_HeroOrcJoin == LOG_Running)
@@ -5463,7 +5463,7 @@ func void dia_ORC_8216_TorDal_Meet_info()
 	AI_Output(other,self,"DIA_ORC_8216_TorDal_Meet_01_01");	//Byl to Hosh-Nar, kdo tě poslal do bažiny?
 	AI_Output(self,other,"DIA_ORC_8216_TorDal_Meet_01_02");	//(překvapeně) KOR RAD... Ano, velký šaman poslal Tor-Dal do velké bažiny.
 	AI_Output(self,other,"DIA_ORC_8216_TorDal_Meet_01_03");	//Ale jak to člověk ví?
-	AI_Output(other,self,"DIA_ORC_8216_TorDal_Meet_01_04");	//Jsem tady na jeho pokyn. Už dlouho o Vás neslyšel takže chce nějaké zprávy.
+	AI_Output(other,self,"DIA_ORC_8216_TorDal_Meet_01_04");	//Jsem tady na jeho pokyn. Už dlouho o vás neslyšel takže chce nějaké zprávy.
 	AI_Output(self,other,"DIA_ORC_8216_TorDal_Meet_01_06");	//Takže člověk přišla pomoci Tor-Dal.
 	AI_Output(self,other,"DIA_ORC_8216_TorDal_Meet_01_07");	//Být lepší kdyby Hosh-Nar poslat další válečníky. Člověk příliš malá...
 	ORCRESPECT = ORCRESPECT + 5;
@@ -5480,7 +5480,7 @@ instance DIA_ORC_8216_TorDal_Many(C_Info)
 	condition = dia_ORC_8216_TorDal_Many_condition;
 	information = dia_ORC_8216_TorDal_Many_info;
 	permanent = FALSE;
-	description = "Není Vás tu mnoho.";
+	description = "Není vás tu mnoho.";
 };
 
 func int dia_ORC_8216_TorDal_Many_condition()
@@ -5493,7 +5493,7 @@ func int dia_ORC_8216_TorDal_Many_condition()
 
 func void dia_ORC_8216_TorDal_Many_info()
 {
-	AI_Output(other,self,"DIA_ORC_8216_TorDal_Many_01_01");	//Není Vás tu mnoho.
+	AI_Output(other,self,"DIA_ORC_8216_TorDal_Many_01_01");	//Není vás tu mnoho.
 	AI_Output(self,other,"DIA_ORC_8216_TorDal_Many_01_02");	//Mnozí bratři Tor-Dal zemřeli... Všechny zabili mrtvé!
 	AI_Output(self,other,"DIA_ORC_8216_TorDal_Many_01_03");	//Pouze Tor-Dal a několik dalších válečníků dokázali přežít.
 	AI_Output(self,other,"DIA_ORC_8216_TorDal_Many_01_04");	//Počkej tady, přemýšlet co dál.
@@ -5521,7 +5521,7 @@ func void dia_ORC_8216_TorDal_What_info()
 	AI_Output(other,self,"DIA_ORC_8216_TorDal_What_01_01");	//Proč tě sem Hosh-Nar poslal?
 	AI_Output(self,other,"DIA_ORC_8216_TorDal_What_01_02");	//Tor-Dal šel do chrám ve velká bažina, jak mu velký šaman Hosh-Nar řekl.
 	AI_Output(self,other,"DIA_ORC_8216_TorDal_What_01_03");	//Chce zde postavit velkou svatyni svých bratrů! Modlit se k duchům předků.
-	AI_Output(self,other,"DIA_ORC_8216_TorDal_What_01_04");	//Pak přijít temný šamani a rozpoutat peklo. Velké zlo působit...
+	AI_Output(self,other,"DIA_ORC_8216_TorDal_What_01_04");	//Pak přijít temní šamani a rozpoutat peklo. Velké zlo působit...
 	AI_Output(self,other,"DIA_ORC_8216_TorDal_What_01_05");	//Zvýšit počet mrtvých, kteří sloužit! Teď zabíjet bratry Tor-Dal.
 	AI_Output(other,self,"DIA_ORC_8216_TorDal_What_01_06");	//Jaké zlo myslíš?
 	AI_Output(self,other,"DIA_ORC_8216_TorDal_What_01_07");	//Tor-Dal nevěděl, neviděl to... Jen slyšet v noci! Bratři jsou vyděšení.
@@ -5529,7 +5529,7 @@ func void dia_ORC_8216_TorDal_What_info()
 	AI_Output(self,other,"DIA_ORC_8216_TorDal_What_01_09");	//Tor-Dal se nemůže vrátit do města. Nejprve musí zničit zlo! Pomstít své bratry.
 	AI_Output(self,other,"DIA_ORC_8216_TorDal_What_01_10");	//Tor-Dal mít málo válečníků na boj v chrámu. Zemřít když tam vrátit.
 	AI_Output(other,self,"DIA_ORC_8216_TorDal_What_01_11");	//Chceš mojí pomoc?
-	AI_Output(self,other,"DIA_ORC_8216_TorDal_What_01_12");	//Hmmm... Muž je slabý! Zemřít dřív než Tor-Dal.
+	AI_Output(self,other,"DIA_ORC_8216_TorDal_What_01_12");	//Hmmm... Člověk je slabý! Zemřít dřív než Tor-Dal.
 	AI_Output(self,other,"DIA_ORC_8216_TorDal_What_01_13");	//Lepší se vrátí k Hosh-Nar a požádá ho, aby mu poslal další válečníky.
 	AI_Output(self,other,"DIA_ORC_8216_TorDal_What_01_14");	//Ti přijdou a pomáhají Tor-Dal zabít zlo v chrámu!
 	AI_Output(other,self,"DIA_ORC_8216_TorDal_What_01_15");	//Dobře.
@@ -5560,8 +5560,8 @@ func void dia_ORC_8216_TorDal_PsiCampDone_info()
 	AI_Output(other,self,"DIA_ORC_8216_TorDal_PsiCampDone_01_01");	//Chrám je čistý!
 	AI_Output(self,other,"DIA_ORC_8216_TorDal_PsiCampDone_01_02");	//(s respektem) Jak je možné, že člověk sám zabil zlo?
 	AI_Output(other,self,"DIA_ORC_8216_TorDal_PsiCampDone_01_03");	//Ano, skončil jsem s ním.
-	AI_Output(self,other,"DIA_ORC_8216_TorDal_PsiCampDone_01_04");	//Tor-Dal omlouvá, že muži řekl, že je slabý.
-	AI_Output(self,other,"DIA_ORC_8216_TorDal_PsiCampDone_01_05");	//To je silný válečník! Tor-Dal respektuje muže... Orak Shaka!
+	AI_Output(self,other,"DIA_ORC_8216_TorDal_PsiCampDone_01_04");	//Tor-Dal omlouvá, že člověku řekl, že je slabý.
+	AI_Output(self,other,"DIA_ORC_8216_TorDal_PsiCampDone_01_05");	//To je silný válečník! Tor-Dal respektuje člověka... Orak Shaka!
 	ORCRESPECT = ORCRESPECT + 15;
 
 	if(MIS_HeroOrcJoin == LOG_Running)
