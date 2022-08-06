@@ -179,11 +179,11 @@ func void dia_taliasan_problem_info()
 	{
 		AI_Output(other,self,"DIA_Taliasan_Problem_01_06");	//To už je mnohem lepší! Řekneš mi to?
 		AI_Output(self,other,"DIA_Taliasan_Problem_01_07");	//Eh... Mladý muži. Ano, řeknu ti svůj příběh...
-		AI_Output(self,other,"DIA_Taliasan_Problem_01_08");	//... Kdysi jsem měl vše: Čest, peníze, respekt... Ne jako nyní. (smutně)
+		AI_Output(self,other,"DIA_Taliasan_Problem_01_08");	//... Kdysi jsem měl vše: čest, peníze, respekt... Ne jako nyní. (smutně)
 		AI_Output(self,other,"DIA_Taliasan_Problem_01_11");	//V nejlepších letech jsem byl hlavou městského cechu mágů a prvním rádcem místodržícího našeho města.
 		AI_Output(other,self,"DIA_Taliasan_Problem_01_12");	//Ty jsi mág?!
 		AI_Output(self,other,"DIA_Taliasan_Problem_01_13");	//A co tě na tom překvapuje?! Ano. A mohu ti říci, mladý muži, že jsem byl nejlepším mágem v Khorinisu!
-		AI_Output(self,other,"DIA_Taliasan_Problem_01_17");	//A to vše kvůly tomu prokletému Risterovi! Kéž by ho sežrala horda krysokrtů! (vztekle)
+		AI_Output(self,other,"DIA_Taliasan_Problem_01_17");	//A to vše kvůli tomu prokletému Risterovi! Kéž by ho sežrala horda krysokrtů! (vztekle)
 		if(Npc_KnowsInfo(other,DIA_Richter_Hello))
 		{
 			AI_Output(other,self,"DIA_Taliasan_Problem_01_18");	//Rister? To je ten arogantní idiot, který si oblékl plášť soudce?
@@ -246,7 +246,7 @@ func void dia_taliasan_help_info()
 	AI_Output(self,other,"DIA_Taliasan_Help_01_05");	//No, ve městě je pár lidí, jejichž názor má velkou cenu.
 	AI_Output(self,other,"DIA_Taliasan_Help_01_07");	//Většina obchodníků z horní čtvrti. Možná by někdo z nich souhlasil...
 	AI_Output(self,other,"DIA_Taliasan_Help_01_08");	//Samozřejmě, mě poslouchat nebudou, ale pokud je někdo jiný přesvědčí...
-	AI_Output(self,other,"DIA_Taliasan_Help_01_09");	//A co vy?
+	AI_Output(self,other,"DIA_Taliasan_Help_01_09");	//A co ty?
 	AI_Output(other,self,"DIA_Taliasan_Help_01_12");	//Hmmm... A jak si představuješ, že je mám přemluvit?
 	AI_Output(self,other,"DIA_Taliasan_Help_01_13");	//No... Například jim můžeš nabídnout svou pomoc.
 	AI_Output(self,other,"DIA_Taliasan_Help_01_21");	//Nicméně, pro mě jsou důležité abys od nich dostal doporučující dopisy.
@@ -260,7 +260,7 @@ func void dia_taliasan_help_info()
 func void dia_taliasan_help_no()
 {
 	AI_Output(other,self,"DIA_Taliasan_Help_No_01_00");	//Toto moc zavání kriminálem. Promiň, ne.
-	AI_Output(self,other,"DIA_Taliasan_Help_No_01_03");	//Jak chceš, budu se stím muset porvat sám. Což bohužel bude trvat věky...
+	AI_Output(self,other,"DIA_Taliasan_Help_No_01_03");	//Jak chceš, budu se s tím muset porvat sám. Což bohužel bude trvat věky...
 	Info_ClearChoices(dia_taliasan_help);
 };
 
@@ -280,11 +280,11 @@ func void dia_taliasan_help_ok()
 func void dia_taliasan_help_howmuch()
 {
 	AI_Output(other,self,"DIA_Taliasan_Help_HowMuch_01_00");	//A co dostanu za svou pomoc?
-	AI_Output(self,other,"DIA_Taliasan_Help_HowMuch_01_04");	//No! pokud mi pomůžeš tak já...
+	AI_Output(self,other,"DIA_Taliasan_Help_HowMuch_01_04");	//No! Pokud mi pomůžeš tak já...
 	AI_Output(other,self,"DIA_Taliasan_Help_HowMuch_01_06");	//Hmmm, zajímavé. A co když mě pěníze nezajímají?
-	AI_Output(self,other,"DIA_Taliasan_Help_HowMuch_01_07");	//No, ano... hm... Pořád mám elixíry, který můžou trvale vylepšit tvé vlastnosti!
+	AI_Output(self,other,"DIA_Taliasan_Help_HowMuch_01_07");	//No, ano... hm... Pořád mám elixíry, které můžou trvale vylepšit tvé vlastnosti!
 	AI_Output(self,other,"DIA_Taliasan_Help_HowMuch_01_08");	//Mohl bych ti dát pár takových.
-	AI_Output(other,self,"DIA_Taliasan_Help_HowMuch_01_09");	//A nemáš něco speciálního? Snad mě můžete naučit kouzlit?
+	AI_Output(other,self,"DIA_Taliasan_Help_HowMuch_01_09");	//A nemáš něco speciálního? Snad mě můžeš naučit kouzlit?
 	AI_Output(self,other,"DIA_Taliasan_Help_HowMuch_01_15");	//Aha, takže si rozumíme, to je to nejlepší, co sis mohl přát.
 	AI_Output(self,other,"DIA_Taliasan_Help_HowMuch_01_16");	//Vědomosti, to je bohatství, které narozdíl od stříbrných pohárů a zlatých mincí přetrvá.
 	AI_Output(self,other,"DIA_Taliasan_Help_HowMuch_01_17");	//To je dobré! Pokud mi pomůžeš, naučím tě čarovat!
@@ -297,7 +297,7 @@ instance DIA_TALIASAN_FineFood(C_Info)
 	condition = DIA_TALIASAN_FineFood_condition;
 	information = DIA_TALIASAN_FineFood_info;
 	permanent = FALSE;
-	description = "Můžu ještě něco udělat, abych vám pomohl?";
+	description = "Můžu ještě něco udělat, abych ti pomohl?";
 };
 
 func int DIA_TALIASAN_FineFood_condition()
@@ -310,13 +310,13 @@ func int DIA_TALIASAN_FineFood_condition()
 
 func void DIA_TALIASAN_FineFood_info()
 {
-	AI_Output(other,self,"DIA_Taliasan_FineFood_01_00");	//Můžu ještě něco udělat, abych vám pomohl?
+	AI_Output(other,self,"DIA_Taliasan_FineFood_01_00");	//Můžu ještě něco udělat, abych ti pomohl?
 	AI_Output(self,other,"DIA_Taliasan_FineFood_01_01");	//(nedbale) Ano, můžeš. Přines mi něco k jídlu.
-	AI_Output(other,self,"DIA_Taliasan_FineFood_01_02");	//Jste hladoví?
+	AI_Output(other,self,"DIA_Taliasan_FineFood_01_02");	//Jsi hladový?
 	AI_Output(self,other,"DIA_Taliasan_FineFood_01_03");	//Ne, ty blázne! Jen už jsem poněkud unavený z objemných krmiv.
 	AI_Output(self,other,"DIA_Taliasan_FineFood_01_04");	//Jsem zvyklý jíst delikatesy! Je velmi obtížné získat slušné jídlo v této díře.
-	AI_Output(other,self,"DIA_Taliasan_FineFood_01_05");	//Dobře, co vám má váš služebník přinést?
-	AI_Output(self,other,"DIA_Taliasan_FineFood_01_06");	//No... myslím, že bude stačit, když mi přineseš tři láhve vína, šunka, kousek sýra, hrnec medu a hrozny.
+	AI_Output(other,self,"DIA_Taliasan_FineFood_01_05");	//Dobře, co ti má tvůj služebník přinést?
+	AI_Output(self,other,"DIA_Taliasan_FineFood_01_06");	//No... myslím, že bude stačit, když mi přineseš tři láhve vína, šunku, kousek sýra, hrnec medu a hrozny.
 	AI_Output(self,other,"DIA_Taliasan_FineFood_01_07");	//Ale neopovažuj se mě ptát na peníze. Sám něco vymysli!
 	MIS_TaliasanFineFood = LOG_Running;
 	Log_CreateTopic(TOPIC_TaliasanFineFood,LOG_MISSION);
@@ -352,14 +352,14 @@ func void DIA_TALIASAN_FineFood_Done_info()
 	Npc_RemoveInvItems(hero,ItFo_Bacon,1);
 	Npc_RemoveInvItems(hero,ITFO_WINEBERRYS,1);
 	Npc_RemoveInvItems(hero,ItFo_Wine,3);
-	AI_Output(self,other,"DIA_Taliasan_FineFood_Done_01_01");	//Vynikající! Dej to sem... (dychtivě) konečně, můj žaludek ochutnát něco jiného než shnilé rybí polévky.
+	AI_Output(self,other,"DIA_Taliasan_FineFood_Done_01_01");	//Vynikající! Dej to sem... (dychtivě) konečně, můj žaludek ochutná něco jiného než shnilé rybí polévky.
 	AI_Output(self,other,"DIA_Taliasan_FineFood_Done_01_02");	//Vedl sis dobře. Můžeš jít. 
 	AI_Output(other,self,"DIA_Taliasan_FineFood_Done_01_03");	//A co nějaký vděk?
 	AI_Output(self,other,"DIA_Taliasan_FineFood_Done_01_04");	//(nedbale) Děkuji.
 	CreateInvItems(hero,ItSc_HarmUndead,1);
 	MIS_TaliasanFineFood = LOG_Success;
 	Log_SetTopicStatus(TOPIC_TaliasanFineFood,LOG_Success);
-	B_LogEntry(TOPIC_TaliasanFineFood,"Přinesl jsem žranici Gallahadovi. To vykračující si to krůtí mi málem ani nepoděkovalo... Není tedy divu, že ho nemá nikdo rád.");
+	B_LogEntry(TOPIC_TaliasanFineFood,"Přinesl jsem žranici Gallahadovi. Ten nafoukaný krocan v hábitu mi ani nepoděkoval... Není tedy divu, že ho nemá nikdo rád.");
 	AI_StopProcessInfos(self);
 };
 
@@ -408,11 +408,11 @@ func int dia_taliasan_letterfromfernando_condition()
 
 func void dia_taliasan_letterfromfernando_info()
 {
-	AI_Output(other,self,"DIA_Taliasan_LetterFromFernando_01_00");	//Mám dopis s doporučením od Fernarda.
+	AI_Output(other,self,"DIA_Taliasan_LetterFromFernando_01_00");	//Mám dopis s doporučením od Fernanda.
 	if(Fernando_ImKnast == FALSE)
 	{
 		B_GivePlayerXP(150);
-		AI_Output(self,other,"DIA_Taliasan_LetterFromFernando_01_01");	//Nech mě podívat se nato... (se zájmem.)
+		AI_Output(self,other,"DIA_Taliasan_LetterFromFernando_01_01");	//Nech mě podívat se nato... (se zájmem)
 		B_GiveInvItems(other,self,itwr_fernandoletter,1);
 		Npc_RemoveInvItems(self,itwr_fernandoletter,1);
 		B_UseFakeScroll();
@@ -437,15 +437,15 @@ func void dia_taliasan_letterfromfernando_info()
 	}
 	else if((Fernando_ImKnast == TRUE) && (RECOMENDLETTER == 3))
 	{
-		AI_Output(self,other,"DIA_Taliasan_LetterFromFernando_01_10");	//A co já z toho?... (vztekle) Celé město už dávno ví, že Fernardo prodával zbraně banditům! Na co mi neseš dopis od něj?!
+		AI_Output(self,other,"DIA_Taliasan_LetterFromFernando_01_10");	//A co já z toho?... (vztekle) Celé město už dávno ví, že Fernando prodával zbraně banditům! Na co mi neseš dopis od něj?!
 		AI_Output(self,other,"DIA_Taliasan_LetterFromFernando_01_12");	//I když... Vzhledem k tomu, že při řešení trestné činnosti - měl ještě stále velký vliv tak budiž.
-		AI_Output(self,other,"DIA_Taliasan_LetterFromFernando_01_04");	//Myslím, že ty dopisy, které jsi mi přinesl by měli stačit na to aby zapůsobyli na Lariuse.
+		AI_Output(self,other,"DIA_Taliasan_LetterFromFernando_01_04");	//Myslím, že ty dopisy, které jsi mi přinesl by měli stačit na to aby zapůsobili na Lariuse.
 		TALIASANHELP_STEP1 = TRUE;
 		B_LogEntry(TOPIC_TALIASANHELP,"Gallahad nechtěl dopis od Fernanda. Asi proto, že je momentálně zavřený.");
 	}
 	else
 	{
-		AI_Output(self,other,"DIA_Taliasan_LetterFromFernando_01_10");	//Na co mi to?... (vztekle) Celé město už dávno ví, že Fernardo prodával zbraně banditům! Na co mi neseš dopis od něj?!
+		AI_Output(self,other,"DIA_Taliasan_LetterFromFernando_01_10");	//Na co mi to?... (vztekle) Celé město už dávno ví, že Fernando prodával zbraně banditům! Na co mi neseš dopis od něj?!
 		AI_Output(self,other,"DIA_Taliasan_LetterFromFernando_01_11");	//Je mi to úplně k ničemu.
 		B_LogEntry(TOPIC_TALIASANHELP,"Gallahad nechtěl převzít dopis od Fernanda protože si myslí že je v nynější situaci bezhodnotný.");
 	};
@@ -474,7 +474,7 @@ func int dia_taliasan_letterfromlutero_condition()
 func void dia_taliasan_letterfromlutero_info()
 {
 	B_GivePlayerXP(150);
-	AI_Output(other,self,"DIA_Taliasan_LetterFromLutero_01_00");	//Tady ti nesu dopis od obchodníka Lutera!
+	AI_Output(other,self,"DIA_Taliasan_LetterFromLutero_01_00");	//Tady ti nesu dopis od obchodníka Lutera.
 	B_GiveInvItems(other,self,itwr_luteroletter,1);
 	Npc_RemoveInvItems(self,itwr_luteroletter,1);
 	B_UseFakeScroll();
@@ -531,7 +531,7 @@ func void dia_taliasan_letterfromgerbrant_info()
 	B_LogEntry(TOPIC_TALIASANHELP,"Dal jsem Gallahadovi dopis od Gerbrandta. Byl velmi překvapený, že se mi ho od něj podařilo získat!");
 	if(RECOMENDLETTER >= 4)
 	{
-		AI_Output(self,other,"DIA_Taliasan_LetterFromGerbrant_01_05");	//Myslím, že tyhle dopisy, co jsem ti donesl budou stačit na to aby zapůsobyli na Lariuse.
+		AI_Output(self,other,"DIA_Taliasan_LetterFromGerbrant_01_05");	//Myslím, že tyhle dopisy, co jsem ti donesl budou stačit na to aby zapůsobili na Lariuse.
 		TALIASANHELP_STEP1 = TRUE;
 	}
 	else if(RECOMENDLETTER >= 3)
@@ -541,7 +541,7 @@ func void dia_taliasan_letterfromgerbrant_info()
 	}
 	else if(RECOMENDLETTER >= 1)
 	{
-		AI_Output(self,other,"DIA_Taliasan_LetterFromGerbrant_01_09");	///Potřebuji ještě další doporučující dopisy!
+		AI_Output(self,other,"DIA_Taliasan_LetterFromGerbrant_01_09");	//Potřebuji ještě další doporučující dopisy!
 		AI_Output(self,other,"DIA_Taliasan_LetterFromGerbrant_01_10");	//Nakonec, ještě pár bys jich sehnat mohl.
 	};
 };
@@ -568,7 +568,7 @@ func void dia_taliasan_letterfromsalandril_info()
 {
 	B_GivePlayerXP(50);
 	AI_Output(other,self,"DIA_Taliasan_LetterFromSalandril_01_00");	//Alchymista Salandril pro tebe napsal doporučení.
-	AI_Output(self,other,"DIA_Taliasan_LetterFromSalandril_01_01");	//Salandril?!... Hmmm, S jeho hlasem jsem nepočítal. Nech mě podívat se.
+	AI_Output(self,other,"DIA_Taliasan_LetterFromSalandril_01_01");	//Salandril?!... Hmmm, s jeho hlasem jsem nepočítal. Nech mě podívat se.
 	B_GiveInvItems(other,self,itwr_salandrilletter,1);
 	Npc_RemoveInvItems(self,itwr_salandrilletter,1);
 	B_UseFakeScroll();
@@ -579,7 +579,7 @@ func void dia_taliasan_letterfromsalandril_info()
 
 	if(RECOMENDLETTER >= 4)
 	{
-		AI_Output(self,other,"DIA_Taliasan_LetterFromSalandril_01_05");	//Myslím, že tyhle dopisy, co jsem ti donesl budou stačit na to aby zapůsobyli na Lariuse.
+		AI_Output(self,other,"DIA_Taliasan_LetterFromSalandril_01_05");	//Myslím, že tyhle dopisy, co jsem ti donesl budou stačit na to aby zapůsobili na Lariuse.
 		TALIASANHELP_STEP1 = TRUE;
 	}
 	else if(RECOMENDLETTER >= 3)
@@ -619,7 +619,7 @@ func void dia_taliasan_letterfromvalentino_info()
 	AI_Output(other,self,"DIA_Taliasan_LetterFromValentino_01_00");	//Mám pro tebe doporučení od Valentina.
 	AI_Output(self,other,"DIA_Taliasan_LetterFromValentino_01_01");	//COŽE? Od toho tupého idiota?
 	AI_Output(self,other,"DIA_Taliasan_LetterFromValentino_01_03");	//Jeho názor ve městě nemá cenu ani červivého jablka! Toto není dar...
-	AI_Output(self,other,"DIA_Taliasan_LetterFromValentino_01_04");	//Nech si to, pro mě je tento kus papíru bezcený!
+	AI_Output(self,other,"DIA_Taliasan_LetterFromValentino_01_04");	//Nech si to, pro mě je tento kus papíru bezcenný!
 	B_LogEntry(TOPIC_TALIASANHELP,"Gallahad nechtěl dopis od Valentina. Zdá se, že jeho názor nikoho ve městě ani trochu nezajímá.");
 };
 
@@ -684,7 +684,7 @@ func void dia_taliasan_sendtolarius_info()
 	AI_Output(self,other,"DIA_Taliasan_SendToLarius_01_12");	//Většina jeho rozhodnutí závisí na jeho momentální náladě.
 	AI_Output(self,other,"DIA_Taliasan_SendToLarius_01_14");	//Jestli si to dobře pamatuju, tak by bylo nejlepší mu ji donést o jeho odpolední přestávce.
 	AI_Output(self,other,"DIA_Taliasan_SendToLarius_01_15");	//Dobře si to pamatuj. Teď běž!
-	B_LogEntry(TOPIC_TALIASANHELP,"Teď mě Gallahad požádal, abych zanesl dopisy Lariusovi. Musím ho přesvědčit, aby Gallahadovi odpustil. Mám si stím promluvit o jeho polední pauze. Je prý velmi náladový.");
+	B_LogEntry(TOPIC_TALIASANHELP,"Teď mě Gallahad požádal, abych zanesl dopisy Lariusovi. Musím ho přesvědčit, aby Gallahadovi odpustil. Mám si s tím promluvit o jeho polední pauze. Je prý velmi náladový.");
 	AI_StopProcessInfos(self);
 	B_StartOtherRoutine(VLK_400_Larius,"Dinner");
 };
@@ -713,7 +713,7 @@ func void dia_taliasan_stolenbook_info()
 {
 	AI_Output(self,other,"DIA_Taliasan_StolenBook_00");	//Nešahej na to!
 	AI_Output(self,other,"DIA_Taliasan_StolenBook_01");	//Na této polici jsou mé osobní knihy, tak si ani nemysli, že bys mi některou vzal!
-	AI_Output(self,other,"DIA_Taliasan_StolenBook_02");	///Pokud bude chybět jedna jediná kniha, budu vědět, za kým mám jít!
+	AI_Output(self,other,"DIA_Taliasan_StolenBook_02");	//Pokud bude chybět jedna jediná kniha, budu vědět, za kým mám jít!
 	B_GiveInvItems(other,self,itwr_rhetorikbook,1);
 	Npc_RemoveInvItems(self,itwr_rhetorikbook,1);
 	Wld_InsertItem(itwr_rhetorikbook,"FP_ITEM_TALIASANBOOK");
@@ -771,7 +771,7 @@ func int dia_taliasan_needbook_condition()
 
 func void dia_taliasan_needbook_info()
 {
-	AI_Output(other,self,"DIA_Taliasan_NeedBook_01_00");	//Gallahade, je tu jedna kniha, potřebuji ji pro Fernarda. Napíše dopis jen když mu dám tu knihu.
+	AI_Output(other,self,"DIA_Taliasan_NeedBook_01_00");	//Gallahade, je tu jedna kniha, potřebuji ji pro Fernanda. Napíše dopis jen když mu dám tu knihu.
 	AI_Output(self,other,"DIA_Taliasan_NeedBook_01_01");	//Ha! Takže ji pořád potřebuje.
 	AI_Output(self,other,"DIA_Taliasan_NeedBook_01_06");	//Najdi jiný způsob jak od něj dostat dopis!
 	B_LogEntry(TOPIC_FERNANDOHELP,"Gallahad mě nenechá vzít si tu knihu a je natolik podezřívavý, že mě ani nenechá přiblížit se k jeho poličce s knihami.");
@@ -786,7 +786,7 @@ instance DIA_TALIASAN_IGNAZHELP(C_Info)
 	condition = dia_taliasan_ignazhelp_condition;
 	information = dia_taliasan_ignazhelp_info;
 	permanent = FALSE;
-	description = "Ignaz mě požádal abych ti něco připomněl...";
+	description = "Ignaz mě požádal abych ti něco připomněl.";
 };
 
 
@@ -803,13 +803,13 @@ func void dia_taliasan_ignazhelp_info()
 	B_GivePlayerXP(50);
 	AI_Output(other,self,"DIA_Taliasan_IgnazHelp_01_00");	//Ignaz mě požádal abych ti něco připomněl.
 	AI_Output(other,self,"DIA_Taliasan_IgnazHelp_01_02");	//Mám ti připomenout, že jsi mu slíbil nové rostliny na jeho experimenty.
-	AI_Output(self,other,"DIA_Taliasan_IgnazHelp_01_03");	//Ach ano! poslední dobou mám tak moc práce, že jsem na něj úplně zapomněl.
+	AI_Output(self,other,"DIA_Taliasan_IgnazHelp_01_03");	//Ach ano! Poslední dobou mám tak moc práce, že jsem na něj úplně zapomněl.
 	TALIASANAWAY = TRUE;
 	self.guild = GIL_NONE;
 	Npc_SetTrueGuild(self,GIL_NONE);
 	Npc_ExchangeRoutine(self,"GoIgnaz");
 	Log_SetTopicStatus(TOPIC_IGNAZHELP,LOG_SUCCESS);
-	B_LogEntry(TOPIC_FERNANDOHELP,"Gallahad odešel na setkáním s Ignazem. Tento okamžik musím využít!");
+	B_LogEntry(TOPIC_FERNANDOHELP,"Gallahad odešel na setkání s Ignazem. Tento okamžik musím využít!");
 	MIS_IGNAZHELP = LOG_SUCCESS;
 	AI_StopProcessInfos(self);
 };
@@ -852,7 +852,7 @@ func void dia_taliasan_cancelhelp_info()
 {
 	AI_Output(self,other,"DIA_Taliasan_CancelHelp_01_00");	//Počkej minutku...
 	AI_Output(self,other,"DIA_Taliasan_CancelHelp_01_02");	//Ve městě se o tobě začínají šířit pověsti. A ne zrovna nejlepší!
-	AI_Output(self,other,"DIA_Taliasan_CancelHelp_01_03");	//Slyšel jsem, že ses nějak pohádal s vlivnými lidmi s horní čtvrti, jejichž pomoc potřebujeme.
+	AI_Output(self,other,"DIA_Taliasan_CancelHelp_01_03");	//Slyšel jsem, že ses nějak pohádal s vlivnými lidmi z horní čtvrti, jejichž pomoc potřebujeme.
 	AI_Output(self,other,"DIA_Taliasan_CancelHelp_01_06");	//Počítal jsem s jejich pomocí, ale teď na ni můžu rovnou zapomenout.
 	AI_Output(self,other,"DIA_Taliasan_CancelHelp_01_07");	//Můžeš zapomenout na to o co jsem tě žádal.
 	AI_Output(self,other,"DIA_Taliasan_CancelHelp_01_14");	//Kliď se mi z očí, idiote!
@@ -1142,7 +1142,7 @@ func void dia_taliasan_givemegiftnow_mana()
 func void dia_taliasan_givemegiftnow_magic()
 {
 	AI_Output(other,self,"DIA_Taliasan_GiveMeGiftNow_Magic_01_00");	//Nauč mě používat magii.
-	AI_Output(self,other,"DIA_Taliasan_GiveMeGiftNow_Magic_01_01");	//Vybral sis nejcenější odměnu!
+	AI_Output(self,other,"DIA_Taliasan_GiveMeGiftNow_Magic_01_01");	//Vybral sis nejcennější odměnu!
 	AI_Output(self,other,"DIA_Taliasan_GiveMeGiftNow_Magic_01_03");	//Nicméně, nemohu tě naučit magii Ohně či Vody. A na umění nekromancie rovnou zapomeň!
 	AI_Output(self,other,"DIA_Taliasan_GiveMeGiftNow_Magic_01_04");	//Tyto schopnosti jsou přístupné pouze následovníkům svých bohů, kteří jim propůjčili znalosti.
 	AI_Output(self,other,"DIA_Taliasan_GiveMeGiftNow_Magic_01_05");	//To, co tě naučím já je pravá magie!
@@ -1373,7 +1373,7 @@ instance DIA_TALIASAN_TEACH_MANA(C_Info)
 	condition = dia_taliasan_teach_mana_condition;
 	information = dia_taliasan_teach_mana_info;
 	permanent = TRUE;
-	description = "Přál bych si zvýšit svou magickou sílu.";
+	description = "Přál bych si zvýšit svou magickou energii.";
 };
 
 func int dia_taliasan_teach_mana_condition()
@@ -1632,7 +1632,7 @@ func void dia_taliasan_bookseekxardas_info()
 {
 	B_GivePlayerXP(50);
 	AI_Output(other,self,"DIA_Taliasan_BookSeekXardas_01_01");	//Hledám jednu vzácnou knihu.
-	AI_Output(other,self,"DIA_Taliasan_BookSeekXardas_01_03");	//Vypadá to,že se jmenuje 'Marná cesta'. Slyšel jsi o ní?
+	AI_Output(other,self,"DIA_Taliasan_BookSeekXardas_01_03");	//Vypadá to, že se jmenuje 'Marná cesta'. Slyšel jsi o ní?
 	AI_Output(self,other,"DIA_Taliasan_BookSeekXardas_01_05");	//Řekni mi, proč se o ni zajímáš?
 	Info_ClearChoices(dia_taliasan_bookseekxardas);
 	Info_AddChoice(dia_taliasan_bookseekxardas,"Xardas ji potřebuje.",dia_taliasan_bookseekxardas_xardas);
@@ -1660,11 +1660,11 @@ func void dia_taliasan_bookseekxardas_nothng()
 		AI_Output(self,other,"DIA_Taliasan_BookSeekXardas_Nothng_01_02");	//Ano? Kdo by to byl řekl... (udiveně)
 		AI_Output(other,self,"DIA_Taliasan_BookSeekXardas_Nothng_01_03");	//Dal bys mi tu knihu?
 		AI_Output(self,other,"DIA_Taliasan_BookSeekXardas_Nothng_01_05");	//Kdysi jsem měl jednu kopii...
-		AI_Output(self,other,"DIA_Taliasan_BookSeekXardas_Nothng_01_09");	//Jenže ty (zhrozen) žádáš příliš!
-		AI_Output(other,self,"DIA_Taliasan_BookSeekXardas_Nothng_01_12");	//Možná bych mohl udělat něco, co by vám vykouzlilo úsměv.
+		AI_Output(self,other,"DIA_Taliasan_BookSeekXardas_Nothng_01_09");	//Jenže ty žádáš příliš! (zhrozen)
+		AI_Output(other,self,"DIA_Taliasan_BookSeekXardas_Nothng_01_12");	//Možná bych mohl udělat něco, co by ti vykouzlilo úsměv.
 		AI_Output(self,other,"DIA_Taliasan_BookSeekXardas_Nothng_01_15");	//(přemýšlí) Pomohl jsi mi s Lariusem... A souhlasím, ale pouze výměnou za stejně cennou věc.
 		AI_Output(other,self,"DIA_Taliasan_BookSeekXardas_Nothng_01_16");	//Zajímá tě něco speciálního?
-		AI_Output(self,other,"DIA_Taliasan_BookSeekXardas_Nothng_01_18");	//Dones mi co chceš-elixír, rostlinu, svitek... Ale musí být cenný!
+		AI_Output(self,other,"DIA_Taliasan_BookSeekXardas_Nothng_01_18");	//Dones mi co chceš - elixír, rostlinu, svitek... Ale musí to být cenný předmět!
 		AI_Output(other,self,"DIA_Taliasan_BookSeekXardas_Nothng_01_19");	//Budu o tom přemýšlet.
 		B_LogEntry(TOPIC_XARDASNDMTASKSTWO,"Gallahad souhlasí s tím, že mi dá tuto knihu, ale jen pokud mu za to dám nějakou jinou cennou věc. Řekl, že to může být cokoliv - elixír, rostlina, či svitek. Hlavně to musí být dostatečně vzácné.");
 		XARDASBRIGBOOKSPECIAL = TRUE;
@@ -1729,7 +1729,7 @@ instance DIA_TALIASAN_BOOKSEEKXARDASGIFT(C_Info)
 	condition = dia_taliasan_bookseekxardasgift_condition;
 	information = dia_taliasan_bookseekxardasgift_info;
 	permanent = TRUE;
-	description = "O cenných věcech pro tebe...";
+	description = "O vzácném předmětu, který tě zajímá...";
 };
 
 
@@ -1743,7 +1743,7 @@ func int dia_taliasan_bookseekxardasgift_condition()
 
 func void dia_taliasan_bookseekxardasgift_info()
 {
-	AI_Output(other,self,"DIA_Taliasan_BookSeekXardasGift_01_00");	//O zajímavých věcích pro tebe...
+	AI_Output(other,self,"DIA_Taliasan_BookSeekXardasGift_01_00");	//O vzácném předmětu, který tě zajímá...
 	AI_Output(self,other,"DIA_Taliasan_BookSeekXardasGift_01_01");	//Ano?!... (se zájmem) Ty máš něco co by mě mohlo zajímat?
 	Info_ClearChoices(dia_taliasan_bookseekxardasgift);
 	if(Npc_HasItems(other,ItPo_Perm_STR) >= 1)
@@ -2182,7 +2182,7 @@ func void DIA_Taliasan_BuyBooks_info()
 	AI_Output(other,self,"DIA_Taliasan_BuyBooks_01_01");	//Zajímáš se o vzácné knihy?
 	AI_Output(self,other,"DIA_Taliasan_BuyBooks_01_02");	//Jistě. (důležitě) To je jedna z mála věcí o nichž mám opravdu velký zájem.
 	AI_Output(self,other,"DIA_Taliasan_BuyBooks_01_03");	//Nějaká moudra se nedají koupit a to i za všechno zlato na světě. 
-	AI_Output(other,self,"DIA_Taliasan_BuyBooks_01_04");	//Co bych dostal kdybych vám nějaké přinesl?
+	AI_Output(other,self,"DIA_Taliasan_BuyBooks_01_04");	//Co bych dostal kdybych ti nějaké přinesl?
 	AI_Output(self,other,"DIA_Taliasan_BuyBooks_01_05");	//Hmmm... Pěněz teď trochu mám ale stejně se mi platit nechce.
 
 	if((hero.guild == GIL_KDF) || (hero.guild == GIL_GUR) || (hero.guild == GIL_KDW) || (hero.guild == GIL_KDM))
@@ -2426,7 +2426,7 @@ func void DIA_Taliasan_BuyBooks_Done_info()
 	if(BookTalCount >= 1)
 	{
 		AI_Output(self,other,"DIA_Taliasan_BuyBooks_Done_01_05");	//Zdá se, že jsou tam opravdu některé velmi zajímavé věci!
-		AI_Output(self,other,"DIA_Taliasan_BuyBooks_Done_01_06");	//Myslím že si je vezmu všechny, nebudeš je potřebovat?
+		AI_Output(self,other,"DIA_Taliasan_BuyBooks_Done_01_06");	//Myslím, že si je vezmu všechny, nebudeš je potřebovat?
 		Info_ClearChoices(DIA_Taliasan_BuyBooks_Done);
 		Info_AddChoice(DIA_Taliasan_BuyBooks_Done,"Jen si je vem.",DIA_Taliasan_BuyBooks_Done_Yes);
 		Info_AddChoice(DIA_Taliasan_BuyBooks_Done,"Budu o tom přemýšlet.",DIA_Taliasan_BuyBooks_Done_No);
@@ -2783,8 +2783,8 @@ func void DIA_Taliasan_BuyBooks_Done_Yes()
 		B_RaiseAttribute_Bonus(hero,ATR_MANA_MAX,BookTalCount);
 		Npc_ChangeAttribute(hero,ATR_MANA,BookTalCount);
 		B_GiveInvItemsManyThings(other,self);
-		AI_Output(other,self,"DIA_Taliasan_BuyBooks_Done_Yes_01_01");	//Ano, vezmu si je.
-		AI_Output(self,other,"DIA_Taliasan_BuyBooks_Done_Yes_01_02");	//Nu, dobře. Já bych teď chtěl jak mi bylo slíbeno, zvýšit své magické schopnosti.
+		AI_Output(other,self,"DIA_Taliasan_BuyBooks_Done_Yes_01_01");	//Ano, vezmi si je.
+		AI_Output(self,other,"DIA_Taliasan_BuyBooks_Done_Yes_01_02");	//Dobře. A já na oplátku, jak jsem slíbil, zvýším tvé magické schopnosti.
 	}
 	else
 	{
@@ -2792,8 +2792,8 @@ func void DIA_Taliasan_BuyBooks_Done_Yes()
 		B_RaiseAttribute(hero,ATR_HITPOINTS_MAX,BookTalCount);
 		Npc_ChangeAttribute(hero,ATR_HITPOINTS,BookTalCount);
 		B_GiveInvItemsManyThings(other,self);
-		AI_Output(other,self,"DIA_Taliasan_BuyBooks_Done_Yes_01_05");	//Ano, vezmu si je.
-		AI_Output(self,other,"DIA_Taliasan_BuyBooks_Done_Yes_01_06");	//Nu, dobře. Já bych teď chtěl jak mi bylo slíbeno, zvýšit svoje zdraví.
+		AI_Output(other,self,"DIA_Taliasan_BuyBooks_Done_Yes_01_05");	//Ano, vezmi si je.
+		AI_Output(self,other,"DIA_Taliasan_BuyBooks_Done_Yes_01_06");	//Dobře. A já na oplátku, jak jsem slíbil, zvýším tvou životní energii.
 	};
 
 	Info_ClearChoices(DIA_Taliasan_BuyBooks_Done);
@@ -2801,8 +2801,8 @@ func void DIA_Taliasan_BuyBooks_Done_Yes()
 
 func void DIA_Taliasan_BuyBooks_Done_No()
 {
-	AI_Output(other,self,"DIA_Taliasan_BuyBooks_Done_No_01_01");	//Musím se zamyslet.
-	AI_Output(self,other,"DIA_Taliasan_BuyBooks_Done_No_01_02");	//Samozřejmě. Ale aby vás s toho nebolela hlava.
+	AI_Output(other,self,"DIA_Taliasan_BuyBooks_Done_No_01_01");	//Musím si to promyslet.
+	AI_Output(self,other,"DIA_Taliasan_BuyBooks_Done_No_01_02");	//Samozřejmě. Ale aby tě z toho nebolela hlava.
 	Info_ClearChoices(DIA_Taliasan_BuyBooks_Done);
 };
 
@@ -2813,7 +2813,7 @@ instance DIA_Taliasan_TestCanone(C_Info)
 	condition = DIA_Taliasan_TestCanone_condition;
 	information = DIA_Taliasan_TestCanone_info;
 	permanent = FALSE;
-	description = "Nemáte pro mě ještě nějakou práci?";
+	description = "Nemáš pro mě ještě nějakou práci?";
 };
 
 func int DIA_Taliasan_TestCanone_condition()
@@ -2830,10 +2830,10 @@ func int DIA_Taliasan_TestCanone_condition()
 
 func void DIA_Taliasan_TestCanone_info()
 {
-	AI_Output(other,self,"DIA_Taliasan_TestCanone_01_00");	//Nemáte pro mě ještě nějakou práci?
+	AI_Output(other,self,"DIA_Taliasan_TestCanone_01_00");	//Nemáš pro mě ještě nějakou práci?
 	AI_Output(self,other,"DIA_Taliasan_TestCanone_01_01");	//Ano. Dobře, jsem rád, že ses zeptal.
-	AI_Output(self,other,"DIA_Taliasan_TestCanone_01_02");	//Mám teď jeden velmi důležitý obchod, ve které by se mě hodila tvoje pomoc.
-	AI_Output(self,other,"DIA_Taliasan_TestCanone_01_04");	//Před pár dny lord Hagen zadal úkol místním alchimistům, na výrobu magického prášku potřebného ke střelbě z děl.
+	AI_Output(self,other,"DIA_Taliasan_TestCanone_01_02");	//Mám teď jednu velmi důležitou záležitost, ve které by se mě hodila tvoje pomoc.
+	AI_Output(self,other,"DIA_Taliasan_TestCanone_01_04");	//Před pár dny lord Hagen zadal úkol místním alchymistům vyrobit magický prášek potřebný ke střelbě z děl.
 	AI_Output(self,other,"DIA_Taliasan_TestCanone_01_05");	//Zásoby paladinů se pomalu tenčí a situace se skřety je čím dál tím horší.
 	AI_Output(self,other,"DIA_Taliasan_TestCanone_01_06");	//Ale problém je v tom, že nikdo z místních mistrů nikdy s ničím takovým nepracoval.
 	AI_Output(self,other,"DIA_Taliasan_TestCanone_01_07");	//Jednoduše, nikdo z nich neví jak na to.
@@ -2885,7 +2885,7 @@ func void DIA_Taliasan_TestCanone_Done_info()
 	AI_Output(self,other,"DIA_Taliasan_TestCanone_Done_01_01");	//(se zájmem) Ano?
 	AI_Output(other,self,"DIA_Taliasan_TestCanone_Done_01_02");	//Je zřejmé, že funguje.
 	AI_Output(self,other,"DIA_Taliasan_TestCanone_Done_01_03");	//Dalo by se s jeho pomocí střílet z děla?
-	AI_Output(other,self,"DIA_Taliasan_TestCanone_Done_01_04");	//Samozřejmě. vybuchnul tak, že mě uši zalehli.
+	AI_Output(other,self,"DIA_Taliasan_TestCanone_Done_01_04");	//Samozřejmě. Vybuchnul tak, že mě uši zalehli.
 	AI_Output(self,other,"DIA_Taliasan_TestCanone_Done_01_05");	//To je dobrá zpráva, nyní ho můžu nabídnout i lordu Hagenovi.
 	AI_Output(self,other,"DIA_Taliasan_TestCanone_Done_01_06");	//Tady je tvoje odměna.
 	B_GiveInvItems(self,other,ItMi_Gold,500);
