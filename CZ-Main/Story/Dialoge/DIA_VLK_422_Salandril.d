@@ -446,13 +446,13 @@ func void dia_salandril_taliasanletter_info()
 	AI_Output(self,other,"DIA_Salandril_TaliasanLetter_01_33");	//Údajně tento lektvar skřeti používají ke zvýšení síly a vytrvalosti.
 	AI_Output(self,other,"DIA_Salandril_TaliasanLetter_01_34");	//Takže se k němu dostaneš asi jen u skřeta...
 	AI_Output(other,self,"DIA_Salandril_TaliasanLetter_01_38");	//No dobrá, zkusím ho získat.
-	AI_Output(self,other,"DIA_Salandril_TaliasanLetter_01_39");	//Slyšel jsem, že jeden lovec nedávno viděl skřeta za jižní bránou.
+	AI_Output(self,other,"DIA_Salandril_TaliasanLetter_01_39");	//Slyšel jsem od zdejšího lovce, že kousek od města byl spatřen nějaký skřet. Vypadá to, že na tom místě byla jeskyně.
 	AI_Output(self,other,"DIA_Salandril_TaliasanLetter_01_40");	//Možná tam něco najdeš.
 	Wld_InsertNpc(orcwarrior_salandril,"NW_CITY_SMFOREST_03_M");
 	MIS_SALANDRILHELP = LOG_Running;
 	Log_CreateTopic(TOPIC_SALANDRILHELP,LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_SALANDRILHELP,LOG_Running);
-	B_LogEntry(TOPIC_SALANDRILHELP,"Salandril mi napíše doporučující dopis pro Gallahada, když mu přinesu skřetí lektvar. V blízkosti jižní brány města byl viděn skřet.");
+	B_LogEntry(TOPIC_SALANDRILHELP,"Salandril mi napíše doporučující dopis pro Gallahada, když mu přinesu skřetí lektvar. V blízkosti východní brány města byl viděn skřet.");
 	AI_StopProcessInfos(self);
 };
 
