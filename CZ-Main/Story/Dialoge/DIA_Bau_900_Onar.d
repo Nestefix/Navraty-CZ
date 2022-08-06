@@ -619,7 +619,7 @@ func void DIA_Onar_CollectGold_Info()
 
 	if(other.guild == GIL_DJG)
 	{
-		AI_Output(self,other,"DIA_Onar_CollectGold_14_01");	///Platím žoldákům, ne drakobijcům.
+		AI_Output(self,other,"DIA_Onar_CollectGold_14_01");	//Platím žoldákům, ne drakobijcům.
 		OnarPissOffGold = TRUE;
 	}
 	else if(Torlof_TheOtherMission_TooLate == TRUE)
