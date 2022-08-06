@@ -792,7 +792,7 @@ func void DIA_Bosper_BogenSuccess_Info()
 	{
 		AI_Output(self,other,"DIA_Bosper_BogenSuccess_11_06");	//Protože jsi mi pomohl dostat můj luk a jsi můj učedník...
 		AI_Output(self,other,"DIA_Bosper_BogenSuccess_11_07");	//... Pak ti kromě šípů a šipek prodám docela dobré luky.
-		AI_Output(self,other,"DIA_Bosper_BogenSuccess_11_08");	///Samozřejmě, nejsou nic extra, ale jsou vhodné pro lov.
+		AI_Output(self,other,"DIA_Bosper_BogenSuccess_11_08");	//Samozřejmě, nejsou nic extra, ale jsou vhodné pro lov.
 		BosperTradeBows = TRUE;
 	};
 };

@@ -484,7 +484,7 @@ func void DIA_Baltram_HaveYourWarez_Info()
 	};
 	if((BaltramEnoughBacon == TRUE) && (BaltramEnoughWine == TRUE))
 	{
-		AI_Output(self,other,"DIA_Baltram_HaveYourWarez_01_04");	///Hmm, není to sice nejlepší kvalita, ale v těchto dobách nemůžeš být moc vybíravý.
+		AI_Output(self,other,"DIA_Baltram_HaveYourWarez_01_04");	//Hmm, není to sice nejlepší kvalita, ale v těchto dobách nemůžeš být moc vybíravý.
 		B_GiveInvItems(other,self,ItFo_Bacon,10);
 		B_GiveInvItems(other,self,ItFo_Wine,10);
 		MIS_BaltramTradeAgain = LOG_SUCCESS;
