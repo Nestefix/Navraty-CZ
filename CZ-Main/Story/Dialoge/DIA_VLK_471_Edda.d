@@ -581,7 +581,7 @@ func void DIA_EDDA_UHA_SBORNAY_Done_info()
 	}
 	else
 	{
-		AI_Output(self,other,"DIA_EDDA_UHA_SBORNAY_Done_01_11");	///Nyní už je pozdě! Přijď zítra.
+		AI_Output(self,other,"DIA_EDDA_UHA_SBORNAY_Done_01_11");	//Nyní už je pozdě! Přijď zítra.
 		AI_StopProcessInfos(self);
 	};
 };
