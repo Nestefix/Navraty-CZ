@@ -450,7 +450,7 @@ func void dia_carl_armorcanteach_info()
 	}
 	else
 	{
-		AI_Output(self,other,"DIA_Carl_ArmorCanTeach_01_13");	///A zřejmě nemáš ani tucha, co to je.
+		AI_Output(self,other,"DIA_Carl_ArmorCanTeach_01_13");	//A zřejmě nemáš ani tucha, co to je.
 		AI_Output(self,other,"DIA_Carl_ArmorCanTeach_01_14");	//Rád tě naučím vše co vím.
 	};
 
