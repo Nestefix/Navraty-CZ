@@ -359,7 +359,7 @@ func void DIA_TALIASAN_FineFood_Done_info()
 	CreateInvItems(hero,ItSc_HarmUndead,1);
 	MIS_TaliasanFineFood = LOG_Success;
 	Log_SetTopicStatus(TOPIC_TaliasanFineFood,LOG_Success);
-	B_LogEntry(TOPIC_TaliasanFineFood,"Přinesl jsem žranici Gallahadovi. Ten nafoukaný krocan v hábitu mi ani nepoděkoval... Není tedy divu, že ho nemá nikdo rád.");
+	B_LogEntry(TOPIC_TaliasanFineFood,"Přinesl jsem žranici Gallahadovi. Ten nafoukaný krocan v hábitu mi málem ani nepoděkoval... Není tedy divu, že ho nemá nikdo rád.");
 	AI_StopProcessInfos(self);
 };
 
