@@ -54,7 +54,7 @@ instance BDT_1460_Nestor(Npc_Default)
 	EquipItem(self,ItRw_Sld_Bow);
 	CreateInvItems(self,ItRw_Arrow,10);
 	CreateInvItems(self,ItKe_HanibalKey,1);
-	B_SetNpcVisual(self,MALE,"Hum_Head_Bald",Face_B_Tough_Silas,BodyTex_N,ITAR_BDT_V);
+	B_SetNpcVisual(self,MALE,"Hum_Head_Bald",Face_B_Tough_Silas,BodyTex_B,ITAR_BDT_V);
 	Mdl_SetModelFatness(self,-1);
 	Mdl_ApplyOverlayMds(self,"Humans_Relaxed.mds");
 	B_GiveNpcTalents(self);
