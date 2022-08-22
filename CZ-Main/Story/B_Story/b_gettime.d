@@ -15495,11 +15495,11 @@ func void RefreshStatusMenuData()
 	};
 	if(ORCMINEKILL_01 == TRUE)
 	{
-		sStatusHeroic_21 = "- Irh'Tar, ruka Chaosu";
+		sStatusHeroic_21 = "- Irh'Tar, Ruka Chaosu";
 	};
 	if(DemonPsicampIsDead == TRUE)
 	{
-		sStatusHeroic_22 = "- Morag'Bar, ruka Chaosu";
+		sStatusHeroic_22 = "- Morag'Bar, Ruka Chaosu";
 	};
 	if(ALLGUARDIANSNOLEADERISDEAD == TRUE)
 	{
