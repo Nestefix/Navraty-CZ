@@ -10,7 +10,7 @@ instance VLK_4200_Buergerin(Npc_Default)
 	B_SetAttributesToChapter(self,1);
 	fight_tactic = FAI_HUMAN_COWARD;
 	B_CreateAmbientInv(self);
-	B_SetNpcVisual(self,FEMALE,"Hum_Head_Babe0",FaceBabe_N_Lilo,BodyTex_N,ITAR_VlkBabe_H);
+	B_SetNpcVisual(self,FEMALE,"Hum_Head_Babe0",FaceBabe_N_Lilo,BodyTexBabe_N,ITAR_VlkBabe_H);
 	Mdl_SetModelFatness(self,0);
 	Mdl_ApplyOverlayMds(self,"Humans_Tired.mds");
 	B_GiveNpcTalents(self);
