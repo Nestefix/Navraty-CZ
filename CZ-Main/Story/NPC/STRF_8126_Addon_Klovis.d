@@ -11,7 +11,7 @@ instance STRF_8126_Addon_Klovis(Npc_Default)
 	aivar[AIV_NoFightParker] = TRUE;
 	fight_tactic = FAI_HUMAN_COWARD;
 	EquipItem(self,ItMw_StoneHammer);
-	B_SetNpcVisual(self,MALE,"Hum_Head_Bald",Face_P_Gilbert,BodyTex_N,ItAr_OrcMine_Slave);
+	B_SetNpcVisual(self,MALE,"Hum_Head_Bald",Face_P_Gilbert,BodyTex_P,ItAr_OrcMine_Slave);
 	Mdl_SetModelFatness(self,0);
 	Mdl_ApplyOverlayMds(self,"Humans_Tired.mds");
 	B_GiveNpcTalents(self);
