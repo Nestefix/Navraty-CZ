@@ -11,7 +11,7 @@ instance STRF_8119_Addon_Rollan(Npc_Default)
 	aivar[AIV_NoFightParker] = TRUE;
 	EquipItem(self,ItMw_StoneHammer);
 	fight_tactic = FAI_HUMAN_COWARD;
-	B_SetNpcVisual(self,MALE,"Hum_Head_Bald",Face_P_Gilbert,BodyTex_N,ItAr_OrcMine_Slave);
+	B_SetNpcVisual(self,MALE,"Hum_Head_Bald",Face_P_Gilbert,BodyTex_P,ItAr_OrcMine_Slave);
 	Mdl_SetModelFatness(self,0);
 	Mdl_ApplyOverlayMds(self,"Humans_Tired.mds");
 	B_GiveNpcTalents(self);
