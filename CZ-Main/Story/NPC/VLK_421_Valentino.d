@@ -50,6 +50,6 @@ func void Rtn_VatrasAway_421()
 
 func void rtn_PsiCamp_421()
 {
-	TA_Smalltalk(10,0,20,0,"NW_PSICAMP_18");
-	TA_Smoke_Joint(20,0,10,0,"NW_PSICAMP_18");
+	TA_Smoke_Joint(10,0,20,0,"WP_NW_PSICAMP_PATH_X2");
+	TA_Smoke_Joint(20,0,10,0,"WP_NW_PSICAMP_PATH_X2");
 };
