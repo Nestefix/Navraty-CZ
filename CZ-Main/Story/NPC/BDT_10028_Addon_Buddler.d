@@ -11,7 +11,7 @@ instance BDT_10028_Addon_Buddler(Npc_Default)
 	fight_tactic = FAI_HUMAN_NORMAL;
 	B_CreateAmbientInv(self);
 	EquipItem(self,ItMw_1h_Sld_Sword);
-	B_SetNpcVisual(self,MALE,"Hum_Head_Bald",Face_L_ToughBald01,BodyTex_B,ITAR_Prisoner);
+	B_SetNpcVisual(self,MALE,"Hum_Head_Bald",Face_L_ToughBald01,BodyTex_L,ITAR_Prisoner);
 	Mdl_SetModelFatness(self,1);
 	Mdl_ApplyOverlayMds(self,"Humans_Militia.mds");
 	B_GiveNpcTalents(self);
