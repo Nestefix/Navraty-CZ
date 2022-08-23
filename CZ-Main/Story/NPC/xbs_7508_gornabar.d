@@ -17,7 +17,7 @@ instance XBS_7508_GORNABAR(Npc_Default)
 	fight_tactic = FAI_HUMAN_MASTER;
 	EquipItem(self,ItMw_Zweihaender2);
 	B_CreateAmbientInv(self);
-	B_SetNpcVisual(self,MALE,"Hum_Head_Bald",Face_L_Normal_GorNaBar,BodyTex_N,itar_tpl_s);
+	B_SetNpcVisual(self,MALE,"Hum_Head_Bald",Face_L_Normal_GorNaBar,BodyTex_L,itar_tpl_s);
 	Mdl_SetModelFatness(self,0);
 	Mdl_ApplyOverlayMds(self,"Humans_Relaxed.mds");
 	B_GiveNpcTalents(self);
