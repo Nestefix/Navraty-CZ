@@ -12,7 +12,7 @@ instance SEK_8038_BALOR(Npc_Default)
 	fight_tactic = FAI_HUMAN_COWARD;
 	EquipItem(self,ItMw_Streitaxt1);
 	B_CreateAmbientInv(self);
-	B_SetNpcVisual(self,MALE,"Hum_Head_Bald",FACE_N_BALOR,BodyTex_P,itar_slp_l);
+	B_SetNpcVisual(self,MALE,"Hum_Head_Bald",FACE_N_BALOR,BodyTex_N,itar_slp_l);
 	Mdl_SetModelFatness(self,0);
 	Mdl_ApplyOverlayMds(self,"Humans_Relaxed.mds");
 	B_GiveNpcTalents(self);
