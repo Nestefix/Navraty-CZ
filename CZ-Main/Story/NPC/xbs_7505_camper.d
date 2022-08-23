@@ -11,7 +11,7 @@ instance XBS_7505_CAMPER(Npc_Default)
 	fight_tactic = FAI_HUMAN_COWARD;
 	B_CreateAmbientInv(self);
 	EquipItem(self,ItMw_1h_Sld_Sword_New);
-	B_SetNpcVisual(self,MALE,"Hum_Head_Bald",Face_N_Ricelord,BodyTex_P,itar_tpl_l);
+	B_SetNpcVisual(self,MALE,"Hum_Head_Bald",Face_N_Ricelord,BodyTex_N,itar_tpl_l);
 	Mdl_SetModelFatness(self,0);
 	Mdl_ApplyOverlayMds(self,"Humans_Relaxed.mds");
 	B_GiveNpcTalents(self);

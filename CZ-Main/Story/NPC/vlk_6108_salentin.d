@@ -12,7 +12,7 @@ instance VLK_6108_SALENTIN(Npc_Default)
 	B_SetAttributesToChapter(self,1);
 	fight_tactic = FAI_HUMAN_NORMAL;
 	EquipItem(self,ItMw_2h_Bau_Axe);
-	B_SetNpcVisual(self,MALE,"Hum_Head_Bald",Face_N_Normal_Blade,BodyTex_L,ITAR_Bau_L_02);
+	B_SetNpcVisual(self,MALE,"Hum_Head_Bald",Face_N_Normal_Blade,BodyTex_N,ITAR_Bau_L_02);
 	Mdl_SetModelFatness(self,0);
 	Mdl_ApplyOverlayMds(self,"Humans_Tired.mds");
 	B_SetFightSkills(self,20);

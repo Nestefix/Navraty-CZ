@@ -14,7 +14,7 @@ instance VLK_988_GRAVO(Npc_Default)
 	fight_tactic = FAI_HUMAN_COWARD;
 	EquipItem(self,ITMW_1H_G4_AXESMALL_01);
 	B_CreateAmbientInv(self);
-	B_SetNpcVisual(self,MALE,"Hum_Head_Psionic",Face_P_OldMan_Gravo,BodyTex_N,ITAR_Bau_L);
+	B_SetNpcVisual(self,MALE,"Hum_Head_Psionic",Face_P_OldMan_Gravo,BodyTex_P,ITAR_Bau_L);
 	Mdl_SetModelFatness(self,2);
 	Mdl_ApplyOverlayMds(self,"Humans_Militia.mds");
 	B_GiveNpcTalents(self);

@@ -197,7 +197,7 @@ func void b_enter_secretisland()
 	};
 	if((TRANSFERARMORISEQUIPED == TRUE) && (PLAYERISTRANSFERDONE == FALSE))
 	{
-		Mdl_SetVisualBody(hero,"hum_body_Naked0",BodyTex_L,0,"Hum_Head_Bald",Face_N_Normal_Blade,0,NO_ARMOR);
+		Mdl_SetVisualBody(hero,"hum_body_Naked0",BodyTex_N,0,"Hum_Head_Bald",Face_N_Normal_Blade,0,NO_ARMOR);
 		PLAYERISTRANSFER = TRUE;
 	};
 

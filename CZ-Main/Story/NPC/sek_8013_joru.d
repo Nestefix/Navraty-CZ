@@ -12,7 +12,7 @@ instance SEK_8013_JORU(Npc_Default)
 	fight_tactic = FAI_HUMAN_NORMAL;
 	EquipItem(self,ItMw_Steinbrecher);
 	B_CreateAmbientInv(self);
-	B_SetNpcVisual(self,MALE,"Hum_Head_Psionic",171,BodyTex_P,itar_slp_ul);
+	B_SetNpcVisual(self,MALE,"Hum_Head_Psionic",171,BodyTex_N,itar_slp_ul);
 	Mdl_ApplyOverlayMds(self,"Humans_Relaxed.mds");
 	B_GiveNpcTalents(self);
 	B_SetFightSkills(self,60);

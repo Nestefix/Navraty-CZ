@@ -60,7 +60,7 @@ func void b_setvisuals_necromacerzombie()
 func void b_setvisuals_psizombie01()
 {
 	Mdl_SetVisual(self,"Zombie.mds");
-	Mdl_SetVisualBody(self,"hum_body_Naked0",BodyTex_N,0,"Hum_Head_Bald",FACE_N_SEKTANT_1,DEFAULT,itar_sekbed);
+	Mdl_SetVisualBody(self,"hum_body_Naked0",BodyTex_L,0,"Hum_Head_Bald",FACE_N_SEKTANT_1,DEFAULT,itar_sekbed);
 };
 
 func void b_setvisuals_psizombie02()

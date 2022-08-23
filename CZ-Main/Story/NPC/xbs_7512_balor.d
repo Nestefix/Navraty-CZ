@@ -11,7 +11,7 @@ instance XBS_7512_BALOR(Npc_Default)
 	fight_tactic = FAI_HUMAN_NORMAL;
 	B_CreateAmbientInv(self);
 	EquipItem(self,ItMw_1h_Sld_Sword_New);
-	B_SetNpcVisual(self,MALE,"Hum_Head_Psionic",Face_N_Cipher_neu,BodyTex_P,ITAR_Lester);
+	B_SetNpcVisual(self,MALE,"Hum_Head_Psionic",Face_N_Cipher_neu,BodyTex_N,ITAR_Lester);
 	Mdl_SetModelFatness(self,0);
 	Mdl_ApplyOverlayMds(self,"Humans_Relaxed.mds");
 	B_GiveNpcTalents(self);

@@ -12,7 +12,7 @@ instance SEK_8022_NOVIZE(Npc_Default)
 	fight_tactic = FAI_HUMAN_COWARD;
 	EquipItem(self,ItMw_1h_Vlk_Axe);
 	B_CreateAmbientInv(self);
-	B_SetNpcVisual(self,MALE,"Hum_Head_Bald",FACE_N_SEKTANT_1,BodyTex_N,itar_sekbed);
+	B_SetNpcVisual(self,MALE,"Hum_Head_Bald",FACE_N_SEKTANT_1,BodyTex_L,itar_sekbed);
 	Mdl_ApplyOverlayMds(self,"Humans_Relaxed.mds");
 	B_GiveNpcTalents(self);
 	B_SetFightSkills(self,30);

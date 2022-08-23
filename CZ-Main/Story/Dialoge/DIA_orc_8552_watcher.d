@@ -97,17 +97,17 @@ func int dia_orc_8552_watcher_DRINK_condition()
 func void dia_orc_8552_watcher_DRINK_info()
 {
 	AI_Output(other,self,"DIA_Orc_8552_Watcher_DRINK_01_01");	//Proč se díváš dolů?
-	AI_Output(self,other,"DIA_Orc_8552_Watcher_DRINK_01_02");	//Wah Grosh upustit svou láhev s grog... (potřásá hlavou) Moc dobrý grog!
+	AI_Output(self,other,"DIA_Orc_8552_Watcher_DRINK_01_02");	//Vah Grosh upustit svou láhev s grog... (potřásá hlavou) Moc dobrý grog!
 	AI_Output(other,self,"DIA_Orc_8552_Watcher_DRINK_01_03");	//Tak jdi dolů a vezmi si to.
 	AI_PlayAni(self,"T_NO");
-	AI_Output(self,other,"DIA_Orc_8552_Watcher_DRINK_01_04");	//Tam být velká tma! Wah Grosh hledá dlouho.
-	AI_Output(self,other,"DIA_Orc_8552_Watcher_DRINK_01_05");	//Wah Grosh nemoct opustit svoje místo.
-	AI_Output(self,other,"DIA_Orc_8552_Watcher_DRINK_01_06");	//Jinak Farrok rozzloben, Ur-Thrall rozzloben, porazí Wah Groshe!
+	AI_Output(self,other,"DIA_Orc_8552_Watcher_DRINK_01_04");	//Tam být velká tma! Vah Grosh hledá dlouho.
+	AI_Output(self,other,"DIA_Orc_8552_Watcher_DRINK_01_05");	//Vah Grosh nemoct opustit svoje místo.
+	AI_Output(self,other,"DIA_Orc_8552_Watcher_DRINK_01_06");	//Jinak Farrok rozzloben, Ur-Thrall rozzloben, porazí Vah Groshe!
 	AI_Output(other,self,"DIA_Orc_8552_Watcher_DRINK_01_07");	//Chápu, nemůžeš opustit svoje místo.
 	MIS_GroshBottle = LOG_Running;
 	Log_CreateTopic(TOPIC_GroshBottle,LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_GroshBottle,LOG_Running);
-	B_LogEntry(TOPIC_GroshBottle,"Wah Grosh, strážný u mostu, upustil svou flašku s grogem. Dolů jít nemůže, protože by opustil svůj post.");
+	B_LogEntry(TOPIC_GroshBottle,"Vah Grosh, strážný u mostu, upustil svou flašku s grogem. Dolů jít nemůže, protože by opustil svůj post.");
 };
 
 instance DIA_ORC_8552_WATCHER_DRINK_Done(C_Info)
@@ -134,8 +134,8 @@ func void dia_orc_8552_watcher_DRINK_Done_info()
 	AI_Output(other,self,"DIA_Orc_8552_Watcher_DRINK_Done_01_01");	//Tady je tvoje láhev.
 	B_GiveInvItems(other,self,ItMi_GroshBottle,1);
 	Npc_RemoveInvItems(self,ItMi_GroshBottle,1);
-	AI_Output(self,other,"DIA_Orc_8552_Watcher_DRINK_Done_01_02");	//URAT DAR! Wah Grosh znovu pít svůj grog!
-	AI_Output(self,other,"DIA_Orc_8552_Watcher_DRINK_Done_01_03");	//Být velmi vděčný za pomoc Wah Groshovi.
+	AI_Output(self,other,"DIA_Orc_8552_Watcher_DRINK_Done_01_02");	//URAT DAR! Vah Grosh znovu pít svůj grog!
+	AI_Output(self,other,"DIA_Orc_8552_Watcher_DRINK_Done_01_03");	//Být velmi vděčný za pomoc Vah Groshovi.
 	AI_Output(other,self,"DIA_Orc_8552_Watcher_DRINK_Done_01_04");	//Rádo se stalo.
 	ORCRESPECT = ORCRESPECT + 5;
 
@@ -146,7 +146,7 @@ func void dia_orc_8552_watcher_DRINK_Done_info()
 
 	MIS_GroshBottle = LOG_Success;
 	Log_SetTopicStatus(TOPIC_GroshBottle,LOG_Success);
-	B_LogEntry(TOPIC_GroshBottle,"Přinesl jsem Wah Groshovi jeho láhev.");
+	B_LogEntry(TOPIC_GroshBottle,"Přinesl jsem Vah Groshovi jeho láhev.");
 };
 
 
@@ -5291,7 +5291,7 @@ instance DIA_Orc_8572_UrHoshNar_What(C_Info)
 	condition = dia_Orc_8572_UrHoshNar_What_condition;
 	information = dia_Orc_8572_UrHoshNar_What_info;
 	permanent = FALSE;
-	description = "Přinesl jsem zprávy od Tor-Dal.";
+	description = "Přinesl jsem zprávy od Tor Dal.";
 };
 
 func int dia_Orc_8572_UrHoshNar_What_condition()
@@ -5305,12 +5305,12 @@ func int dia_Orc_8572_UrHoshNar_What_condition()
 func void dia_Orc_8572_UrHoshNar_What_info()
 {
 	B_GivePlayerXP(300);
-	AI_Output(other,self,"DIA_Orc_8572_UrHoshNar_What_01_01");	//Přinesl jsem zprávy od Tor-Dal.
+	AI_Output(other,self,"DIA_Orc_8572_UrHoshNar_What_01_01");	//Přinesl jsem zprávy od Tor Dal.
 	AI_Output(self,other,"DIA_Orc_8572_UrHoshNar_What_01_02");	//Hosh-Nar poslouchat... (dychtivě) Člověk mluvit!
 	AI_Output(other,self,"DIA_Orc_8572_UrHoshNar_What_01_03");	//Oddíl, co jsi poslal do bažin je skoro zničený.
-	AI_Output(other,self,"DIA_Orc_8572_UrHoshNar_What_01_04");	//Zůstal pouze Tor-Dal a pár jeho válečníků.
+	AI_Output(other,self,"DIA_Orc_8572_UrHoshNar_What_01_04");	//Zůstal pouze Tor Dal a pár jeho válečníků.
 	AI_Output(other,self,"DIA_Orc_8572_UrHoshNar_What_01_05");	//V tom chrámu, kde bývalo Bratrstvo Spáče, je zlo.
-	AI_Output(other,self,"DIA_Orc_8572_UrHoshNar_What_01_06");	//Nicméně, Tor-Dal netuší, co to je. V noci je slyšet strašlivé vrčení.
+	AI_Output(other,self,"DIA_Orc_8572_UrHoshNar_What_01_06");	//Nicméně, Tor Dal netuší, co to je. V noci je slyšet strašlivé vrčení.
 	AI_Output(other,self,"DIA_Orc_8572_UrHoshNar_What_01_07");	//Požaduje víc válečníků, aby mohl získat chrám pro skřety.
 	AI_Output(self,other,"DIA_Orc_8572_UrHoshNar_What_01_08");	//Hmmm... (nespokojeně) To je špatná zpráva, kterou přinést člověk!
 	AI_Output(self,other,"DIA_Orc_8572_UrHoshNar_What_01_09");	//Hosh-Nar myslet, že v chrámu postavit svatyni pro bratry, nyní změnit názor.
@@ -5321,10 +5321,10 @@ func void dia_Orc_8572_UrHoshNar_What_info()
 	AI_Output(other,self,"DIA_Orc_8572_UrHoshNar_What_01_14");	//Proč?
 	AI_Output(self,other,"DIA_Orc_8572_UrHoshNar_What_01_15");	//Ur-Thrall se domnívá, že je to špatné místo pro svatyni bratří.
 	AI_Output(self,other,"DIA_Orc_8572_UrHoshNar_What_01_16");	//Zatracený KRUSHAK! Musí tam být spousta zla...
-	AI_Output(other,self,"DIA_Orc_8572_UrHoshNar_What_01_17");	//Musím pomoct Tor-Dalovi. Nejdřív musím zajít za Ur-Thrallem.
+	AI_Output(other,self,"DIA_Orc_8572_UrHoshNar_What_01_17");	//Musím pomoct Tor Dalovi. Nejdřív musím zajít za Ur-Thrallem.
 	AI_Output(self,other,"DIA_Orc_8572_UrHoshNar_What_01_18");	//Hosh-Nar si to myslí. Člověk jít k Ur-Thrall a mluvit s ním o chrámu v bažinách.
 	HoshNarSentMe = TRUE;
-	B_LogEntry(TOPIC_PsicampDemon,"Podal jsem zprávy o Tor-Dalovi. Hosh-Nar mu nemůže poslat další válečníky. To vyžaduje povolení od Ur-Thralla.");	
+	B_LogEntry(TOPIC_PsicampDemon,"Podal jsem zprávy o Tor Dalovi. Hosh-Nar mu nemůže poslat další válečníky. To vyžaduje povolení od Ur-Thralla.");	
 };
 
 instance DIA_Orc_8572_UrHoshNar_PsicampDemonDone(C_Info)
@@ -5437,7 +5437,7 @@ func void dia_ORC_8216_TorDal_hello_info()
 	AI_Output(other,self,"DIA_ORC_8216_TorDal_HELLO_01_02");	//Kdo jsi, skřete?
 	AI_Output(self,other,"DIA_ORC_8216_TorDal_HELLO_01_03");	//GOR TAK NABAR SHAR... (třese hlavou)
 	AI_Output(self,other,"DIA_ORC_8216_TorDal_HELLO_01_04");	//Pokud chce hloupý člověk umřít, pak může pokračovat!
-	AI_Output(self,other,"DIA_ORC_8216_TorDal_HELLO_01_05");	//Tor-Dal ho nezastaví.
+	AI_Output(self,other,"DIA_ORC_8216_TorDal_HELLO_01_05");	//Tor Dal ho nezastaví.
 	AI_StopProcessInfos(self);
 };
 
@@ -5461,10 +5461,10 @@ func int dia_ORC_8216_TorDal_Meet_condition()
 func void dia_ORC_8216_TorDal_Meet_info()
 {
 	AI_Output(other,self,"DIA_ORC_8216_TorDal_Meet_01_01");	//Byl to Hosh-Nar, kdo tě poslal do bažiny?
-	AI_Output(self,other,"DIA_ORC_8216_TorDal_Meet_01_02");	//(překvapeně) KOR RAD... Ano, velký šaman poslal Tor-Dal do velké bažiny.
+	AI_Output(self,other,"DIA_ORC_8216_TorDal_Meet_01_02");	//(překvapeně) KOR RAD... Ano, velký šaman poslal Tor Dal do velké bažiny.
 	AI_Output(self,other,"DIA_ORC_8216_TorDal_Meet_01_03");	//Ale jak to člověk ví?
 	AI_Output(other,self,"DIA_ORC_8216_TorDal_Meet_01_04");	//Jsem tady na jeho pokyn. Už dlouho o vás neslyšel takže chce nějaké zprávy.
-	AI_Output(self,other,"DIA_ORC_8216_TorDal_Meet_01_06");	//Takže člověk přišla pomoci Tor-Dal.
+	AI_Output(self,other,"DIA_ORC_8216_TorDal_Meet_01_06");	//Takže člověk přišla pomoci Tor Dal.
 	AI_Output(self,other,"DIA_ORC_8216_TorDal_Meet_01_07");	//Být lepší kdyby Hosh-Nar poslat další válečníky. Člověk příliš malá...
 	ORCRESPECT = ORCRESPECT + 5;
 
@@ -5494,8 +5494,8 @@ func int dia_ORC_8216_TorDal_Many_condition()
 func void dia_ORC_8216_TorDal_Many_info()
 {
 	AI_Output(other,self,"DIA_ORC_8216_TorDal_Many_01_01");	//Není vás tu mnoho.
-	AI_Output(self,other,"DIA_ORC_8216_TorDal_Many_01_02");	//Mnozí bratři Tor-Dal zemřeli... Všechny zabili mrtvé!
-	AI_Output(self,other,"DIA_ORC_8216_TorDal_Many_01_03");	//Pouze Tor-Dal a několik dalších válečníků dokázali přežít.
+	AI_Output(self,other,"DIA_ORC_8216_TorDal_Many_01_02");	//Mnozí bratři Tor Dal zemřeli... Všechny zabili mrtvé!
+	AI_Output(self,other,"DIA_ORC_8216_TorDal_Many_01_03");	//Pouze Tor Dal a několik dalších válečníků dokázali přežít.
 	AI_Output(self,other,"DIA_ORC_8216_TorDal_Many_01_04");	//Počkej tady, přemýšlet co dál.
 };
 
@@ -5519,22 +5519,22 @@ func int dia_ORC_8216_TorDal_What_condition()
 func void dia_ORC_8216_TorDal_What_info()
 {
 	AI_Output(other,self,"DIA_ORC_8216_TorDal_What_01_01");	//Proč tě sem Hosh-Nar poslal?
-	AI_Output(self,other,"DIA_ORC_8216_TorDal_What_01_02");	//Tor-Dal šel do chrám ve velká bažina, jak mu velký šaman Hosh-Nar řekl.
+	AI_Output(self,other,"DIA_ORC_8216_TorDal_What_01_02");	//Tor Dal šel do chrám ve velká bažina, jak mu velký šaman Hosh-Nar řekl.
 	AI_Output(self,other,"DIA_ORC_8216_TorDal_What_01_03");	//Chce zde postavit velkou svatyni svých bratrů! Modlit se k duchům předků.
 	AI_Output(self,other,"DIA_ORC_8216_TorDal_What_01_04");	//Pak přijít temní šamani a rozpoutat peklo. Velké zlo působit...
-	AI_Output(self,other,"DIA_ORC_8216_TorDal_What_01_05");	//Zvýšit počet mrtvých, kteří sloužit! Teď zabíjet bratry Tor-Dal.
+	AI_Output(self,other,"DIA_ORC_8216_TorDal_What_01_05");	//Zvýšit počet mrtvých, kteří sloužit! Teď zabíjet bratry Tor Dal.
 	AI_Output(other,self,"DIA_ORC_8216_TorDal_What_01_06");	//Jaké zlo myslíš?
-	AI_Output(self,other,"DIA_ORC_8216_TorDal_What_01_07");	//Tor-Dal nevěděl, neviděl to... Jen slyšet v noci! Bratři jsou vyděšení.
+	AI_Output(self,other,"DIA_ORC_8216_TorDal_What_01_07");	//Tor Dal nevěděl, neviděl to... Jen slyšet v noci! Bratři jsou vyděšení.
 	AI_Output(other,self,"DIA_ORC_8216_TorDal_What_01_08");	//Měl bys to říct Hosh-Narovi! 
-	AI_Output(self,other,"DIA_ORC_8216_TorDal_What_01_09");	//Tor-Dal se nemůže vrátit do města. Nejprve musí zničit zlo! Pomstít své bratry.
-	AI_Output(self,other,"DIA_ORC_8216_TorDal_What_01_10");	//Tor-Dal mít málo válečníků na boj v chrámu. Zemřít když tam vrátit.
+	AI_Output(self,other,"DIA_ORC_8216_TorDal_What_01_09");	//Tor Dal se nemůže vrátit do města. Nejprve musí zničit zlo! Pomstít své bratry.
+	AI_Output(self,other,"DIA_ORC_8216_TorDal_What_01_10");	//Tor Dal mít málo válečníků na boj v chrámu. Zemřít když tam vrátit.
 	AI_Output(other,self,"DIA_ORC_8216_TorDal_What_01_11");	//Chceš mojí pomoc?
-	AI_Output(self,other,"DIA_ORC_8216_TorDal_What_01_12");	//Hmmm... Člověk je slabý! Zemřít dřív než Tor-Dal.
+	AI_Output(self,other,"DIA_ORC_8216_TorDal_What_01_12");	//Hmmm... Člověk je slabý! Zemřít dřív než Tor Dal.
 	AI_Output(self,other,"DIA_ORC_8216_TorDal_What_01_13");	//Lepší se vrátí k Hosh-Nar a požádá ho, aby mu poslal další válečníky.
-	AI_Output(self,other,"DIA_ORC_8216_TorDal_What_01_14");	//Ti přijdou a pomáhají Tor-Dal zabít zlo v chrámu!
+	AI_Output(self,other,"DIA_ORC_8216_TorDal_What_01_14");	//Ti přijdou a pomáhají Tor Dal zabít zlo v chrámu!
 	AI_Output(other,self,"DIA_ORC_8216_TorDal_What_01_15");	//Dobře.
 	TorDalSentMe = TRUE;
-	B_LogEntry(TOPIC_PsicampDemon,"V bažinách jsem narazil na skřeta Tor-Dala a zbytek jeho skupiny. Tor-Dal mě poslal za Hosh-Narem a požádal ho o posily, aby mohl bojovat s mrtvými z chrámu. Možná se pokusí dobýt chrám tak jako tak...");	
+	B_LogEntry(TOPIC_PsicampDemon,"V bažinách jsem narazil na skřeta Tor Dala a zbytek jeho skupiny. Tor Dal mě poslal za Hosh-Narem a požádal ho o posily, aby mohl bojovat s mrtvými z chrámu. Možná se pokusí dobýt chrám tak jako tak...");	
 };
 
 instance DIA_ORC_8216_TorDal_PsiCampDone(C_Info)
@@ -5560,8 +5560,8 @@ func void dia_ORC_8216_TorDal_PsiCampDone_info()
 	AI_Output(other,self,"DIA_ORC_8216_TorDal_PsiCampDone_01_01");	//Chrám je čistý!
 	AI_Output(self,other,"DIA_ORC_8216_TorDal_PsiCampDone_01_02");	//(s respektem) Jak je možné, že člověk sám zabil zlo?
 	AI_Output(other,self,"DIA_ORC_8216_TorDal_PsiCampDone_01_03");	//Ano, skončil jsem s ním.
-	AI_Output(self,other,"DIA_ORC_8216_TorDal_PsiCampDone_01_04");	//Tor-Dal omlouvá, že člověku řekl, že je slabý.
-	AI_Output(self,other,"DIA_ORC_8216_TorDal_PsiCampDone_01_05");	//To je silný válečník! Tor-Dal respektuje člověka... Orak Shaka!
+	AI_Output(self,other,"DIA_ORC_8216_TorDal_PsiCampDone_01_04");	//Tor Dal omlouvá, že člověku řekl, že je slabý.
+	AI_Output(self,other,"DIA_ORC_8216_TorDal_PsiCampDone_01_05");	//To je silný válečník! Tor Dal respektuje člověka... Orak Shaka!
 	ORCRESPECT = ORCRESPECT + 15;
 
 	if(MIS_HeroOrcJoin == LOG_Running)
@@ -5572,5 +5572,5 @@ func void dia_ORC_8216_TorDal_PsiCampDone_info()
 	AI_PlayAni(self,"T_GREETGRD");
 	MIS_PsicampDemon = LOG_Success;
 	Log_SetTopicStatus(TOPIC_PsicampDemon,LOG_Success);
-	B_LogEntry(TOPIC_PsicampDemon,"Informoval jsem Tor-Dala o tom, že jsem porazil zlo v chrámu. Nyní můžou skřeti postavit svatyni.");	
+	B_LogEntry(TOPIC_PsicampDemon,"Informoval jsem Tor Dala o tom, že jsem porazil zlo v chrámu. Nyní můžou skřeti postavit svatyni.");	
 };

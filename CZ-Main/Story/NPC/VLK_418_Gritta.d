@@ -16,7 +16,7 @@ instance VLK_418_Gritta(Npc_Default)
 	attribute[ATR_HITPOINTS] = 500;
 	fight_tactic = FAI_HUMAN_MASTER;
 	CreateInvItems(self,ItMi_Gold,100);
-	B_SetNpcVisual(self,FEMALE,"Hum_Head_Babe0",FaceBabe_N_YoungBlonde,BodyTex_N,ITAR_VlkBabe_M);
+	B_SetNpcVisual(self,FEMALE,"Hum_Head_Babe0",FaceBabe_N_YoungBlonde,BodyTexBabe_N,ITAR_VlkBabe_M);
 	Mdl_SetModelFatness(self,0);
 	Mdl_ApplyOverlayMds(self,"Humans_Tired.mds");
 	B_GiveNpcTalents(self);

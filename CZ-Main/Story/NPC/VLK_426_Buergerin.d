@@ -13,7 +13,7 @@ instance VLK_426_Buergerin(Npc_Default)
 	fight_tactic = FAI_HUMAN_COWARD;
 	B_CreateAmbientInv(self);
 	EquipItem(self,ItMw_1h_Vlk_Mace);
-	B_SetNpcVisual(self,FEMALE,"Hum_Head_Babe0",FaceBabe_N_Lilo,BodyTex_N,ITAR_VlkBabe_H);
+	B_SetNpcVisual(self,FEMALE,"Hum_Head_Babe0",FaceBabe_N_Lilo,BodyTexBabe_N,ITAR_VlkBabe_H);
 	Mdl_SetModelFatness(self,0);
 	Mdl_ApplyOverlayMds(self,"Humans_Babe.mds");
 	B_GiveNpcTalents(self);

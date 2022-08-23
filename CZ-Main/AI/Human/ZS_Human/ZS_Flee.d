@@ -47,7 +47,7 @@ func int ZS_Flee_Loop()
 		B_Say(self,hero,"$Dead");
 		Npc_ChangeAttribute(self,ATR_HITPOINTS,-self.attribute[ATR_HITPOINTS_MAX]);
 		Wld_PlayEffect("spellFX_Innoseye",self,self,0,0,0,FALSE);
-		Mdl_SetVisualBody(hero,"hum_body_Naked0",BodyTex_L,0,"Hum_Head_Bald",Face_N_Normal_Blade,0,itar_bau_l_trans);
+		Mdl_SetVisualBody(hero,"hum_body_Naked0",BodyTex_N,0,"Hum_Head_Bald",Face_N_Normal_Blade,0,itar_bau_l_trans);
 		PLAYERISTRANSFER = TRUE;
 		return LOOP_END;
 	};
