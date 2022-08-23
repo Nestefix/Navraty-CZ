@@ -11,7 +11,7 @@ instance VLK_6012_SHMAN(Npc_Default)
 	aivar[AIV_PlayerHasPickedMyPocket] = TRUE;
 	fight_tactic = FAI_HUMAN_COWARD;
 	EquipItem(self,ItMw_1h_Sld_Sword_New);
-	B_SetNpcVisual(self,FEMALE,"Hum_Head_Thief",Face_L_NormalBart01,BodyTexBabe_N,ItAr_ShValley_Armor);
+	B_SetNpcVisual(self,MALE,"Hum_Head_Thief",Face_L_NormalBart01,BodyTex_L,ItAr_ShValley_Armor);
 	Mdl_SetModelFatness(self,0);
 	Mdl_ApplyOverlayMds(self,"Humans_Relaxed.mds");
 	B_GiveNpcTalents(self);
