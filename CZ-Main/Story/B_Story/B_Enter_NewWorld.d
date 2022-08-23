@@ -1731,7 +1731,7 @@ func void B_ENTER_NEWWORLD_Kapitel_6()
 		};
 
 		B_RemoveNpc(VLK_6120_LEMARGUARD);
-		B_RemoveNpc(SEK_8034_NOVIZE);
+		//B_RemoveNpc(SEK_8034_NOVIZE);
 
 		if(MIS_NOVICECANJOIN == LOG_SUCCESS)
 		{
