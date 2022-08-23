@@ -84,7 +84,7 @@ instance PAL_9172_RITTER(Npc_Default)
 	EquipItem(self,ItRw_Crossbow_M_02);
 	CreateInvItems(self,ItRw_Bolt,10);
 	B_CreateAmbientInv(self);
-	B_SetNpcVisual(self,MALE,"Hum_Head_FatBald",Face_N_NormalBart05,BodyTex_L,ItAr_PAL_M_NPC);
+	B_SetNpcVisual(self,MALE,"Hum_Head_FatBald",Face_N_NormalBart05,BodyTex_N,ItAr_PAL_M_NPC);
 	Mdl_SetModelFatness(self,2);
 	Mdl_ApplyOverlayMds(self,"Humans_Militia.mds");
 	B_GiveNpcTalents(self);
@@ -119,7 +119,7 @@ instance PAL_9173_RITTER(Npc_Default)
 	EquipItem(self,ItRw_Crossbow_M_02);
 	CreateInvItems(self,ItRw_Bolt,10);
 	B_CreateAmbientInv(self);
-	B_SetNpcVisual(self,MALE,"Hum_Head_FatBald",Face_B_Normal_Kirgo,BodyTex_L,ItAr_PAL_M_NPC);
+	B_SetNpcVisual(self,MALE,"Hum_Head_FatBald",Face_B_Normal_Kirgo,BodyTex_B,ItAr_PAL_M_NPC);
 	Mdl_SetModelFatness(self,2);
 	Mdl_ApplyOverlayMds(self,"Humans_Militia.mds");
 	B_GiveNpcTalents(self);
@@ -154,7 +154,7 @@ instance PAL_9174_RITTER(Npc_Default)
 	EquipItem(self,ItRw_Crossbow_M_02);
 	CreateInvItems(self,ItRw_Bolt,10);
 	B_CreateAmbientInv(self);
-	B_SetNpcVisual(self,MALE,"Hum_Head_FatBald",Face_N_NormalBart03,BodyTex_L,ItAr_PAL_M_NPC);
+	B_SetNpcVisual(self,MALE,"Hum_Head_FatBald",Face_N_NormalBart03,BodyTex_N,ItAr_PAL_M_NPC);
 	Mdl_SetModelFatness(self,2);
 	Mdl_ApplyOverlayMds(self,"Humans_Militia.mds");
 	B_GiveNpcTalents(self);
@@ -188,7 +188,7 @@ instance PAL_9175_RITTER(Npc_Default)
 	EquipItem(self,ItRw_Crossbow_M_02);
 	CreateInvItems(self,ItRw_Bolt,10);
 	B_CreateAmbientInv(self);
-	B_SetNpcVisual(self,MALE,"Hum_Head_FatBald",Face_N_NormalBart03,BodyTex_L,ItAr_PAL_M_NPC);
+	B_SetNpcVisual(self,MALE,"Hum_Head_FatBald",Face_N_NormalBart03,BodyTex_N,ItAr_PAL_M_NPC);
 	Mdl_SetModelFatness(self,2);
 	Mdl_ApplyOverlayMds(self,"Humans_Militia.mds");
 	B_GiveNpcTalents(self);
