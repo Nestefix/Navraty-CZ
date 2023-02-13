@@ -33,7 +33,7 @@ func void Use_Bookstand_Pyrokar_S1()
 		Doc_PrintLine(nDocID,0,"");
 		Doc_PrintLine(nDocID,0,"");
 		Doc_SetFont(nDocID,-1,Font_Book_New_Small);
-		Doc_PrintLines(nDocID,0,"Mág není jako obyčejný smrtelník. Má schopnost čerpat božskou moc, a proto se také na něj nevztahují přírodní zákony, které ovlivňují každého človeka.");
+		Doc_PrintLines(nDocID,0,"Mág není jako obyčejný smrtelník. Má schopnost čerpat božskou moc, a proto se také na něj nevztahují přírodní zákony, které ovlivňují každého člověka.");
 		Doc_SetMargins(nDocID,-1,30,20,275,20,1);
 		Doc_PrintLine(nDocID,1,"");
 		Doc_PrintLines(nDocID,1,"Jakmile mág dosáhne určité úrovně, která mu umožňuje povznést se nad rámec běžné existence, může vstoupit do jiného světa, nedosažitelného běžným smrtelníkům. Mág může prolomit hranice času a prostoru, a dokonce ani smrt ho nebude schopna zastavit.");
@@ -130,7 +130,7 @@ func void Use_Bookstand_Andre_S1()
 
 		if(Rengaru_Ausgeliefert == TRUE)
 		{
-			Doc_PrintLines(nDocID,1,"... Vězeň Rengar je obviněn z krádeže.");
+			Doc_PrintLines(nDocID,1,"... Vězeň Rengaru je obviněn z krádeže.");
 		};
 		if(Halvor_Ausgeliefert == TRUE)
 		{
@@ -243,7 +243,7 @@ func void Use_FINALDRAGONEQUIPMENT_S1()
 		Doc_SetFont(nDocID,-1,Font_Book_New_Small);
 		Doc_SetMargins(nDocID,0,275,20,30,20,1);
 		Doc_PrintLine(nDocID,0,"");
-		Doc_PrintLines(nDocID,0,"... Doufám, že magická bariéra spolehlivě ochrání rudu před skřety. Král skoro uveřil, že jsme bariéru vytvořili, abychom zabránili trestancům v útěku. Ale sledovali jsme mnohem důležitější cíle. Doufám, že budeme mít dostatek času na přípravu pro hlavní bitvu.");
+		Doc_PrintLines(nDocID,0,"... Doufám, že magická bariéra spolehlivě ochrání rudu před skřety. Král skoro uvěřil, že jsme bariéru vytvořili, abychom zabránili trestancům v útěku. Ale sledovali jsme mnohem důležitější cíle. Doufám, že budeme mít dostatek času na přípravu pro hlavní bitvu.");
 		Doc_PrintLines(nDocID,0,"");
 
 		if((hero.guild == GIL_KDF) && (PLAYER_TALENT_RUNES[SPL_MasterOfDisaster] == FALSE))
@@ -326,7 +326,7 @@ func void use_bookazgolor_01_s1()
 		Doc_PrintLine(nDocID,0,"Rituál Stínu");
 		Doc_PrintLine(nDocID,0,"");
 		Doc_SetFont(nDocID,-1,Font_Book_New_Small);
-		Doc_PrintLines(nDocID,0,"Tento rituál umožňuje přivolat do tohoto světa jedno z nejstrašlivejších stvoření temnoty - Velký Stín, mocného černého draka Azgalora. Kdo ho chce přivést do tohoto sveta, musí napřed mít starobylý artefakt - Oko hněvu, jehož výzvu všechny temné bytosti musí uposlechnout. Společně s vyřčenými slovy moci se rituál podaří, Oko přivolá Velký Stín do tohoto světa.");
+		Doc_PrintLines(nDocID,0,"Tento rituál umožňuje přivolat do tohoto světa jedno z nejstrašlivějších stvoření temnoty - Velký Stín, mocného černého draka Azgalora. Kdo ho chce přivést do tohoto světa, musí napřed mít starobylý artefakt - Oko hněvu, jehož výzvu všechny temné bytosti musí uposlechnout. Společně s vyřčenými slovy moci se rituál podaří, Oko přivolá Velký Stín do tohoto světa.");
 		Doc_SetMargins(nDocID,-1,30,20,275,20,1);
 		Doc_PrintLine(nDocID,1,"");
 		Doc_PrintLine(nDocID,1,"");
@@ -453,7 +453,7 @@ func void use_bookstandxranfreg_s1()
 		Doc_PrintLines(nDocID,0,"Během jedné výzkumné expedice v horách Khorinisu jsme objevili starodávný chrám. Ještě než jsme vstoupili dovnitř, ucítili jsme podivný tok velmi silné magické energie!");
 		Doc_SetMargins(nDocID,-1,30,20,275,20,1);
 		Doc_PrintLine(nDocID,1,"");
-		Doc_PrintLines(nDocID,1,"Chtěli jsme vstoupit dovnitř, ale ozval se hlasitý třesk, a zjevil se kamenný golem epických rozměrů! Jednou ranou zabil tři paladiny. Dali jsem se na ústup, protože naše magie byla proti němu bezmocná...");
+		Doc_PrintLines(nDocID,1,"Chtěli jsme vstoupit dovnitř, ale ozval se hlasitý třesk, a zjevil se kamenný golem epických rozměrů! Jednou ranou zabil tři paladiny. Dali jsme se na ústup, protože naše magie byla proti němu bezmocná...");
 		Doc_PrintLine(nDocID,1,"");
 		Doc_PrintLine(nDocID,1,"Pyrokar");
 		Doc_Show(nDocID);
