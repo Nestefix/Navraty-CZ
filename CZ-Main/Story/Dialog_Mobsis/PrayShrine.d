@@ -959,12 +959,12 @@ func void pc_prayshrine_prayforgomez_info()
 		else
 		{
 			RankPoints = RankPoints + 1;
-			concatText = "Innos uděluje Gomezově duší své odpuštění!";
+			concatText = "Innos uděluje Gomezově duši své odpuštění!";
 			Snd_Play("SFX_HealObsession");
 			Wld_PlayEffect("spellFX_INCOVATION_WHITE",self,self,0,0,0,FALSE);
 			AI_Print(concatText);
 			RESCUEGOMEZPRAYINNOS = TRUE;
-			B_LogEntry(TOPIC_RESCUEGOMEZ,"Získal jsem pro Gomeze Innosovo odpuštení.");
+			B_LogEntry(TOPIC_RESCUEGOMEZ,"Získal jsem pro Gomeze Innosovo odpuštění.");
 	
 			if((RESCUEGOMEZPRAYINNOS == TRUE) && (RESCUEGOMEZPRAYBELIAR == TRUE) && (RESCUEGOMEZPRAYADANOS == TRUE))
 			{
@@ -977,12 +977,12 @@ func void pc_prayshrine_prayforgomez_info()
 	else
 	{
 		RankPoints = RankPoints + 1;
-		concatText = "Innos uděluje Gomezově duší své odpuštění!";
+		concatText = "Innos uděluje Gomezově duši své odpuštění!";
 		Snd_Play("SFX_HealObsession");
 		Wld_PlayEffect("spellFX_INCOVATION_WHITE",self,self,0,0,0,FALSE);
 		AI_Print(concatText);
 		RESCUEGOMEZPRAYINNOS = TRUE;
-		B_LogEntry(TOPIC_RESCUEGOMEZ,"Získal jsem pro Gomeze Innosovo odpuštení.");
+		B_LogEntry(TOPIC_RESCUEGOMEZ,"Získal jsem pro Gomeze Innosovo odpuštění.");
 	
 		if((RESCUEGOMEZPRAYINNOS == TRUE) && (RESCUEGOMEZPRAYBELIAR == TRUE) && (RESCUEGOMEZPRAYADANOS == TRUE))
 		{
