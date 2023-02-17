@@ -85,7 +85,7 @@ func void DIA_Biff_HALLO_Info()
 	AI_Output(self,other,"DIA_Biff_HALLO_07_01");	//To je opravdu ta nejblbější otázka, jakou jsem kdy slyšel. Co asi tak myslíš?
 	Info_AddChoice(DIA_Biff_HALLO,"Z tak přiblblýho výrazu, jakej máš ty, se nedá nic poznat. Proto jsem se taky musel zeptat.",DIA_Biff_HALLO_spott);
 	Info_AddChoice(DIA_Biff_HALLO,"Tak o tom nemám ani tucha.",DIA_Biff_HALLO_keineAhnung);
-	Info_AddChoice(DIA_Biff_HALLO,"To nic!",DIA_Biff_HALLO_doof);
+	Info_AddChoice(DIA_Biff_HALLO,"To nic.",DIA_Biff_HALLO_doof);
 };
 
 func void DIA_Biff_HALLO_doof()
