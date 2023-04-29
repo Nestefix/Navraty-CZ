@@ -436,7 +436,7 @@ func void Use_Hinweis_02()
 	Doc_PrintLine(nDocID,0,"");
 	Doc_PrintLine(nDocID,0,"Hele chlapi!");
 	Doc_PrintLines(nDocID,0,"");
-	Doc_PrintLines(nDocID,0,"Lou zmizel v bažinách. Pravděpodobně ho sežrali močáloví žraloci. Co je ale horší - klíč ode dvěří se ztatil s ním. Kdo ho najde, může si nechat jeho věci.");
+	Doc_PrintLines(nDocID,0,"Lou zmizel v bažinách. Pravděpodobně ho sežrali močáloví žraloci. Co je ale horší - klíč ode dvěří se ztratil s ním. Kdo ho najde, může si nechat jeho věci.");
 	Doc_PrintLine(nDocID,0,"");
 	Doc_PrintLine(nDocID,0,"");
 	Doc_PrintLine(nDocID,0,"			- Snaf");
@@ -565,9 +565,9 @@ instance ITWr_Addon_Mana_04(C_Item)
 	material = MAT_LEATHER;
 	on_state[0] = Use_Manarezept_04;
 	scemeName = "MAP";
-	description = "Recept na elixír many";
-	text[3] = "Způsob připravy elixíru many...";
-	text[4] = "Je potřeba znalost lektvarů many...";
+	description = "Recept na elixír čisté many";
+	text[3] = "Způsob připravy elixíru čisté many...";
+	text[4] = "Je potřeba znalost receptu lektvarů many...";
 	text[5] = NAME_Value;
 	count[5] = value;
 	inv_animate = 1;
@@ -602,9 +602,9 @@ func void Use_Manarezept_04()
 	Doc_SetMargins(nDocID,-1,50,50,50,50,1);
 	Doc_PrintLine(nDocID,0,"");
 	Doc_PrintLine(nDocID,0,"");
-	Doc_PrintLines(nDocID,0,"Příprava elixíru many:");
+	Doc_PrintLines(nDocID,0,"Příprava elixíru čisté many:");
 	Doc_PrintLine(nDocID,0,"");
-	Doc_PrintLines(nDocID,0,"Vezmi čistý alkohol, luční pohanku, esence many a modrý bez. Micháme a vaříme podle receptu elixíru many.");
+	Doc_PrintLines(nDocID,0,"Vezmi čistý alkohol, luční pohanku, esence many a modrý bez. Mícháme a vaříme podle receptu elixíru many.");
 	Doc_PrintLine(nDocID,0,"");
 	Doc_PrintLine(nDocID,0,"");
 	Doc_PrintLines(nDocID,0,"P.S. Tenhle lektvar může namíchat pouze ten alchymista, který zná recept na výrobu elixíru many.");
@@ -654,7 +654,7 @@ func void Use_ItWr_Alcohol_Grog()
 	Doc_SetMargins(nDocID,-1,50,50,50,50,1);
 	Doc_PrintLine(nDocID,0,"");
 	Doc_PrintLine(nDocID,0,"");
-	Doc_PrintLines(nDocID,0,"Výroba čistého alkoholu:");
+	Doc_PrintLines(nDocID,0,"Příprava čistého alkoholu:");
 	Doc_PrintLine(nDocID,0,"");
 	Doc_PrintLines(nDocID,0,"Na přípravu jsou potřeba dva grogy. Poté je nutné je vydestilovat u alchymistického stolu.");
 	Doc_PrintLine(nDocID,0,"");
@@ -667,7 +667,7 @@ func void Use_ItWr_Alcohol_Grog()
 
 instance ItWr_Alcohol_Rom(C_Item)
 {
-	name = "Recept na výrobu čistého alkoholu";
+	name = "Recept na přípravu čistého alkoholu";
 	mainflag = ITEM_KAT_DOCS;
 	flags = ITEM_MISSION;
 	value = 200;
@@ -797,7 +797,7 @@ instance ITWr_Addon_MCELIXIER_01(C_Item)
 	scemeName = "MAP";
 	description = name;
 	text[3] = "Recept na lektvar proměny mysli...";
-	text[4] = "Tento lektvar pomůže oživit ztacené vzpomínky...";
+	text[4] = "Tento lektvar pomůže oživit ztracené vzpomínky...";
 	inv_animate = 1;
 };
 
@@ -933,7 +933,7 @@ func void Use_Joint_Rezept_01()
 	Doc_SetMargins(nDocID,-1,50,50,50,50,1);
 	Doc_PrintLine(nDocID,0,"");
 	Doc_PrintLine(nDocID,0,"");
-	Doc_PrintLines(nDocID,0,"Špeky co tu balí jsou dost dobré, ale v táboře v bažinách to posunuli ještě dál. Pokud vezmu esenci ze dvou lodyh trávy z bažin a přidám k nim jednu luční pohanku, je možné ubalit špeka se stejným efektem zeleného novice. Zelený novic napomáha tišit bolest a rozjasňuje mysl.");
+	Doc_PrintLines(nDocID,0,"Špeky co tu balí jsou dost dobré, ale v táboře v bažinách to posunuli ještě dál. Pokud vezmu esenci ze dvou špeků trávy z bažin a přidám k nim jednu luční pohanku, je možné ubalit špeka se stejným efektem zeleného novice. Zelený novic napomáha tišit bolest a rozjasňuje mysl.");
 	Doc_PrintLine(nDocID,0,"");
 	Doc_PrintLine(nDocID,0,"");
 	Doc_PrintLine(nDocID,0,"");
@@ -1155,7 +1155,7 @@ func void UseAxtAnleitung()
 
 instance ItWr_Addon_SUMMONANCIENTGHOST(C_Item)
 {
-	name = "Vyvolej 'Quarhodrona'";
+	name = "Vyvolání 'Quarhodrona'";
 	mainflag = ITEM_KAT_DOCS;
 	flags = ITEM_MISSION;
 	value = 250;
@@ -1266,7 +1266,7 @@ func void use_magdef()
 	Doc_SetMargins(nDocID,-1,50,50,50,50,1);
 	Doc_PrintLine(nDocID,0,"");
 	Doc_PrintLine(nDocID,0,"");
-	Doc_PrintLines(nDocID,0,"Příprava lektvaru:");
+	Doc_PrintLines(nDocID,0,"Příprava elixíru:");
 	Doc_PrintLine(nDocID,0,"");
 	Doc_PrintLines(nDocID,0,"Vezmi čistý alkohol, luční pohanku, kořalku a otrokovy chleby. Otrokovy chleby rozdrť najemno, zalej kořalkou a přidej luční pohanku. Zahřívej na mírném ohni po dobu deseti minut, potom nech ochládnout.");
 	Doc_PrintLine(nDocID,0,"");
@@ -1349,7 +1349,7 @@ instance ITWR_SPEED_03(C_Item)
 	on_state[0] = use_speed_03;
 	scemeName = "MAP";
 	description = "Recept na 'Černý chňapavec'";
-	text[4] = "Způsob přípravy napoje rychlosti z jater černého chňapavce...";
+	text[4] = "Způsob přípravy lektvaru rychlosti z jater černého chňapavce...";
 	text[5] = NAME_Value;
 	count[5] = value;
 	inv_animate = 1;
@@ -1632,7 +1632,7 @@ func void useglintvein()
 	Doc_PrintLine(nDocID,0,"Ingredience na přípravu svařeného vína:");
 	Doc_PrintLine(nDocID,0,"");
 	Doc_PrintLines(nDocID,0,"1 láhev vína, 1 láhev silného měsíčního svitu,");
-	Doc_PrintLines(nDocID,0,"přidáme trochu bíleho rumu, lžíci medu a posypené vločkama z ohnivého býlí");
+	Doc_PrintLines(nDocID,0,"přidáme trochu bíleho rumu, lžíci medu a posypené vločkama z ohnivého býlí.");
 	Doc_PrintLine(nDocID,0,"");
 	Doc_PrintLine(nDocID,0,"Pít pouze horké!");
 	Doc_PrintLine(nDocID,0,"");
@@ -1906,7 +1906,7 @@ func void Use_ItWr_OsaitToTiamant()
 	Doc_PrintLine(nDocID,0,"");
 	Doc_PrintLine(nDocID,0,"");
 	Doc_PrintLines(nDocID,0,"");
-	Doc_PrintLines(nDocID,0,"Tiamante! Neschopnost tvojich lidí mě stojí více a více peněz. Jestli chceš aby vůbec do dolu dorazila další várka otroku - musíš jim nejprve zajistit bezpečí!");
+	Doc_PrintLines(nDocID,0,"Tiamante! Neschopnost tvojich lidí mě stojí více a více peněz. Jestli chceš aby vůbec do dolu dorazila další várka otroků - musíš jim nejprve zajistit bezpečí!");
 	Doc_PrintLine(nDocID,0,"");
 	Doc_PrintLine(nDocID,0,"");
 	Doc_PrintLine(nDocID,0,"			- Osair");
@@ -3446,7 +3446,7 @@ func void Use_ItWr_Sigil()
 	Doc_PrintLine(nDocID,0,"");
 	Doc_PrintLines(nDocID,0,"- Runový sihill -");
 	Doc_PrintLine(nDocID,0,"");
-	Doc_PrintLines(nDocID,0,"Tento meč je pravděpodobně ta nejlepší zbraň, kterou kdy člověk vyrobil! Nejen, že může v tichosti nasekat napřátelé na malé kousky, může také způsobit zranění nehmotným bytostem, například přízrakům.");
+	Doc_PrintLines(nDocID,0,"Tento meč je pravděpodobně ta nejlepší zbraň, kterou kdy člověk vyrobil! Nejen, že může v tichosti nasekat nepřátelé na malé kousky, může také způsobit zranění nehmotným bytostem, například přízrakům.");
 	Doc_PrintLine(nDocID,0,"");
 	Doc_PrintLine(nDocID,0,"");
 	Doc_PrintLines(nDocID,0,"Bohužel jen pravý mistr kovařiny je schopen ukovat zbraň takovéhoto rázu, protože recept na výrobu je nesmírně složitý.");
@@ -3514,7 +3514,7 @@ func void Use_ItWr_Unpoison()
 	Doc_PrintLine(nDocID,0,"");
 	Doc_PrintLines(nDocID,0,"- Jedy -");
 	Doc_PrintLine(nDocID,0,"");
-	Doc_PrintLines(nDocID,0,"Jed - je zlo! Obvzlášť když se dostane do organizmu. Musíme se postarat o to, aby tělo začalo jed rozkládat co nejdříve.");
+	Doc_PrintLines(nDocID,0,"Jed - je zlo! Obzvlášť když se dostane do organizmu. Musíme se postarat o to, aby tělo začalo jed rozkládat co nejdříve.");
 	Doc_PrintLine(nDocID,0,"");
 	Doc_PrintLine(nDocID,0,"");
 	Doc_PrintLines(nDocID,0,"Je velice důležité se neustále pohybovat a hodně potit! Potom otrava jedem nebude působit tolik újmy.");
