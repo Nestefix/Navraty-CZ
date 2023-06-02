@@ -3514,7 +3514,7 @@ func void Use_ItWr_Unpoison()
 	Doc_PrintLine(nDocID,0,"");
 	Doc_PrintLines(nDocID,0,"- Jedy -");
 	Doc_PrintLine(nDocID,0,"");
-	Doc_PrintLines(nDocID,0,"Jed - je zlo! Obzvlášť když se dostane do organizmu. Musíme se postarat o to, aby tělo začalo jed rozkládat co nejdříve.");
+	Doc_PrintLines(nDocID,0,"Jed - je zlo! Obvzlášť když se dostane do organizmu. Musíme se postarat o to, aby tělo začalo jed rozkládat co nejdříve.");
 	Doc_PrintLine(nDocID,0,"");
 	Doc_PrintLine(nDocID,0,"");
 	Doc_PrintLines(nDocID,0,"Je velice důležité se neustále pohybovat a hodně potit! Potom otrava jedem nebude působit tolik újmy.");
