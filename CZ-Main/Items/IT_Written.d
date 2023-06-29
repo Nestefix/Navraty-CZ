@@ -436,7 +436,7 @@ func void Use_Hinweis_02()
 	Doc_PrintLine(nDocID,0,"");
 	Doc_PrintLine(nDocID,0,"Hele chlapi!");
 	Doc_PrintLines(nDocID,0,"");
-	Doc_PrintLines(nDocID,0,"Lou zmizel v bažinách. Pravděpodobně ho sežrali močáloví žraloci. Co je ale horší - klíč ode dvěří se ztratil s ním. Kdo ho najde, může si nechat jeho věci.");
+	Doc_PrintLines(nDocID,0,"Lou zmizel v bažinách. Pravděpodobně ho sežrali močáloví žraloci. Co je ale horší - klíč ode dveří se ztratil s ním. Kdo ho najde, může si nechat jeho věci.");
 	Doc_PrintLine(nDocID,0,"");
 	Doc_PrintLine(nDocID,0,"");
 	Doc_PrintLine(nDocID,0,"			- Snaf");
@@ -566,7 +566,7 @@ instance ITWr_Addon_Mana_04(C_Item)
 	on_state[0] = Use_Manarezept_04;
 	scemeName = "MAP";
 	description = "Recept na elixír čisté many";
-	text[3] = "Způsob připravy elixíru čisté many...";
+	text[3] = "Způsob přípravy elixíru čisté many...";
 	text[4] = "Je potřeba znalost receptu lektvarů many...";
 	text[5] = NAME_Value;
 	count[5] = value;
@@ -933,7 +933,7 @@ func void Use_Joint_Rezept_01()
 	Doc_SetMargins(nDocID,-1,50,50,50,50,1);
 	Doc_PrintLine(nDocID,0,"");
 	Doc_PrintLine(nDocID,0,"");
-	Doc_PrintLines(nDocID,0,"Špeky co tu balí jsou dost dobré, ale v táboře v bažinách to posunuli ještě dál. Pokud vezmu esenci ze dvou špeků trávy z bažin a přidám k nim jednu luční pohanku, je možné ubalit špeka se stejným efektem zeleného novice. Zelený novic napomáha tišit bolest a rozjasňuje mysl.");
+	Doc_PrintLines(nDocID,0,"Špeky co tu balí jsou dost dobré, ale v táboře v bažinách to posunuli ještě dál. Pokud vezmu esenci ze dvou špeků trávy z bažin a přidám k nim jednu luční pohanku, je možné ubalit špeka se stejným efektem zeleného novice. Zelený novic napomáhá tišit bolest a rozjasňuje mysl.");
 	Doc_PrintLine(nDocID,0,"");
 	Doc_PrintLine(nDocID,0,"");
 	Doc_PrintLine(nDocID,0,"");
@@ -1327,7 +1327,7 @@ func void use_permint()
 	Doc_PrintLine(nDocID,0,"");
 	Doc_PrintLines(nDocID,0,"Příprava elixíru:");
 	Doc_PrintLine(nDocID,0,"");
-	Doc_PrintLines(nDocID,0,"Vezmi čistý alkohol, luční pohanku, trávu z bažin a deset hlav kudlanek. Povař hlavy, sceď vodu a smíchej s trávou. Zahřívej na mírném ohni a přílévej vývar, do té doby než vypaření proběhne pětkrát. Užívej vychladlé.");
+	Doc_PrintLines(nDocID,0,"Vezmi čistý alkohol, luční pohanku, trávu z bažin a deset hlav kudlanek. Povař hlavy, sceď vodu a smíchej s trávou. Zahřívej na mírném ohni a přilévej vývar, do té doby než vypaření proběhne pětkrát. Užívej vychladlé.");
 	Doc_PrintLine(nDocID,0,"");
 	Doc_PrintLine(nDocID,0,"");
 	Doc_PrintLine(nDocID,0,"");
@@ -1504,7 +1504,7 @@ func void use_fullhealth_02()
 	Doc_PrintLine(nDocID,0,"");
 	Doc_PrintLines(nDocID,0,"Příprava léčivého elixíru:");
 	Doc_PrintLine(nDocID,0,"");
-	Doc_PrintLines(nDocID,0,"Vezmeme čistý alkohol, žihadla krvavé mouchy, léčivou rostlinu, luční pohanku a modrý bez. Rozřízneme žihadla a získáme z nich jed. Smíchame byliny, aby pustili šťávu. Zbytky žihadel zalijeme šťávou z bylin a pomalu přidáváme jed až do rozpuštění zbytku bylin. Scedíme a dál pokračujeme v přípravě jako u běžných elixírů.");
+	Doc_PrintLines(nDocID,0,"Vezmeme čistý alkohol, žihadla krvavé mouchy, léčivou rostlinu, luční pohanku a modrý bez. Rozřízneme žihadla a získáme z nich jed. Smícháme byliny, aby pustili šťávu. Zbytky žihadel zalijeme šťávou z bylin a pomalu přidáváme jed až do rozpuštění zbytku bylin. Scedíme a dál pokračujeme v přípravě jako u běžných elixírů.");
 	Doc_PrintLine(nDocID,0,"");
 	Doc_PrintLine(nDocID,0,"");
 	Doc_PrintLine(nDocID,0,"");
@@ -1859,7 +1859,7 @@ func void Use_ItWr_Luka()
 	Doc_PrintLine(nDocID,0,"");
 	Doc_PrintLine(nDocID,0,"");
 	Doc_PrintLines(nDocID,0,"");
-	Doc_PrintLines(nDocID,0,"Luko, zatím vyčkej a neřeš s Hasimem nic! I když se ten bastard příblížil k dolu až moc blízko, znám někoho, kdo za nás tu špinavou práci udělá...");
+	Doc_PrintLines(nDocID,0,"Luko, zatím vyčkej a neřeš s Hasimem nic! I když se ten bastard přiblížil k dolu až moc blízko, znám někoho, kdo za nás tu špinavou práci udělá...");
 	Doc_PrintLine(nDocID,0,"");
 	Doc_PrintLine(nDocID,0,"");
 	Doc_PrintLine(nDocID,0,"			- Tiamant");
@@ -1906,7 +1906,7 @@ func void Use_ItWr_OsaitToTiamant()
 	Doc_PrintLine(nDocID,0,"");
 	Doc_PrintLine(nDocID,0,"");
 	Doc_PrintLines(nDocID,0,"");
-	Doc_PrintLines(nDocID,0,"Tiamante! Neschopnost tvojich lidí mě stojí více a více peněz. Jestli chceš aby vůbec do dolu dorazila další várka otroků - musíš jim nejprve zajistit bezpečí!");
+	Doc_PrintLines(nDocID,0,"Tiamante! Neschopnost tvých lidí mě stojí více a více peněz. Jestli chceš aby vůbec do dolu dorazila další várka otroků - musíš jim nejprve zajistit bezpečí!");
 	Doc_PrintLine(nDocID,0,"");
 	Doc_PrintLine(nDocID,0,"");
 	Doc_PrintLine(nDocID,0,"			- Osair");
@@ -2248,7 +2248,7 @@ func void use_itwr_cbow_t2()
 	Doc_SetMargins(nDocID,0,275,20,30,20,1);
 	Doc_SetFont(nDocID,-1,FONT_Book_New_Small);
 	Doc_PrintLine(nDocID,0,"");
-	Doc_PrintLines(nDocID,0,"Správné držení těla při nabíjení kuše, síla a neustálé zlepšování zajistí lepší rychlost nabíjení. Nejčastěšjí chyba při práci s kuší je, že tětiva nebývá natahována stále na to stejné místo a jak nejvíc je do středu možné.");
+	Doc_PrintLines(nDocID,0,"Správné držení těla při nabíjení kuše, síla a neustálé zlepšování zajistí lepší rychlost nabíjení. Nejčastější chyba při práci s kuší je, že tětiva nebývá natahována stále na to stejné místo a jak nejvíc je do středu možné.");
 	Doc_SetMargins(nDocID,-1,30,20,275,20,1);
 	Doc_PrintLine(nDocID,1,"");
 	Doc_PrintLines(nDocID,1,"Přetažení tětivy o půl centimetru do strany výrazně odvádí šipku od svého cíle. Pokud máte dostatek štěstí a dostanete se k modelu kuše, která vám dovolí dotknout se obou stran úchytu při centrování tětivy, je to jen dobře. Někteří kušníci si dělají dvě značky na tětivě a to po jedné na každé straně pažby. Poté natahují tětivu a posouvají ji doprava nebo doleva podle středu.");
@@ -2409,7 +2409,7 @@ func void Use_ItWr_UberionBook()
 	Doc_PrintLines(nDocID,0,"Jsem neustále mučen vizemi. Vždy v nich vidím ten stejný obraz - obraz mocného stvoření! Nazval jsem ho - Spáč.");
 	Doc_SetMargins(nDocID,-1,30,20,275,20,1);
 	Doc_PrintLine(nDocID,1,"");
-	Doc_PrintLines(nDocID,1,"Použil jsem rostlinu, která roste v bažinách a přiravil jsem z ní speciální směs na kouření, která způsobuje osvícení a zvyšuje mou magickou moc...");
+	Doc_PrintLines(nDocID,1,"Použil jsem rostlinu, která roste v bažinách a připravil jsem z ní speciální směs na kouření, která způsobuje osvícení a zvyšuje mou magickou moc...");
 	Doc_Show(nDocID);
 };
 
@@ -2588,7 +2588,7 @@ func void Use_ItWr_CassiaLetter()
 	Doc_SetMargins(nDocID,-1,50,50,50,50,1);
 	Doc_PrintLine(nDocID,0,"");
 	Doc_PrintLine(nDocID,0,"");
-	Doc_PrintLines(nDocID,0,"Je nutné přověřit následující lidi:");
+	Doc_PrintLines(nDocID,0,"Je nutné prověřit následující lidi:");
 	Doc_PrintLine(nDocID,0,"");
 	Doc_PrintLine(nDocID,0,"Halvor");
 	Doc_PrintLine(nDocID,0,"Nagur");
@@ -2671,7 +2671,7 @@ func void Use_ItWr_Fregarah()
 	Doc_PrintLines(nDocID,0,"Po dlouhé roky jsem si pokládal tu samou otázku - odkud se to stvoření vzalo? Až Strážci mi poodhalili pohled na události, kdy Stonnos, čtvrtý z bohů tohoto světa, byl zabit jeho bratrem - Beliarem! Jsem si zcela jistý, že nenadálé zjevení tohoto stvoření v našem světě je s těmito událostmi nějak přepojeno.");
 	Doc_SetMargins(nDocID,-1,30,20,275,20,1);
 	Doc_PrintLine(nDocID,1,"");
-	Doc_PrintLines(nDocID,1,"Taková bytost se na našem světě objeví jen ojediněle, často v dobách velkých převratů. Neskutečná síla, která se v nich nachází dokáže přeměnit běžný předmět na arktefakt, jež disponuje opravdu úžasnými vlastnostmi.");
+	Doc_PrintLines(nDocID,1,"Taková bytost se na našem světě objeví jen ojediněle, často v dobách velkých převratů. Neskutečná síla, která se v nich nachází dokáže přeměnit běžný předmět na artefakt, jež disponuje opravdu úžasnými vlastnostmi.");
 	Doc_Show(nDocID);
 };
 
@@ -2716,7 +2716,7 @@ func void Use_ItWr_Stonnos_01()
 			B_RaiseAttribute(self,ATR_HITPOINTS_MAX,100);
 			Snd_Play("Levelup");
 			StonnosHrAll = TRUE;
-			B_LogEntry(TOPIC_XRANFREG,"Teď už vím vše, co jsem potřeboval! To stvoření s kterým se Pyrokar a Xardas setkali, nebyl nikdo jiný než Stonnos sám. Je nesmrtelný a pouze a jen krev boha, který ho splodil, může zničit toto stvoření. Podle všeho, obyčejná magická ruda - je stejná jako krev Stonnose! Vzpomínám si na příběh o Urizielovi. Možná to bude fungovat znova. Jenže kde já najdu tolik rudy?! A co je nejdůležitější, jaký předmět použít pro tyto účely. Otázky, otázky, samé otázky...");
+			B_LogEntry(TOPIC_XRANFREG,"Teď už vím vše, co jsem potřeboval! To stvoření s kterým se Pyrokar a Xardas setkali, nebyl nikdo jiný než Stonnos sám. Je nesmrtelný a pouze a jen krev boha, který ho zplodil, může zničit toto stvoření. Podle všeho, obyčejná magická ruda - je stejná jako krev Stonnose! Vzpomínám si na příběh o Urizielovi. Možná to bude fungovat znova. Jenže kde já najdu tolik rudy?! A co je nejdůležitější, jaký předmět použít pro tyto účely. Otázky, otázky, samé otázky...");
 		};
 	}
 	else
@@ -2753,7 +2753,7 @@ func void Use_ItWr_Stonnos_01()
 	Doc_PrintLines(nDocID,0,"Čtyři božští bratři byli velice silní i přes své rozepře, které vyvstávaly z jejich vlastní podstaty. Vznešený Innos, ctižádostivý Beliar, soustředěný Adanos a nadšený Stonnos. Dokud hrají svou roli v tomto světě, naše možnosti jsou vymezeny jejich úmluvou.");
 	Doc_SetMargins(nDocID,-1,30,20,275,20,1);
 	Doc_PrintLine(nDocID,1,"");
-	Doc_PrintLines(nDocID,1,"Tři jsou lepší než čtyři. A každá ctnost má i své nedostatky: samolibost Innose, závistivost Beliara, lhostejnost Adana i přílišná obětavost Stonnose. Ten, kdo proniká do temnoty Skály, vstupuje i do Temnoty Beliara. Jak jednoduše zasýt sémě pochybnosti a pěstovat zárodky nenávisti zamíchané se závistí. Hlavní věc je – ostražitost!");
+	Doc_PrintLines(nDocID,1,"Tři jsou lepší než čtyři. A každá ctnost má i své nedostatky: samolibost Innose, závistivost Beliara, lhostejnost Adana i přílišná obětavost Stonnose. Ten, kdo proniká do temnoty Skály, vstupuje i do Temnoty Beliara. Jak jednoduše zasít sémě pochybnosti a pěstovat zárodky nenávisti zamíchané se závistí. Hlavní věc je – ostražitost!");
 	Doc_Show(nDocID);
 };
 
@@ -2798,7 +2798,7 @@ func void Use_ItWr_Stonnos_02()
 			B_RaiseAttribute(self,ATR_HITPOINTS_MAX,100);
 			Snd_Play("Levelup");
 			StonnosHrAll = TRUE;
-			B_LogEntry(TOPIC_XRANFREG,"Teď už vím vše, co jsem potřeboval! To stvoření s kterým se Pyrokar a Xardas setkali, nebyl nikdo jiný než Stonnos sám. Je nesmrtelný a pouze a jen krev boha, který ho splodil, může zničit toto stvoření. Podle všeho, obyčejná magická ruda - je stejná jako krev Stonnose! Vzpomínám si na příběh o Urizielovi. Možná to bude fungovat znova. Jenže kde já najdu tolik rudy?! A co je nejdůležitější, jaký předmět použít pro tyto účely. Otázky, otázky, samé otázky...");
+			B_LogEntry(TOPIC_XRANFREG,"Teď už vím vše, co jsem potřeboval! To stvoření s kterým se Pyrokar a Xardas setkali, nebyl nikdo jiný než Stonnos sám. Je nesmrtelný a pouze a jen krev boha, který ho zplodil, může zničit toto stvoření. Podle všeho, obyčejná magická ruda - je stejná jako krev Stonnose! Vzpomínám si na příběh o Urizielovi. Možná to bude fungovat znova. Jenže kde já najdu tolik rudy?! A co je nejdůležitější, jaký předmět použít pro tyto účely. Otázky, otázky, samé otázky...");
 		};
 	}
 	else
@@ -2880,7 +2880,7 @@ func void Use_ItWr_Stonnos_03()
 			B_RaiseAttribute(self,ATR_HITPOINTS_MAX,100);
 			Snd_Play("Levelup");
 			StonnosHrAll = TRUE;
-			B_LogEntry(TOPIC_XRANFREG,"Teď už vím vše, co jsem potřeboval! To stvoření s kterým se Pyrokar a Xardas setkali, nebyl nikdo jiný než Stonnos sám. Je nesmrtelný a pouze a jen krev boha, který ho splodil, může zničit toto stvoření. Podle všeho, obyčejná magická ruda - je stejná jako krev Stonnose! Vzpomínám si na příběh o Urizielovi. Možná to bude fungovat znova. Jenže kde já najdu tolik rudy?! A co je nejdůležitější, jaký předmět použít pro tyto účely. Otázky, otázky, samé otázky...");
+			B_LogEntry(TOPIC_XRANFREG,"Teď už vím vše, co jsem potřeboval! To stvoření s kterým se Pyrokar a Xardas setkali, nebyl nikdo jiný než Stonnos sám. Je nesmrtelný a pouze a jen krev boha, který ho zplodil, může zničit toto stvoření. Podle všeho, obyčejná magická ruda - je stejná jako krev Stonnose! Vzpomínám si na příběh o Urizielovi. Možná to bude fungovat znova. Jenže kde já najdu tolik rudy?! A co je nejdůležitější, jaký předmět použít pro tyto účely. Otázky, otázky, samé otázky...");
 		};
 	}
 	else
@@ -2962,7 +2962,7 @@ func void Use_ItWr_Stonnos_04()
 			B_RaiseAttribute(self,ATR_HITPOINTS_MAX,100);
 			Snd_Play("Levelup");
 			StonnosHrAll = TRUE;
-			B_LogEntry(TOPIC_XRANFREG,"Teď už vím vše, co jsem potřeboval! To stvoření s kterým se Pyrokar a Xardas setkali, nebyl nikdo jiný než Stonnos sám. Je nesmrtelný a pouze a jen krev boha, který ho splodil, může zničit toto stvoření. Podle všeho, obyčejná magická ruda - je stejná jako krev Stonnose! Vzpomínám si na příběh o Urizielovi. Možná to bude fungovat znova. Jenže kde já najdu tolik rudy?! A co je nejdůležitější, jaký předmět použít pro tyto účely. Otázky, otázky, samé otázky...");
+			B_LogEntry(TOPIC_XRANFREG,"Teď už vím vše, co jsem potřeboval! To stvoření s kterým se Pyrokar a Xardas setkali, nebyl nikdo jiný než Stonnos sám. Je nesmrtelný a pouze a jen krev boha, který ho zplodil, může zničit toto stvoření. Podle všeho, obyčejná magická ruda - je stejná jako krev Stonnose! Vzpomínám si na příběh o Urizielovi. Možná to bude fungovat znova. Jenže kde já najdu tolik rudy?! A co je nejdůležitější, jaký předmět použít pro tyto účely. Otázky, otázky, samé otázky...");
 		};
 	}
 	else
@@ -3044,7 +3044,7 @@ func void Use_ItWr_Stonnos_05()
 			B_RaiseAttribute(self,ATR_HITPOINTS_MAX,100);
 			Snd_Play("Levelup");
 			StonnosHrAll = TRUE;
-			B_LogEntry(TOPIC_XRANFREG,"Teď už vím vše, co jsem potřeboval! To stvoření s kterým se Pyrokar a Xardas setkali, nebyl nikdo jiný než Stonnos sám. Je nesmrtelný a pouze a jen krev boha, který ho splodil, může zničit toto stvoření. Podle všeho, obyčejná magická ruda - je stejná jako krev Stonnose! Vzpomínám si na příběh o Urizielovi. Možná to bude fungovat znova. Jenže kde já najdu tolik rudy?! A co je nejdůležitější, jaký předmět použít pro tyto účely. Otázky, otázky, samé otázky...");
+			B_LogEntry(TOPIC_XRANFREG,"Teď už vím vše, co jsem potřeboval! To stvoření s kterým se Pyrokar a Xardas setkali, nebyl nikdo jiný než Stonnos sám. Je nesmrtelný a pouze a jen krev boha, který ho zplodil, může zničit toto stvoření. Podle všeho, obyčejná magická ruda - je stejná jako krev Stonnose! Vzpomínám si na příběh o Urizielovi. Možná to bude fungovat znova. Jenže kde já najdu tolik rudy?! A co je nejdůležitější, jaký předmět použít pro tyto účely. Otázky, otázky, samé otázky...");
 		};
 	}
 	else
@@ -3078,10 +3078,10 @@ func void Use_ItWr_Stonnos_05()
 	Doc_SetMargins(nDocID,0,275,20,30,20,1);
 	Doc_SetFont(nDocID,-1,"font_10_book.tga");
 	Doc_PrintLine(nDocID,0,"");
-	Doc_PrintLines(nDocID,0,"Magická ruda - není nic jiného než zkaměnělá krev Stonnose. Ale rozžhavené zemské hlubiny - to je ta pravá síla boha kamene! Teď už s tím nemůžeme dělat vůbec nic.");
+	Doc_PrintLines(nDocID,0,"Magická ruda - není nic jiného než zkamenělá krev Stonnose. Ale rozžhavené zemské hlubiny - to je ta pravá síla boha kamene! Teď už s tím nemůžeme dělat vůbec nic.");
 	Doc_SetMargins(nDocID,-1,30,20,275,20,1);
 	Doc_PrintLine(nDocID,1,"");
-	Doc_PrintLines(nDocID,1,"Nově stvořená bytost není však Stonnos sám, nýbrž jen část jeho samotnéno. Podařilo se nám ho přesvědčit, aby nám sloužil a je to tak, že nyní ho žádný z božských bratří nemůže použít ve svůj vlastní prospěch.");
+	Doc_PrintLines(nDocID,1,"Nově stvořená bytost není však Stonnos sám, nýbrž jen část jeho samotného. Podařilo se nám ho přesvědčit, aby nám sloužil a je to tak, že nyní ho žádný z božských bratří nemůže použít ve svůj vlastní prospěch.");
 	Doc_Show(nDocID);
 };
 
@@ -3126,7 +3126,7 @@ func void Use_ItWr_Stonnos_06()
 			B_RaiseAttribute(self,ATR_HITPOINTS_MAX,100);
 			Snd_Play("Levelup");
 			StonnosHrAll = TRUE;
-			B_LogEntry(TOPIC_XRANFREG,"Teď už vím vše, co jsem potřeboval! To stvoření s kterým se Pyrokar a Xardas setkali, nebyl nikdo jiný než Stonnos sám. Je nesmrtelný a pouze a jen krev boha, který ho splodil, může zničit toto stvoření. Podle všeho, obyčejná magická ruda - je stejná jako krev Stonnose! Vzpomínám si na příběh o Urizielovi. Možná to bude fungovat znova. Jenže kde já najdu tolik rudy?! A co je nejdůležitější, jaký předmět použít pro tyto účely. Otázky, otázky, samé otázky...");
+			B_LogEntry(TOPIC_XRANFREG,"Teď už vím vše, co jsem potřeboval! To stvoření s kterým se Pyrokar a Xardas setkali, nebyl nikdo jiný než Stonnos sám. Je nesmrtelný a pouze a jen krev boha, který ho zplodil, může zničit toto stvoření. Podle všeho, obyčejná magická ruda - je stejná jako krev Stonnose! Vzpomínám si na příběh o Urizielovi. Možná to bude fungovat znova. Jenže kde já najdu tolik rudy?! A co je nejdůležitější, jaký předmět použít pro tyto účely. Otázky, otázky, samé otázky...");
 		};
 	}
 	else
@@ -3310,7 +3310,7 @@ func void Use_ItWr_Alchemy_01()
 	Doc_PrintLines(nDocID,0,"Moudří lidé se naučili získávat magickou moc z bylin a z částí různých stvoření. Od té doby, alchymisti hledají využití pro nové léčebné prostředky a způsoby jak vylepšit ty staré. Ty, jejichž podstatu napadl sám Beliar, nazýváme temnými alchymisty. Ve svých lektvarech užívají kosti, lebky a ektoplazmu mocných magických stvoření.");
 	Doc_SetMargins(nDocID,-1,30,20,275,20,1);
 	Doc_PrintLine(nDocID,1,"");
-	Doc_PrintLines(nDocID,1,"Elixíry mají rozličné účinky na válečníky a na mágy. Výsledkem tréninku se organizmus stává citlivým na určité alchymistické směsi a vůči dalším si buduje imunitu. Pro dosažení co nejlepších účinků užívejte elixíry přirozené vášmu osobnímu tréninku.");
+	Doc_PrintLines(nDocID,1,"Elixíry mají rozličné účinky na válečníky a na mágy. Výsledkem tréninku se organizmus stává citlivým na určité alchymistické směsi a vůči dalším si buduje imunitu. Pro dosažení co nejlepších účinků užívejte elixíry přirozené vašemu osobnímu tréninku.");
 	Doc_Show(nDocID);
 };
 
