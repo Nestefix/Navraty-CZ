@@ -177,8 +177,8 @@ func void Bookstand_Avabul_s1()
 		Doc_SetMargins(nDocID,0,275,20,30,20,1);
 		Doc_PrintLine(nDocID,0,"");
 		Doc_PrintLine(nDocID,0,"");
-		Doc_PrintLines(nDocID,0,"Jediná naděje jak získat tento artefakt zavisí na provedení rituálu...");
-		Doc_PrintLines(nDocID,0,"Doufám, že dokážu přivolat jednoho ze sluhů Beliara, aby mi odpoveděl na mé otázky.");
+		Doc_PrintLines(nDocID,0,"Jediná naděje jak získat tento artefakt závisí na provedení rituálu...");
+		Doc_PrintLines(nDocID,0,"Doufám, že dokážu přivolat jednoho ze sluhů Beliara, aby mi odpověděl na mé otázky.");
 		Doc_PrintLine(nDocID,0,"");
 		Doc_SetMargins(nDocID,-1,30,20,275,20,1);
 		Doc_PrintLine(nDocID,1,"");

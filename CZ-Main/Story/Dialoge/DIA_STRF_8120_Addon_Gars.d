@@ -165,7 +165,7 @@ func void DIA_STRF_8120_Addon_Gars_Paladin_info()
 	AI_Output(other,self,"DIA_STRF_8120_Addon_Gars_Paladin_01_01");	//Ano, to jsem byl já. Jestli jsi opravdu paladin.
 	AI_Output(self,other,"DIA_STRF_8120_Addon_Gars_Paladin_01_02");	//To jsem! Říkají mě Wenzel.
 	AI_Output(other,self,"DIA_STRF_8120_Addon_Gars_Paladin_01_03");	//Wenzel?! Vypadá to, že jsem se nemýlil.
-	AI_Output(self,other,"DIA_STRF_8120_Addon_Gars_Paladin_01_04");	//To jsem rád. Tak co ji potřeboval?
+	AI_Output(self,other,"DIA_STRF_8120_Addon_Gars_Paladin_01_04");	//To jsem rád. Tak co jsi potřeboval?
 	FindVenzel = TRUE;
 	self.name[0] = "Wenzel";
 	B_LogEntry(TOPIC_LostPaladins,"Našel jsem v dole paladina. Ukázalo se že je to kopáč Gars! Kdo by si to pomyslel...");
@@ -430,12 +430,12 @@ func void DIA_STRF_8120_Addon_Gars_NeedWeapons_info()
 	AI_Output(self,other,"DIA_STRF_8120_Addon_Gars_NeedWeapons_01_12");	//No dobře, je pěkné si zavzpomínat, ale na to teď nemáme čas.
 	AI_Output(other,self,"DIA_STRF_8120_Addon_Gars_NeedWeapons_01_13");	//Crow říkal, že budeš vědět, co dělat dál.
 	AI_Output(self,other,"DIA_STRF_8120_Addon_Gars_NeedWeapons_01_14");	//Je to jednoduché. Vezmu si organizaci lidí na sebe.
-	AI_Output(self,other,"DIA_STRF_8120_Addon_Gars_NeedWeapons_01_15");	//Ale nejdřív se musíme pořádně připravit na útěku.
+	AI_Output(self,other,"DIA_STRF_8120_Addon_Gars_NeedWeapons_01_15");	//Ale nejdřív se musíme pořádně připravit na útěk.
 	AI_Output(self,other,"DIA_STRF_8120_Addon_Gars_NeedWeapons_01_16");	//Potřebujeme normální zbraně a dostatek potravy.
-	AI_Output(self,other,"DIA_STRF_8120_Addon_Gars_NeedWeapons_01_17");	//Bez toho, bude naše akce už od začátku odsouzena k neůspěchu.
+	AI_Output(self,other,"DIA_STRF_8120_Addon_Gars_NeedWeapons_01_17");	//Bez toho, bude naše akce už od začátku odsouzena k neúspěchu.
 	AI_Output(self,other,"DIA_STRF_8120_Addon_Gars_NeedWeapons_01_18");	//Kromě toho by bylo dobré, kdybys mi přinesl moji zbroj a meč.
 	AI_Output(self,other,"DIA_STRF_8120_Addon_Gars_NeedWeapons_01_19");	//Jestli budem nuceni bojovat, tak to může zachránit nejeden život!
-	B_LogEntry(TOPIC_EscapeMine,"Wenzel je připraven vést vzpouru a pomoct uniknout všem vězňům. Chce využít vhodný okamžik a dostat lidi přes magický portál pryč! Ale nejdřív se musíme připravit, pro případ, že budem nuceni bojovat.");
+	B_LogEntry(TOPIC_EscapeMine,"Wenzel je připraven vést vzpouru a pomoct uniknout všem vězňům. Chce využít vhodný okamžik a dostat lidi přes magický portál pryč! Ale nejdřív se musí připravit, pro případ, že budou nuceni bojovat.");
 };
 
 instance DIA_STRF_8120_Addon_Gars_Weapons(C_Info)
@@ -459,14 +459,14 @@ func int DIA_STRF_8120_Addon_Gars_Weapons_condition()
 func void DIA_STRF_8120_Addon_Gars_Weapons_info()
 {
 	AI_Output(other,self,"DIA_STRF_8120_Addon_Gars_Weapons_01_00");	//Kolik zbraní potřebuješ?
-	AI_Output(self,other,"DIA_STRF_8120_Addon_Gars_Weapons_01_01");	//Když vezmeme v potaz kolik nás je, tak dva tucty by mohli stačit. Budou stačit obyčejné.
-	AI_Output(self,other,"DIA_STRF_8120_Addon_Gars_Weapons_01_02");	//Rozdám je mezi vězně těsně než vyrazíme.
+	AI_Output(self,other,"DIA_STRF_8120_Addon_Gars_Weapons_01_01");	//Když vezmeme v potaz kolik nás je, tak dvě desítky mečů by mohli stačit. Budou stačit obyčejné.
+	AI_Output(self,other,"DIA_STRF_8120_Addon_Gars_Weapons_01_02");	//Rozdám je mezi vězně těsně předtím než vyrazíme.
 	AI_Output(self,other,"DIA_STRF_8120_Addon_Gars_Weapons_01_03");	//Dřív by to bylo nebezpečné, skřeti by mohli něco vytušit.
 	AI_Output(other,self,"DIA_STRF_8120_Addon_Gars_Weapons_01_04");	//Rozumím.
 	MIS_GarsWeapons = LOG_Running;
 	Log_CreateTopic(TOPIC_GarsWeapons,LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_GarsWeapons,LOG_Running);
-	B_LogEntry(TOPIC_GarsWeapons,"Na vyzbrojení vězňů potřebuje Wenzel dva tucty obyčejných zbraní.");
+	B_LogEntry(TOPIC_GarsWeapons,"Na vyzbrojení vězňů potřebuje Wenzel dvacet obyčejných mečů.");
 };
 
 instance DIA_STRF_8120_Addon_Gars_WeaponsDone(C_Info)

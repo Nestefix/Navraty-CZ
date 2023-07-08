@@ -547,7 +547,7 @@ func void DIA_Parlan_NoEnter_Info()
 	Info_ClearChoices(DIA_Parlan_NoEnter);
 	Info_AddChoice(DIA_Parlan_NoEnter,"Přelezl jsem přes stěnu.",DIA_Parlan_NoEnter_UpWall);
 	Info_AddChoice(DIA_Parlan_NoEnter,"Přišel jsem z hor.",DIA_Parlan_NoEnter_Mount);
-	Info_AddChoice(DIA_Parlan_NoEnter,"Novic pedro mě pustil.",DIA_Parlan_NoEnter_Pedro);
+	Info_AddChoice(DIA_Parlan_NoEnter,"Novic Pedro mě pustil.",DIA_Parlan_NoEnter_Pedro);
 
 	// if(RhetorikSkillValue[1] >= 10)
 	// {

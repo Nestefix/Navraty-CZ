@@ -108,7 +108,7 @@ func void dia_urshak_tarrokwound_info()
 	AI_Output(self,other,"DIA_Urshak_TarrokWound_18_02");	//Přítel může přijt vždy a Ur-Shak mu pomůže.
 	AI_Output(other,self,"DIA_Urshak_TarrokWound_18_03");	//Potkal jsem tvého přítele, Thurrocka. Bohužel ho napadli kostlivci a ošklivě ho zranili.
 	AI_Output(other,self,"DIA_Urshak_TarrokWound_18_04");	//Jestli nemá zemřít, bude potřebovat léčivý elixír, jaký užívají skřeti. Můžeš mi prozradit, kde ho najdu?
-	AI_Output(self,other,"DIA_Urshak_TarrokWound_18_05");	//Přítel Ur-Shaka zraněn! Špatné... Přítel udelal správne, že přijít za Ur-Shak.
+	AI_Output(self,other,"DIA_Urshak_TarrokWound_18_05");	//Přítel Ur-Shaka zraněn! Špatné... Přítel udělal správně, že přijít za Ur-Shak.
 	AI_Output(self,other,"DIA_Urshak_TarrokWound_18_06");	//Přítel nemusí hledat lektvar. Ur-Shak mu jej dá. Člověk jej zanese Thurrockovi a ten bude zase zdravý jako dřív.
 	AI_Output(self,other,"DIA_Urshak_TarrokWound_18_07");	//Tady... Přítel má lektvar, nyní jej zanese.
 	B_GiveInvItems(self,other,itpo_xorcpotion,1);
@@ -219,7 +219,7 @@ func void DIA_Urshak_ZAUN_Info()
 	AI_Output(other,self,"DIA_Urshak_ZAUN_15_00");	//Co je ukryto za tou dlouhou zdí na východě?
 	AI_Output(self,other,"DIA_Urshak_ZAUN_18_01");	//Skřeti vždycky, když válka, stavět velká palisáda a tábor.
 	AI_Output(self,other,"DIA_Urshak_ZAUN_18_02");	//Palisáda dobrá pro válka. Ukrývá síla vojska a chrání skřety.
-	AI_Output(self,other,"DIA_Urshak_ZAUN_18_03");	//Nicméně Ur-shak slyšel hrozné a divné veci.
+	AI_Output(self,other,"DIA_Urshak_ZAUN_18_03");	//Nicméně Ur-Shak slyšel hrozné a divné věci.
 	AI_Output(self,other,"DIA_Urshak_ZAUN_18_04");	//Skřeti říkají, že jiný druh magie schovaný za palisáda! Temný a nečistý!
 	AI_Output(self,other,"DIA_Urshak_ZAUN_18_05");	//Skřeti jsou vylekaní! Šamani jsou také vylekaní...
 	AI_Output(self,other,"DIA_Urshak_ZAUN_18_06");	//Ani Ur-Shak nikdy předtím nic takového neviděl.
@@ -306,14 +306,14 @@ func void dia_urshak_templedoor_info()
 	AI_Output(self,other,"DIA_Urshak_TempleDoor_01_06");	//Člověk chce jít do chrámu? To se přítel nebojí zla?!
 	AI_Output(other,self,"DIA_Urshak_TempleDoor_15_05");	//Prostě tam potřebuji, můžeš mě tam dostat?
 	AI_Output(self,other,"DIA_Urshak_TempleDoor_01_08");	//Bratři zrobit klíč. Klíč ke kouzlu. Ale pak i odnést klíč a dobře schovat.
-	AI_Output(other,self,"DIA_Urshak_TempleDoor_15_06");	//Město? Chceš říci, že v kolonii je ješte jiné skřetí město?!
-	AI_Output(self,other,"DIA_Urshak_TempleDoor_01_10");	//Město pod skálou. Velké mesto - mnoho bratrů, mnoho válečníků.
+	AI_Output(other,self,"DIA_Urshak_TempleDoor_15_06");	//Město? Chceš říci, že v kolonii je ještě jiné skřetí město?!
+	AI_Output(self,other,"DIA_Urshak_TempleDoor_01_10");	//Město pod skálou. Velké město - mnoho bratrů, mnoho válečníků.
 	AI_Output(self,other,"DIA_Urshak_TempleDoor_01_11");	//Jestli přítel jít tam, mít s sebou Ulu-Mulu. Pak bratři nedotknout a mluvit s přítel.
 	AI_Output(other,self,"DIA_Urshak_TempleDoor_01_12");	//Myslím, že jsem ho ztratil. Kde teď seženu ještě jeden Ulu-Mulu?
-	AI_Output(self,other,"DIA_Urshak_TempleDoor_01_13");	//Ur-Shak ti nepomůže, jen válečníci ví jak se dělá. Ur-Shak nebyl válečník, ale šaman... Ale Ur-Shak může povědet kde hledat válečníka.
+	AI_Output(self,other,"DIA_Urshak_TempleDoor_01_13");	//Ur-Shak ti nepomůže, jen válečníci ví jak se dělá. Ur-Shak nebyl válečník, ale šaman... Ale Ur-Shak může povědět kde hledat válečníka.
 	AI_Output(self,other,"DIA_Urshak_TempleDoor_01_14");	//Thurrock nesmýšlet špatně o lidech. Být více jako Ur-Shak než ostatní. Pomůže ti k Ulu-Mulu.
 	AI_Output(other,self,"DIA_Urshak_TempleDoor_01_15");	//A kde toho Thurrocka najdu?
-	AI_Output(self,other,"DIA_Urshak_TempleDoor_01_16");	//Přítel k bažině jít a hledat vež. Nad ní naposled Thurrockův tábor.
+	AI_Output(self,other,"DIA_Urshak_TempleDoor_01_16");	//Přítel k bažině jít a hledat věž. Nad ní naposled Thurrockův tábor.
 	AI_Output(other,self,"DIA_Urshak_TempleDoor_01_17");	//A kde pak najdu město?
 	AI_Output(self,other,"DIA_Urshak_TempleDoor_01_18");	//Přítel půjde do hor na severu, tam najít vstup.
 	AI_Output(self,other,"DIA_Urshak_TempleDoor_01_19");	//Ale nezapomenout Ulu-Mulu mít v ruce, jinak špatný konec.
@@ -326,7 +326,7 @@ func void dia_urshak_templedoor_info()
 
 	AI_Output(other,self,"DIA_Urshak_TempleDoor_01_22");	//Díky za pomoc, kamaráde.
 	B_LogEntry(TOPIC_ORCTEMPLE,"Ur-Shak mi řekl, že jediná cesta přes zaklínadlo u vstupu do chrámu je najít klíč. Nicméně si ho odnesli skřeti do svého města. Měl bych se tam podívat a přimět je, aby mi půjčili svůj klíček...");
-	B_LogEntry_Quiet(TOPIC_ORCTEMPLE,"S sebou bych ale měl mít Ulu-Mulu, symbol přátelství se skřety. S ním na zádech se mě ani nedotknou. Ur-Shak ho neumí vyrobit, ale odkázal mě na někoho kdo ano. Jmenuje se Thurrock. Pravdepodobně Bude souhlasit a vyrobí mi Ulu-Mulu. Snad... Podle Ur-Shaka měl naposled tábor rozdělán kousek od té nové velké bažiny, nad strážní věží.");
+	B_LogEntry_Quiet(TOPIC_ORCTEMPLE,"S sebou bych ale měl mít Ulu-Mulu, symbol přátelství se skřety. S ním na zádech se mě ani nedotknou. Ur-Shak ho neumí vyrobit, ale odkázal mě na někoho kdo ano. Jmenuje se Thurrock. Pravděpodobně bude souhlasit a vyrobí mi Ulu-Mulu. Snad... Podle Ur-Shaka měl naposled tábor rozdělán kousek od té nové velké bažiny, nad strážní věží.");
 
 	if(ORCPROMISEMAKE == FALSE)
 	{
@@ -394,9 +394,9 @@ func int DIA_Urshak_HOSHPAKRACHE_Condition()
 
 func void DIA_Urshak_HOSHPAKRACHE_Info()
 {
-	AI_Output(self,other,"DIA_Urshak_HOSHPAKRACHE_18_00");	//(agresivně) Khrotok Morra! Já dozvedet ty tady, když Hosh-Pak umřel.
-	AI_Output(self,other,"DIA_Urshak_HOSHPAKRACHE_18_04");	//Ur-Shak vidí omyl, když věřil zlému človeku. Ur-Shak lituje, že volal přítel na človeka a nezabil jej.
-	AI_Output(self,other,"DIA_Urshak_HOSHPAKRACHE_18_05");	//Nyní opustíš údolí a Ur-Shak tě nechá jít. Čest šamana mu nedovolí te zabít.
+	AI_Output(self,other,"DIA_Urshak_HOSHPAKRACHE_18_00");	//(agresivně) Khrotok Morra! Já dozvědět ty tady, když Hosh-Pak umřel.
+	AI_Output(self,other,"DIA_Urshak_HOSHPAKRACHE_18_04");	//Ur-Shak vidí omyl, když věřil zlému člověku. Ur-Shak lituje, že volal přítel na člověka a nezabil jej.
+	AI_Output(self,other,"DIA_Urshak_HOSHPAKRACHE_18_05");	//Nyní opustíš údolí a Ur-Shak tě nechá jít. Čest šamana mu nedovolí tě zabít.
 	AI_Output(self,other,"DIA_Urshak_HOSHPAKRACHE_18_06");	//Příště ale ne...
 	AI_StopProcessInfos(self);
 	URSHAK_SUCKED = TRUE;
@@ -450,13 +450,13 @@ func int dia_urshak_forgiveme_condition()
 
 func void dia_urshak_forgiveme_info()
 {
-	AI_Output(self,other,"DIA_Urshak_ForgiveMe_01_00");	//Co to člověk delá? Snaží se mi snad ublížit?
+	AI_Output(self,other,"DIA_Urshak_ForgiveMe_01_00");	//Co to člověk dělá? Snaží se mi snad ublížit?
 	AI_Output(other,self,"DIA_Urshak_ForgiveMe_01_01");	//Konečně se mnou zase mluvíš!...
 	AI_Output(self,other,"DIA_Urshak_ForgiveMe_01_02");	//Člověk říká divná slova, Ur-Shak nerozumí...
-	AI_Output(self,other,"DIA_Urshak_ForgiveMe_01_03");	//Člověk přece přítel, proč Ur-Shak nemluvit s přítel?!... (nechápave)
+	AI_Output(self,other,"DIA_Urshak_ForgiveMe_01_03");	//Člověk přece přítel, proč Ur-Shak nemluvit s přítel?!... (nechápavě)
 	AI_Output(other,self,"DIA_Urshak_ForgiveMe_01_04");	//Už na mě nejsi naštvaný?
-	AI_Output(self,other,"DIA_Urshak_ForgiveMe_01_05");	//Ur-Shak nechápat proč být naštvaný na člověka!... (nepochopitelne)
-	AI_Output(other,self,"DIA_Urshak_ForgiveMe_01_06");	//Jo, jasně... Nejak mi to dneska nemyslí. Nevím co to se mnou je, zapomeň na to!
+	AI_Output(self,other,"DIA_Urshak_ForgiveMe_01_05");	//Ur-Shak nechápat proč být naštvaný na člověka!... (nepochopitelně)
+	AI_Output(other,self,"DIA_Urshak_ForgiveMe_01_06");	//Jo, jasně... Nějak mi to dneska nemyslí. Nevím co to se mnou je, zapomeň na to!
 	AI_Output(self,other,"DIA_Urshak_ForgiveMe_01_07");	//Ur-Shak myslí, že přítel se chovat divně! Nebýt v něm zlý démon, který se snaží ublížit?
 	AI_Output(other,self,"DIA_Urshak_ForgiveMe_01_08");	//Vše je v pořádku, příteli. Prostě na to zapomeň.
 	B_LogEntry(TOPIC_Urshak,"Můj nápad užít na Ur-Shaka kouzlo Zapomnění funguje! Ur-Shak zapomněl na svého učitele a znovu se mnou mluví.");
@@ -486,7 +486,7 @@ func int dia_urshak_orctemplefixed_condition()
 func void dia_urshak_orctemplefixed_info()
 {
 	AI_Output(other,self,"DIA_Urshak_OrctempleFixed_15_00");	//Skončil jsem se zlem v Spáčově chrámu.
-	AI_Output(self,other,"DIA_Urshak_OrctempleFixed_18_01");	//(vítězne) KHROTOK YABART! Jak to človek dokázat?
+	AI_Output(self,other,"DIA_Urshak_OrctempleFixed_18_01");	//(vítězně) KHROTOK YABART! Jak to člověk dokázat?
 	AI_Output(other,self,"DIA_Urshak_OrctempleFixed_15_02");	//No, nebylo to zrovna lehké.
 	AI_Output(self,other,"DIA_Urshak_OrctempleFixed_18_03");	//Velký respekt od Ur-Shaka, velký respekt.
 	B_GivePlayerXP(300);
@@ -518,11 +518,11 @@ func void dia_urshak_becomeshaman_info()
 	AI_Output(other,self,"DIA_Urshak_BecomeShaman_01_01");	//Přimluvil jsem se za tebe u skřetího krále.
 	AI_Output(self,other,"DIA_Urshak_BecomeShaman_01_02");	//A co ti Velký vůdce říkat?
 	AI_Output(other,self,"DIA_Urshak_BecomeShaman_01_03");	//No, můžeš se vrátit za svými bratry!
-	AI_Output(self,other,"DIA_Urshak_BecomeShaman_01_04");	//(vítězne) KHROTOK YABART! Jak to človek dokázal?
+	AI_Output(self,other,"DIA_Urshak_BecomeShaman_01_04");	//(vítězně) KHROTOK YABART! Jak to člověk dokázal?
 	AI_Output(other,self,"DIA_Urshak_BecomeShaman_01_05");	//No, výměnou jsem musel prokázat jednu službičku.
-	AI_Output(self,other,"DIA_Urshak_BecomeShaman_01_06");	//Ur-Shak velmi potěšen! Ur-Shak velmi dekuje!
+	AI_Output(self,other,"DIA_Urshak_BecomeShaman_01_06");	//Ur-Shak velmi potěšen! Ur-Shak velmi děkuje!
 	AI_Output(other,self,"DIA_Urshak_BecomeShaman_01_07");	//Jasně, nebylo to tak komplikované.
-	AI_Output(self,other,"DIA_Urshak_BecomeShaman_01_08");	//Ur-Sjal nikdy nezapomene co člověk udelal!
+	AI_Output(self,other,"DIA_Urshak_BecomeShaman_01_08");	//Ur-Shak nikdy nezapomene co člověk udělal!
 	AI_Output(other,self,"DIA_Urshak_BecomeShaman_01_09");	//To je v pohodě, teď musím zase dál.
 	AI_Output(self,other,"DIA_Urshak_BecomeShaman_01_10");	//Jdi, příteli. Ur-Shak se připravuje na návrat. Návrat domů. Návrat k bratrům...
 	URSHAKBECOMESHAMAN = TRUE;
@@ -562,10 +562,10 @@ func void dia_urshak_orcorder_info()
 	AI_Output(other,self,"DIA_Urshak_OrcOrder_01_05");	//Tady, to je on.
 	B_GiveInvItems(other,self,itwr_orcsorder,1);
 	B_UseFakeScroll();
-	AI_Output(self,other,"DIA_Urshak_OrcOrder_01_06");	//... (kouká na dopis) Píše s tu o válečných plánech proti lidem.
-	AI_Output(self,other,"DIA_Urshak_OrcOrder_01_07");	//KHROTOK YABART! Odkud má člověk ten dopis?!... (udivene)
+	AI_Output(self,other,"DIA_Urshak_OrcOrder_01_06");	//... (kouká na dopis) Píše se tu o válečných plánech proti lidem.
+	AI_Output(self,other,"DIA_Urshak_OrcOrder_01_07");	//KHROTOK YABART! Odkud má člověk ten dopis?!... (udiveně)
 	AI_Output(other,self,"DIA_Urshak_OrcOrder_01_08");	//Našel jsem ho! Raději nepřestávej číst...
-	AI_Output(self,other,"DIA_Urshak_OrcOrder_01_09");	//Hmmm... (looks at the letter)
+	AI_Output(self,other,"DIA_Urshak_OrcOrder_01_09");	//Hmmm... (dívá se na dopis)
 	B_UseFakeScroll();
 	AI_Output(self,other,"DIA_Urshak_OrcOrder_01_10");	//Skřeti zde píší, že brzy dorazí spousta válečníků válčit proti lidem.
 	AI_Output(self,other,"DIA_Urshak_OrcOrder_01_11");	//A brzy zaútočí na lidskou pevnost...
@@ -608,13 +608,13 @@ func void dia_urshak_wakontest_info()
 	AI_Output(other,self,"DIA_Urshak_WakonTest_01_00");	//Ahoj, nějako by se mi hodila rada.
 	AI_Output(self,other,"DIA_Urshak_WakonTest_01_01");	//A jaká rada to být?
 	AI_Output(other,self,"DIA_Urshak_WakonTest_01_02");	//Víš něco o Duchu Vody?
-	AI_Output(self,other,"DIA_Urshak_WakonTest_01_03");	//Duchu Vody?! Hmm... (zamyšleně) Obávám se, že Ur-Shak nebýt dostatečne vzdelaný o tomto... Neslyšel o nem!
-	AI_Output(self,other,"DIA_Urshak_WakonTest_01_04");	//Nicméně Ur-Shak ví, kdo moci pomoci.
+	AI_Output(self,other,"DIA_Urshak_WakonTest_01_03");	//Duchu Vody?! Hmm... (zamyšleně) Obávám se, že Ur-Shak nebýt dostatečně vzdělaný o tomto... Neslyšel o něm!
+	AI_Output(self,other,"DIA_Urshak_WakonTest_01_04");	//Nicméně Ur-Shak ví, kdo může pomoci.
 	AI_Output(other,self,"DIA_Urshak_WakonTest_01_05");	//A kdo to je?!
 	AI_Output(self,other,"DIA_Urshak_WakonTest_01_06");	//Přítel musí za horskými skřety! Tam najít klan Vysoká skála - velký tábor a velký počet bratří.
-	AI_Output(self,other,"DIA_Urshak_WakonTest_01_07");	//Člověk prát tam a nekdo mu pomoci!
+	AI_Output(self,other,"DIA_Urshak_WakonTest_01_07");	//Člověk ptát tam a někdo mu pomoci!
 	AI_Output(other,self,"DIA_Urshak_WakonTest_01_08");	//Ale jak se tam dostanu?!
-	AI_Output(self,other,"DIA_Urshak_WakonTest_01_09");	//Člověk půjde nahoru nad starý Spáčův chrám! Pak stále nahoru až tam, kde i poslední zveř nebývá! A až nahoře je klan Vysoká skála!
+	AI_Output(self,other,"DIA_Urshak_WakonTest_01_09");	//Člověk půjde nahoru nad starý Spáčův chrám! Pak stále nahoru až tam, kde i poslední zvěř nebývá! A až nahoře je klan Vysoká skála!
 	AI_Output(self,other,"DIA_Urshak_WakonTest_01_10");	//Člověk jít do hor a najít tábor.
 	AI_Output(other,self,"DIA_Urshak_WakonTest_01_11");	//Dobrá, díky za pomoc!
 	AI_Output(self,other,"DIA_Urshak_WakonTest_01_12");	//Ur-Shak vždy rád pomůže.
@@ -644,12 +644,12 @@ func int dia_urshak_meetincastle_condition()
 
 func void dia_urshak_meetincastle_info()
 {
-	AI_Output(self,other,"DIA_Urshak_MeetInCastle_01_00");	//Člověk-přítel v hrade! Proč to?!
+	AI_Output(self,other,"DIA_Urshak_MeetInCastle_01_00");	//Ur-Shak vidět lidského přítele přicházet do hradu! Proč by to dělal?!
 	AI_Output(other,self,"DIA_Urshak_MeetInCastle_01_01");	//Ty jsi také tady, takové setkání jsem nečekal!
-	AI_Output(self,other,"DIA_Urshak_MeetInCastle_01_02");	//Proč je člověk tak překvapen?!... (nechápave)
+	AI_Output(self,other,"DIA_Urshak_MeetInCastle_01_02");	//Proč je člověk tak překvapen?!... (nechápavě)
 	AI_Output(self,other,"DIA_Urshak_MeetInCastle_01_03");	//Ur-Shak nyní šaman. Vrátit se k bratrům a bojovat s nimi ve válce.
 	AI_Output(self,other,"DIA_Urshak_MeetInCastle_01_04");	//Nicméně to Ur-Shak nechtít a stále říkat bratřím, že to špatné!
-	AI_Output(self,other,"DIA_Urshak_MeetInCastle_01_05");	//Ale opět Ur-Shaka neposlouchají, opet se Ur-Shak obává, že se minulost bude opakovat.
+	AI_Output(self,other,"DIA_Urshak_MeetInCastle_01_05");	//Ale opět Ur-Shaka neposlouchají, opět se Ur-Shak obává, že se minulost bude opakovat.
 	AI_Output(other,self,"DIA_Urshak_MeetInCastle_01_06");	//No, snad budeš mít štěstí.
 	MEETURSHAKALREADY = TRUE;
 };
@@ -682,11 +682,11 @@ func void dia_urshak_orcsavepeople_info()
 	AI_Output(self,other,"DIA_Urshak_OrcSavePeople_01_03");	//Já promluvit k bratřím a říci, že lidé užiteční.
 	AI_Output(self,other,"DIA_Urshak_OrcSavePeople_01_04");	//Protože to nebýt obyčejní lidé, ale paladinové! To silní válečníci.
 	AI_Output(other,self,"DIA_Urshak_OrcSavePeople_01_05");	//Ale jak to, že tě slyší?
-	AI_Output(self,other,"DIA_Urshak_OrcSavePeople_01_06");	//Ur-Shak být šaman a mluvit s duchy. Duchové říct Ur-shak to, že ti lidé se nedát zabít.
+	AI_Output(self,other,"DIA_Urshak_OrcSavePeople_01_06");	//Ur-Shak být šaman a mluvit s duchy. Duchové říct Ur-Shak to, že ti lidé se nedát zabít.
 	AI_Output(self,other,"DIA_Urshak_OrcSavePeople_01_07");	//Vůdce pevnosti uznat Ur-Shakovu pravdu, protože duchové neomylní!
 	AI_Output(other,self,"DIA_Urshak_OrcSavePeople_01_08");	//Aha... jasně! To se mi nějak nezdá.
-	AI_Output(self,other,"DIA_Urshak_OrcSavePeople_01_09");	//Člověk mi neveří? (udivene) Proč?!
-	AI_Output(other,self,"DIA_Urshak_OrcSavePeople_01_10");	//Ne, věřím ti. A dejuji za tvou pomoc!
+	AI_Output(self,other,"DIA_Urshak_OrcSavePeople_01_09");	//Člověk mi nevěří? (udiveně) Proč?!
+	AI_Output(other,self,"DIA_Urshak_OrcSavePeople_01_10");	//Ne, věřím ti. A děkuji za tvou pomoc!
 	AI_Output(self,other,"DIA_Urshak_OrcSavePeople_01_11");	//HUTS TAR!... Ur-Shak opravdu mluvit s duchy, příteli.
 	URSHAKTELLPALADIN = TRUE;
 	if(MIS_NEWSSURVIVERS == LOG_Running)
@@ -725,7 +725,7 @@ func void dia_urshak_helpsavepeople_info()
 	AI_Output(self,other,"DIA_Urshak_HelpSavePeople_01_06");	//Nerozumí! Člověk nemůže osvobodit lidi s Ur-Shak, ale může OSVOBODIT LIDI.
 	AI_Output(self,other,"DIA_Urshak_HelpSavePeople_01_07");	//Ale sám. Ur-Shak nesmět pomoci!
 	AI_Output(other,self,"DIA_Urshak_HelpSavePeople_01_08");	//Ty máš nápad? A jaký?!
-	AI_Output(self,other,"DIA_Urshak_HelpSavePeople_01_09");	//Člověk by mel mluvit s vůdce pevnosti! Človek moci přesvedčit vůdce, aby pustit lidi.
+	AI_Output(self,other,"DIA_Urshak_HelpSavePeople_01_09");	//Člověk by měl mluvit s vůdce pevnosti! Člověk moci přesvědčit vůdce, aby pustit lidi.
 	if(Npc_KnowsInfo(other,dia_orc_8566_urhan_hello))
 	{
 		AI_Output(other,self,"DIA_Urshak_HelpSavePeople_01_10");	//Ano, toho už jsem potkal. Co bych mu měl říci?!
@@ -736,8 +736,8 @@ func void dia_urshak_helpsavepeople_info()
 		AI_Output(self,other,"DIA_Urshak_HelpSavePeople_01_12");	//Přece zdejší vůdce! Říkat bratrům co smět a co ne...
 		AI_Output(other,self,"DIA_Urshak_HelpSavePeople_01_13");	//A co bych mu měl říci?!
 	};
-	AI_Output(self,other,"DIA_Urshak_HelpSavePeople_01_14");	//To, co chce slyšet, Ur-Shak nevědet.
-	AI_Output(other,self,"DIA_Urshak_HelpSavePeople_01_15");	//Můžeš mi o něm říci neco více?!
+	AI_Output(self,other,"DIA_Urshak_HelpSavePeople_01_14");	//To, co chce slyšet, Ur-Shak nevědět.
+	AI_Output(other,self,"DIA_Urshak_HelpSavePeople_01_15");	//Můžeš mi o něm říci něco více?!
 	AI_Output(self,other,"DIA_Urshak_HelpSavePeople_01_16");	//Noo! Ur-Shak slyšet, že vůdce chtít vždy být skřetí král.
 	AI_Output(self,other,"DIA_Urshak_HelpSavePeople_01_17");	//Pak by bratři nazývali jeho za největšího válečníka!
 	AI_Output(self,other,"DIA_Urshak_HelpSavePeople_01_18");	//Jestli král zemřít, vůdce pevnosti uplatnit nárok Velkého Válečníka!
@@ -820,7 +820,7 @@ func void DIA_Urshak_OrcLanguageTeach_info()
 	}
 	else
 	{
-		AI_Output(self,other,"DIA_Urshak_OrcLanguageTeach_01_07");	//Chcete to provést, chybí zkušenost, člověk!
+		AI_Output(self,other,"DIA_Urshak_OrcLanguageTeach_01_07");	//Chceš to provést, chybí zkušenost, člověk!
 		AI_Output(self,other,"DIA_Urshak_OrcLanguageTeach_01_08");	//Vracet se později.
 	};
 };

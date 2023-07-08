@@ -6,7 +6,7 @@ func void B_DIA_BDT_10XX_Fluechtling_Stimme7()
 
 func void B_DIA_BDT_10XX_Fluechtling_Stimme6()
 {
-	AI_Output(self,other,"DIA_B_DIA_BDT_10XX_Fluechtling_06_00");	//Nepřišel si pro nás, abys nás odvedl zpět do vezení, že ne?
+	AI_Output(self,other,"DIA_B_DIA_BDT_10XX_Fluechtling_06_00");	//Nepřišel si pro nás, abys nás odvedl zpět do vězení, že ne?
 };
 
 
@@ -52,7 +52,7 @@ func int DIA_BDT_1031_Fluechtling_Tip1_Condition()
 
 func void DIA_BDT_1031_Fluechtling_Tip1_Info()
 {
-	AI_Output(self,other,"DIA_BDT_1031_Fluechtling_Tip1_07_00");	//Měl by ses ode me držet raději dál, jestli nechceš zkončit ve vězení.
+	AI_Output(self,other,"DIA_BDT_1031_Fluechtling_Tip1_07_00");	//Měl by ses ode mě držet raději dál, jestli nechceš skončit ve vězení.
 	B_GivePlayerXP(XP_AmbientKap3);
 	if(SCFoundMorgahard == FALSE)
 	{
@@ -73,7 +73,7 @@ func void DIA_BDT_1031_Fluechtling_Tip1_Morgahard()
 func void DIA_BDT_1031_Fluechtling_Tip1_Morgahard_drohen()
 {
 	AI_Output(other,self,"DIA_BDT_1031_Fluechtling_Tip1_Morgahard_drohen_15_00");	//To je škoda. To potom budu muset uvědomit soudce.
-	AI_Output(self,other,"DIA_BDT_1031_Fluechtling_Tip1_Morgahard_drohen_07_01");	//Dobře, dobře. Předpokládám, že někteří z nás uprchli do hostince. Ale ode me jsi to neslyšel, OK?
+	AI_Output(self,other,"DIA_BDT_1031_Fluechtling_Tip1_Morgahard_drohen_07_01");	//Dobře, dobře. Předpokládám, že někteří z nás uprchli do hostince. Ale ode mě jsi to neslyšel, OK?
 	AI_StopProcessInfos(self);
 };
 
@@ -235,7 +235,7 @@ func void DIA_BDT_1033_Fluechtling_Tip2_Morgahard()
 
 func void DIA_BDT_1033_Fluechtling_Tip2_Knast()
 {
-	AI_Output(other,self,"DIA_BDT_1033_Fluechtling_Tip2_Knast_15_00");	//Poslal mě soudce, abych te přivedl zpět.
+	AI_Output(other,self,"DIA_BDT_1033_Fluechtling_Tip2_Knast_15_00");	//Poslal mě soudce, abych tě přivedl zpět.
 	AI_Output(self,other,"DIA_BDT_1033_Fluechtling_Tip2_Knast_07_01");	//(křičí) NE!
 	AI_StopProcessInfos(self);
 	B_Attack(self,other,AR_SuddenEnemyInferno,1);
@@ -245,12 +245,12 @@ func void DIA_BDT_1033_Fluechtling_Tip2_frei()
 {
 	AI_Output(other,self,"DIA_BDT_1033_Fluechtling_Tip2_frei_15_00");	//Klídek. Jen si chci s tebou promluvit.
 	AI_Output(self,other,"DIA_BDT_1033_Fluechtling_Tip2_frei_07_01");	//Ale já s tebou mluvit nechci. Zmizni chlape.
-	Info_AddChoice(DIA_BDT_1033_Fluechtling_Tip2,"Máš pěkne nahnáno v kalhotách, že?",DIA_BDT_1033_Fluechtling_Tip2_frei_verbrechen);
+	Info_AddChoice(DIA_BDT_1033_Fluechtling_Tip2,"Máš pěkně nahnáno v kalhotách, že?",DIA_BDT_1033_Fluechtling_Tip2_frei_verbrechen);
 };
 
 func void DIA_BDT_1033_Fluechtling_Tip2_frei_verbrechen()
 {
-	AI_Output(other,self,"DIA_BDT_1033_Fluechtling_Tip2_frei_verbrechen_15_00");	//Máš pěkne nahnáno v kalhotách, že?
+	AI_Output(other,self,"DIA_BDT_1033_Fluechtling_Tip2_frei_verbrechen_15_00");	//Máš pěkně nahnáno v kalhotách, že?
 	AI_Output(self,other,"DIA_BDT_1033_Fluechtling_Tip2_frei_verbrechen_07_01");	//Mluv si dál. Ale na tebe nečekají galeje, když tě chytí.
 };
 
